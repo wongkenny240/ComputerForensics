@@ -13,3 +13,6 @@
 * [Advanced EnCase](encase/advanced-encase.md)
 * [EnScript](encase/enscript.md)
 
+## Malware Analysis
+* [Malware Analysis](malware/malware-analysis.md)
+
