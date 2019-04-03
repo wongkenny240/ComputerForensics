@@ -1,1 +1,1 @@
-## Acquisition Method
+## Advanced EnCase
