@@ -1,1 +1,1 @@
-## Acquisition Method
+## Basic EnCase
