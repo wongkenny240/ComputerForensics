@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Introduction](introduction.md)
 
 ## Acquisition
 
@@ -12,6 +13,3 @@
 * [Advanced EnCase](encase/advanced-encase.md)
 * [EnScript](encase/enscript.md)
 
-## Nuix
-
-##  
