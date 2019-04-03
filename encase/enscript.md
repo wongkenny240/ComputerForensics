@@ -67,6 +67,8 @@ for (ItemIteratorClass iter(c, NOPROXY, CURRENTVIEW_SELECTED); EntryClass e = it
 }
 ```
 
+Select Entry Items to loop
+
 |	Name	|	Value	|	Description	|
 | :--- | :--- | :--- |
 |	ALL	|	0	|	All items in the case 	|
