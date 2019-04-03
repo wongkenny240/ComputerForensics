@@ -16,8 +16,7 @@ Write Protect =  writes are prevented, nothing is cached locally, and Windows la
 
 ```
 
-After finished acquiring > Physically remove the device 
-> Stop the write-blocking software in EnCase (Tools > FastBloc SE > Clear All)
+After finished acquiring > Physically remove the device > Stop the write-blocking software in EnCase (Tools > FastBloc SE > Clear All)
 
 
 ### Tableau Write Blocker
