@@ -4,13 +4,13 @@
 
 ### Windows Prefetch Files
 
-WinPrefetchView
-
 Location
 
 ```
 C:\Windows\Prefetch
 ```
+
+Information contains:
 
 * .pf file creation date generally shows when program first executed
 * .pf file last modified date shows when program last executed
@@ -18,4 +18,32 @@ C:\Windows\Prefetch
 * Process’s last run time
 * Process’s run count
 * Files accessed during start-ups
+
+#### WinPrefetchView
+
+### Registry
+
+#### AppCompatCache
+
+```
+HKLM\SYSTEM\CurrentControlSet00#\Control\Session Manager\AppCompatCache\
+```
+
+* Executable’s last modification date
+* Executable’s file path
+
+RegRipper
+
+```BatchFile
+C:\Tools\RegRipper>rip.exe -r H:\Windows\System32\config\SYSTEM -p appcompatcache
+```
+
+auto_rip.exe
+
+#### Legacy registry keys
+
+
+
+
+
 
