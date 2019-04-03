@@ -15,7 +15,7 @@
 * Run – F5 
 * Undo – Ctrl-Z
 
-## EntryClass
+## Entry Class
 
 * Evidence Name: EvidenceFile\(\) 
 * Unique Name: UniqueName\(\) 
@@ -31,4 +31,10 @@
 * Path: Path\(\) 
 * IsSelected: IsSelected\(\) 
 * IsDeleted: IsDeleted\(\)
+
+## Case Class
+
+| sd | sd |
+| :--- | :--- |
+| sdf | df |
 
