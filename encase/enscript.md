@@ -57,3 +57,24 @@
 |	TagItemRoot	|	TagItemClass	|	No	|	Top level object of tags list. 	|
 |	TemporaryFolder	|	String	|	No	|	Path to temp folder in CaseFolder. 	|
 |	UseBaseFolder	|	bool	|	Yes	|	Use base case folder for primary evidence cache. Overrides primary evidence folder settings	|
+
+
+## ItemIterator Class
+
+```C#
+for (ItemIteratorClass iter(c, NOPROXY, CURRENTVIEW_SELECTED); EntryClass e = iter.GetNextEntry();){
+	ProcessEntry(c, e, logfile, datestring);
+}
+```
+
+|	Name	|	Value	|	Description	|
+| :--- | :--- | :--- | :--- |
+|	ALL	|	0	|	All items in the case 	|
+|	TAGGED	|	1	|	Tagged items 	|
+|	RESULT	|	2	|	Items in a named result set 	|
+|	CURRENTVIEW	|	3	|	Items in the current user view 	|
+|	CURRENTVIEW_SELECTED	|	4	|	Selected items in the current user view 	|
+|	CURRENTFOLDER	|	5	|	Items in the current user folder 	|
+|	CURRENTFOLDER_SELECTED	|	6	|	Selected items in the current user folder 	|
+
+
