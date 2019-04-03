@@ -68,7 +68,7 @@ for (ItemIteratorClass iter(c, NOPROXY, CURRENTVIEW_SELECTED); EntryClass e = it
 ```
 
 |	Name	|	Value	|	Description	|
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 |	ALL	|	0	|	All items in the case 	|
 |	TAGGED	|	1	|	Tagged items 	|
 |	RESULT	|	2	|	Items in a named result set 	|
