@@ -28,3 +28,10 @@ Remove Sort:
 * Remove sort in the Sort menu
 
 
+## File Types view
+
+* Add File Type
+View > File Types > New
+
+* Add a File Viewer
+Open With > File Viewers > New File Viewer
