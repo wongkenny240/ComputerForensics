@@ -18,37 +18,43 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 
 ## Tableau Write Blocker
 
-## LinEn (Linux)
+## LinEn \(Linux\)
 
 {% hint style="info" %}
-Edit the inittab file with text editor to change your Linux (e.g. Helix) to console mode
-By change `id:5:initdefault:.` to `id:3:initdefault:.` 
+Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to console mode By change `id:5:initdefault:.` to `id:3:initdefault:.`
 {% endhint %}
 
 1. Attached the target drive to the Linux imaging platform
-2. Attached storage drive (FAT32) to the Linux imaging platform
+2. Attached storage drive \(FAT32\) to the Linux imaging platform
 3. Boot your Linux machine to console and log in as root
 4. Check what file systems are mounted
-```Bash
-mount
-```
+
+   ```bash
+   mount
+   ```
+
 5. Check what devices are available
-```
-fdisk -l
-```
+
+   ```text
+   fdisk -l
+   ```
+
 6. Mount your storage drive and check that the storage drive is mounted
-```
-mkdir /mnt/fat32
-mount /dev/hda1 /mnt/fat32
-mount
-```
+
+   ```text
+   mkdir /mnt/fat32
+   mount /dev/hda1 /mnt/fat32
+   mount
+   ```
+
 7. Create the folder on your storage volume to hold the EnCase evidence file
 8. Go to the directory of LinEn and run LinEn
-```
-./LinEn
-```
+
+   ```text
+   ./LinEn
+   ```
+
 9. press `A` / use Tab key to go to Acquire and press Enter
 10. Select your drive and press Enter
 11. Choose the path for your evidence file and prefix it with the path to the mount path e.g. `/case/casename/evidence` to `/mnt/winfat/cases/casename/evidence/XXX001`
-
 

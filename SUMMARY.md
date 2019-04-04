@@ -13,5 +13,6 @@
 * [EnScript](encase/enscript.md)
 
 ## Malware Analysis
-* [Malware Analysis](malware/malware-analysis.md)
+
+* [Malware Analysis](malware-analysis/malware-analysis.md)
 
