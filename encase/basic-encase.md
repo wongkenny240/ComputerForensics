@@ -10,6 +10,8 @@ Tree Pane &gt; Set Included &gt; Timeline view &gt; Higher Resolution or Lower R
 
 Date Types &gt; select which timestamps to be viewed
 
+![Timeline View](../.gitbook/assets/2019-04-03-16_29_25-encase-forensic%20%282%29.png)
+
 ## Sort
 
 First sort \(either one of the following\):
@@ -35,18 +37,27 @@ Remove Sort:
 * Add File Type View &gt; File Types &gt; New
 * Add a File Viewer Open With &gt; File Viewers &gt; New File Viewer
 
+![View &amp;gt; File Types](../.gitbook/assets/2019-04-04-15_01_05-greenshot.png)
+
+![New File Type](../.gitbook/assets/2019-04-04-15_01_32-greenshot.png)
+
 ## Evidence Processor
 
-![Process &amp;gt; Evidence Processor](../.gitbook/assets/image%20%283%29.png)
+![Right Click &amp;gt; Process](../.gitbook/assets/2019-04-04-14_48_55-greenshot.png)
+
+![Evidence Processor](../.gitbook/assets/image.png)
+
+* Prioritization
+
+![](../.gitbook/assets/2019-04-04-14_52_15-greenshot.png)
 
 * Recover Folders
 
+
+
 * Hash Analysis
-
 * File Signatures Analysis
-
 * Finding Email
-
 * Finding Internet Artifacts
-
 * Search Keywords
+
