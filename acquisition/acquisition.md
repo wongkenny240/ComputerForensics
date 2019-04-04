@@ -1,5 +1,11 @@
 # Acquisition Method
 
+## Memory Acquisition \(FTK Imager Lite\)
+
+File &gt; Capture Memory
+
+![FTK Imager Lite for capturing memory](../.gitbook/assets/2019-04-04-17_31_52-greenshot.png)
+
 ## FastBloc SE
 
 1. Make sure no devices are attached \(or only your storage device is attached\)
