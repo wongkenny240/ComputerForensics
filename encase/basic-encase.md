@@ -39,3 +39,14 @@ Remove Sort:
 
 ![Process &amp;gt; Evidence Processor](../.gitbook/assets/image%20%283%29.png)
 
+* Recover Folders
+
+* Hash Analysis
+
+* File Signatures Analysis
+
+* Finding Email
+
+* Finding Internet Artifacts
+
+* Search Keywords
