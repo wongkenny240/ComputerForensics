@@ -42,6 +42,7 @@ $ cat osession.txt
 
 ```text
 $ python vol.py -f XPSP3x86.vmem auditpol --profile=WinXPSP3x86
+
 Volatility Foundation Volatility Framework 2.4
 Auditing is Enabled
 Audit System Events: S/F
@@ -68,8 +69,8 @@ Note: To find the equivalent security IDs for Windows Vista, 2008, and 7 machine
 You must extract the logs from memory using the dumpfiles plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology (finding and dumping the event log of choice) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching (regular expression) capabilities.
 
 ```text
-$ python vol.py –f Win7SP1x86.vmem --profile=Win7SP1x86 dumpfiles --regex .evtx$ --ignore-case
---dump-dir output
+$ python vol.py –f Win7SP1x86.vmem --profile=Win7SP1x86 dumpfiles --regex .evtx$ --ignore-case --dump-dir output
+
 Volatility Foundation Volatility Framework 2.4
 DataSectionObject 0x8509eba8 756 \Device\HarddiskVolume1\Windows\System32\winevt\Logs\Microsoft-Windows-Diagnostics-Performance%4Operational.evtx
 SharedCacheMap 0x8509eba8 756 \Device\HarddiskVolume1\Windows\System32\winevt\Logs\Microsoft-Windows-Diagnostics-Performance%4Operational.evtx
@@ -201,4 +202,19 @@ REG_SZ Adobe ARM :
 (S) "C:\Program Files\Common Files\Adobe\ARM\1.0\AdobeARM.exe"
 REG_SZ svchosts :
 (S) C:\WINDOWS\system32\svchosts.exe
+```
+
+```text
+$ python vol.py -f Win7.raw --profile=Win7SP1x64 printkey -K "SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN"
+
+Volatility Foundation Volatility Framework 2.4
+Legend: (S) = Stable (V) = Volatile
+----------------------------
+Registry: \??\C:\Users\Andrew\ntuser.dat
+Key name: Run (S)
+Last updated: 2013-03-10 22:47:09 UTC+0000
+Subkeys:
+Values:
+REG_SZ mswinnt : (S) "C:\Users\Andrew\Desktop\mswinnt.exe" 
+--logfile=log.txt --encryption-index=4
 ```
