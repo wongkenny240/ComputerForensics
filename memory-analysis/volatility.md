@@ -118,6 +118,8 @@ Key information in registry:
 * System information: Determine system settings, installed software, and security patches that have been applied.
 * Malware configurations: Extract data related to malware command and control sites, paths to infected files on disk, and encryption keys (anything malicious code writes to the registry).
 
+#### hivelist
+
 The hivelist plugin scans for registry hives and then prints out their physical and virtual offsets and path information. 
 
 The following is an example:
@@ -140,3 +142,17 @@ Virtual Physical Name
 [snip]
 ```
 
+#### printkey
+```text
+$ python vol.py -f win7.vmem --profile=Win7SP1x86 printkey -K "controlset001\control\computername"
+Volatility Foundation Volatility Framework 2.4
+Legend: (S) = Stable (V) = Volatile
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ComputerName (S)
+Last updated: 2011-10-20 15:25:16
+Subkeys:
+(S) ComputerName
+(V) ActiveComputerName
+Values:
+```
