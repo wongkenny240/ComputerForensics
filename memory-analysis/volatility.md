@@ -110,9 +110,33 @@ Guid="{EEF54E71-0661-422D-9A98-82FD4940B820}" />
 
 ### Registry in Memory
 
+Key information in registry:
+
 * Hardware: Enumerate the external media devices that were connected to the system.
 * User account information: Audit user passwords, accounts, most recently used (MRU) items, and user preferences.
 * Recently run programs: Determine what applications executed recently (using data from the Userassist, Shimcache, and MUICache keys).
 * System information: Determine system settings, installed software, and security patches that have been applied.
 * Malware configurations: Extract data related to malware command and control sites, paths to infected files on disk, and encryption keys (anything malicious code writes to the registry).
+
+The hivelist plugin scans for registry hives and then prints out their physical and virtual offsets and path information. 
+
+The following is an example:
+```text
+$ python vol.py -f win7.vmem --profile=Win7SP0x86 hivelist
+```
+
+```text
+Volatility Foundation Volatility Framework 2.4
+Virtual Physical Name
+---------- ---------- ----
+0x82b7a140 0x02b7a140 [no name]
+0x820235c8 0x203675c8 \SystemRoot\System32\Config\SAM
+0x87a1a250 0x27eb3250 \REGISTRY\MACHINE\SYSTEM
+0x87a429d0 0x27f9d9d0 \REGISTRY\MACHINE\HARDWARE
+0x87ac34f8 0x135804f8 \SystemRoot\System32\Config\DEFAULT
+0x88603008 0x20d36008 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
+0x88691008 0x1ca1c008 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
+0x9141e9d0 0x1dc569d0 \??\C:\Windows\System32\config\COMPONENTS
+[snip]
+```
 
