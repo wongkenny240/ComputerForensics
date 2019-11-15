@@ -143,8 +143,12 @@ Virtual Physical Name
 ```
 
 #### printkey
+
+In the output, you can see the registry path, key name, last write time, subkeys, and any values that the key has (in this case, there were none). The printkey plugin also tells you whether the registry key or its subkeys are stable (S) or volatile (V).
+
 ```text
 $ python vol.py -f win7.vmem --profile=Win7SP1x86 printkey -K "controlset001\control\computername"
+
 Volatility Foundation Volatility Framework 2.4
 Legend: (S) = Stable (V) = Volatile
 ----------------------------
@@ -156,3 +160,23 @@ Subkeys:
 (V) ActiveComputerName
 Values:
 ```
+
+#### Detecting Malware Persistence
+
+These keys contain information about programs that run when the system boots up or a user logs in. Therefore, you should check these known registry keys to see if the malware is using them to persist on the machine. The following list shows some known startup keys.
+
+* For system startup:
+```text
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+```
+
+* For user logons:
+```text
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+```
+
