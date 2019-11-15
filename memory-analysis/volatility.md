@@ -103,8 +103,16 @@ Guid="{EEF54E71-0661-422D-9A98-82FD4940B820}" />
 [snip]
 ```
 
-• Provider Name: Tells you from which log this information was extracted.
-• EventID: Contains the event ID that you would look up online to figure out what event transpired.
-• TimeCreated: A timestamp for when the event was generated.
-• EventRecordID: The ID of the record, which helps you figure out the ordering of the generated records.
+* Provider Name: Tells you from which log this information was extracted.
+* EventID: Contains the event ID that you would look up online to figure out what event transpired.
+* TimeCreated: A timestamp for when the event was generated.
+* EventRecordID: The ID of the record, which helps you figure out the ordering of the generated records.
+
+### Registry in Memory
+
+* Hardware: Enumerate the external media devices that were connected to the system.
+* User account information: Audit user passwords, accounts, most recently used (MRU) items, and user preferences.
+* Recently run programs: Determine what applications executed recently (using data from the Userassist, Shimcache, and MUICache keys).
+* System information: Determine system settings, installed software, and security patches that have been applied.
+* Malware configurations: Extract data related to malware command and control sites, paths to infected files on disk, and encryption keys (anything malicious code writes to the registry).
 
