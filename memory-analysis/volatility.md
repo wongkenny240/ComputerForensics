@@ -77,3 +77,28 @@ DataSectionObject 0x83eaec48 756 \Device\HarddiskVolume1\Windows\System32\winevt
 SharedCacheMap 0x83eaec48 756 \Device\HarddiskVolume1\Windows\System32\winevt\Logs\Microsoft-Windows-Kernel-WHEA%4Errors.evtx
 [snip]
 ```
+
+The following shows how to investigate one of these logs with the evtxdump.pl utility from Evtxparser:
+```text
+$ evtxdump.pl output/file.756.0x8404b008.vacb
+```
+Output of the command:
+```text
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-Application-Experience"
+Guid="{EEF54E71-0661-422D-9A98-82FD4940B820}" />
+<EventID>900</EventID>
+<Version>0</Version>
+<Level>4</Level>
+<Task>0</Task>
+<Opcode>0</Opcode>
+<Keywords>0x0800000000000000</Keywords>
+<TimeCreated SystemTime="1341520633" />
+<EventRecordID>1</EventRecordID>
+<Correlation />
+<Execution ProcessID="3336" ThreadID="3580" />
+[snip]
+```
