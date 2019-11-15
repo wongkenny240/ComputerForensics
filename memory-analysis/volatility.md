@@ -179,4 +179,26 @@ HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
 HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
 ```
+An example of malware persistence is shown in the following output. The malicious executable C:\WINDOWS\system32\svchosts.exe is run every time the system starts up. This is immediately suspicious because no **svchosts.exe** executable exists on a clean Windows
+machine—it is attempting to blend in with the legitimate svchost.exe (without the extra “s”). Notice that you do not have to prefix the –K/--key argument with HKLM\SOFTWARE because it is actually not part of the path within the registry, but instead denotes which
+registry contains the key (for example, the SOFTWARE hive on the local machine).
 
+```text
+$ python vol.py -f grrcon.raw --profile=WinXPSP3x86 printkey -K "Microsoft\Windows\CurrentVersion\Run"
+
+Volatility Foundation Volatility Framework 2.4
+Legend: (S) = Stable (V) = Volatile
+----------------------------
+Registry: \Device\HarddiskVolume1\WINDOWS\system32\config\software
+Key name: Run (S)
+Last updated: 2012-04-28 01:59:22 UTC+0000
+Subkeys:
+(S) OptionalComponents
+Values:
+REG_SZ Adobe Reader Speed Launcher :
+(S) "C:\Program Files\Adobe\Reader 9.0\Reader\Reader_sl.exe"
+REG_SZ Adobe ARM :
+(S) "C:\Program Files\Common Files\Adobe\ARM\1.0\AdobeARM.exe"
+REG_SZ svchosts :
+(S) C:\WINDOWS\system32\svchosts.exe
+```
