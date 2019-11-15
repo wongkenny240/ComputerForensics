@@ -14,5 +14,8 @@
 
 ## Malware Analysis
 
-* [Malware Analysis](malware-analysis/malware-analysis.md)
+* [Malware Hunting](malware-analysis/malware-analysis.md)
+
+## Memory Analysis
+* [Volatility](memory-analysis/volatility.md)
 
