@@ -1,6 +1,6 @@
 # Volatility
 
-#### Event Log File
+### Event Log File
 
 **Finding Event Log File in Memory**
 
