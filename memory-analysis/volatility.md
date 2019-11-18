@@ -1,6 +1,6 @@
 # Volatility
 
-### Event Log File
+## Event Log File
 
 **Finding Event Log File in Memory**
 
@@ -18,11 +18,12 @@ $ python vol.py -f XPSP3.vmem --profile=WinXPSP3x86 vadinfo -p 69
 ```
 
 **Extracting Event Log File in Memory**
+
 ```text
 $ python vol.py -f cve2011_0611.dmp --profile=WinXPSP3x86 evtlogs -v --save-evt -D output/
 ```
 
-The above uses the --save-evt option, the plugin created an .evt file (raw binary event log) and a .txt file (parsed records in text format) for each log file. The output of the parsed text file is in the following format:
+The above uses the --save-evt option, the plugin created an .evt file \(raw binary event log\) and a .txt file \(parsed records in text format\) for each log file. The output of the parsed text file is in the following format:
 
 ```text
 Date/Time | Log Name | Computer Name | SID | Source | Event ID | Event Type | Message Strings
@@ -66,7 +67,7 @@ Logs located on the disk at
 
 Note: To find the equivalent security IDs for Windows Vista, 2008, and 7 machines, add 4096 to the ID used for Windows XP/2003. For example, to find events that are related to someone logging on to a Windows 7 machine, the ID of interest would be **4624** instead of 528.
 
-You must extract the logs from memory using the dumpfiles plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology (finding and dumping the event log of choice) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching (regular expression) capabilities.
+You must extract the logs from memory using the dumpfiles plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology \(finding and dumping the event log of choice\) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching \(regular expression\) capabilities.
 
 ```text
 $ python vol.py –f Win7SP1x86.vmem --profile=Win7SP1x86 dumpfiles --regex .evtx$ --ignore-case --dump-dir output
@@ -80,10 +81,13 @@ SharedCacheMap 0x83eaec48 756 \Device\HarddiskVolume1\Windows\System32\winevt\Lo
 ```
 
 The following shows how to investigate one of these logs with the evtxdump.pl utility from Evtxparser:
+
 ```text
 $ evtxdump.pl output/file.756.0x8404b008.vacb
 ```
+
 Output of the command:
+
 ```text
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Events>
@@ -109,21 +113,22 @@ Guid="{EEF54E71-0661-422D-9A98-82FD4940B820}" />
 * TimeCreated: A timestamp for when the event was generated.
 * EventRecordID: The ID of the record, which helps you figure out the ordering of the generated records.
 
-### Registry in Memory
+## Registry in Memory
 
 Key information in registry:
 
 * Hardware: Enumerate the external media devices that were connected to the system.
-* User account information: Audit user passwords, accounts, most recently used (MRU) items, and user preferences.
-* Recently run programs: Determine what applications executed recently (using data from the Userassist, Shimcache, and MUICache keys).
+* User account information: Audit user passwords, accounts, most recently used \(MRU\) items, and user preferences.
+* Recently run programs: Determine what applications executed recently \(using data from the Userassist, Shimcache, and MUICache keys\).
 * System information: Determine system settings, installed software, and security patches that have been applied.
-* Malware configurations: Extract data related to malware command and control sites, paths to infected files on disk, and encryption keys (anything malicious code writes to the registry).
+* Malware configurations: Extract data related to malware command and control sites, paths to infected files on disk, and encryption keys \(anything malicious code writes to the registry\).
 
-#### hivelist
+### hivelist
 
-The hivelist plugin scans for registry hives and then prints out their physical and virtual offsets and path information. 
+The hivelist plugin scans for registry hives and then prints out their physical and virtual offsets and path information.
 
 The following is an example:
+
 ```text
 $ python vol.py -f win7.vmem --profile=Win7SP0x86 hivelist
 ```
@@ -143,9 +148,9 @@ Virtual Physical Name
 [snip]
 ```
 
-#### printkey
+### printkey
 
-In the output, you can see the registry path, key name, last write time, subkeys, and any values that the key has (in this case, there were none). The printkey plugin also tells you whether the registry key or its subkeys are stable (S) or volatile (V).
+In the output, you can see the registry path, key name, last write time, subkeys, and any values that the key has \(in this case, there were none\). The printkey plugin also tells you whether the registry key or its subkeys are stable \(S\) or volatile \(V\).
 
 ```text
 $ python vol.py -f win7.vmem --profile=Win7SP1x86 printkey -K "controlset001\control\computername"
@@ -162,27 +167,28 @@ Subkeys:
 Values:
 ```
 
-#### Detecting Malware Persistence
+### Detecting Malware Persistence
 
 These keys contain information about programs that run when the system boots up or a user logs in. Therefore, you should check these known registry keys to see if the malware is using them to persist on the machine. The following list shows some known startup keys.
 
 * For system startup:
-```text
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-```
+
+  ```text
+  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+  ```
 
 * For user logons:
-```text
-HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows
-HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
-HKCU\Software\Microsoft\Windows\CurrentVersion\Run
-HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
-```
-An example of malware persistence is shown in the following output. The malicious executable C:\WINDOWS\system32\svchosts.exe is run every time the system starts up. This is immediately suspicious because no **svchosts.exe** executable exists on a clean Windows
-machine—it is attempting to blend in with the legitimate svchost.exe (without the extra “s”). Notice that you do not have to prefix the –K/--key argument with HKLM\SOFTWARE because it is actually not part of the path within the registry, but instead denotes which
-registry contains the key (for example, the SOFTWARE hive on the local machine).
+
+  ```text
+  HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows
+  HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
+  HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+  HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+  ```
+
+  An example of malware persistence is shown in the following output. The malicious executable C:\WINDOWS\system32\svchosts.exe is run every time the system starts up. This is immediately suspicious because no **svchosts.exe** executable exists on a clean Windows machine—it is attempting to blend in with the legitimate svchost.exe \(without the extra “s”\). Notice that you do not have to prefix the –K/--key argument with HKLM\SOFTWARE because it is actually not part of the path within the registry, but instead denotes which registry contains the key \(for example, the SOFTWARE hive on the local machine\).
 
 ```text
 $ python vol.py -f grrcon.raw --profile=WinXPSP3x86 printkey -K "Microsoft\Windows\CurrentVersion\Run"
@@ -218,3 +224,4 @@ Values:
 REG_SZ mswinnt : (S) "C:\Users\Andrew\Desktop\mswinnt.exe" 
 --logfile=log.txt --encryption-index=4
 ```
+
