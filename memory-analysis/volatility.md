@@ -15,22 +15,26 @@ Volatility provides a few commands you can use for extracting information about 
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 ```
 
-![output of the pslist command](../.gitbook/assets/image%20%283%29.png)
+![output of the pslist command](../.gitbook/assets/image%20%284%29.png)
 
-* Three browsers are running (two instances of IEXPLORE.EXE and one firefox .exe), an e‑mail client (thunderbird.exe), and Adobe Reader (AcroRd32.exe). Thus, this machine is very likely to be a client or workstation, as opposed to a server.
-Furthermore, if you suspect a client-side attack vector (such as a drive-by download or phishing exploit), it is wise to mine these processes for data related to the incident because there’s a good chance that one or more of them was involved.
-* All processes, including the system-critical ones, are running in session 0, which indicates this is an older (Windows XP or 2003) machine (that is, before session 0 isolation) and that only one user is currently logged on.
-* Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer (indicated by the dashed lines). If the exit time column were displayed (we truncated it to prevent lines from wrapping on the page), you’d see that these two processes
-have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them (see The Mis-leading Active in PsActiveProcessHead:http://mnin.blogspot.com/2011/03/mis-leading-active-in.html).
-* The process with PID 2280 (a\[1\].php) has an invalid extension for executables—it claims to be a PHP file. Furthermore, based on its creation time, it has a temporal relationship with several other processes that started during the same minute (14:19:XX), including a command shell (cmd.exe).
+* Three browsers are running \(two instances of IEXPLORE.EXE and one firefox .exe\), an e‑mail client \(thunderbird.exe\), and Adobe Reader \(AcroRd32.exe\). Thus, this machine is very likely to be a client or workstation, as opposed to a server.
 
+  Furthermore, if you suspect a client-side attack vector \(such as a drive-by download or phishing exploit\), it is wise to mine these processes for data related to the incident because there’s a good chance that one or more of them was involved.
+
+* All processes, including the system-critical ones, are running in session 0, which indicates this is an older \(Windows XP or 2003\) machine \(that is, before session 0 isolation\) and that only one user is currently logged on.
+* Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer \(indicated by the dashed lines\). If the exit time column were displayed \(we truncated it to prevent lines from wrapping on the page\), you’d see that these two processes
+
+  have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them \(see The Mis-leading Active in PsActiveProcessHead:[http://mnin.blogspot.com/2011/03/mis-leading-active-in.html](http://mnin.blogspot.com/2011/03/mis-leading-active-in.html)\).
+
+* The process with PID 2280 \(a\[1\].php\) has an invalid extension for executables—it claims to be a PHP file. Furthermore, based on its creation time, it has a temporal relationship with several other processes that started during the same minute \(14:19:XX\), including a command shell \(cmd.exe\).
 
 ```text
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pstree
 ```
 
-s
+![](../.gitbook/assets/image%20%282%29.png)
 
+When viewing the processes as a tree, it’s much easier to determine the possible events that took place during the attack. You can see that firefox.exe \(PID 180\) was started by explorer.exe \(PID 1300\). This is normal—anytime you launch an application via the start menu or by double-clicking a desktop icon, the parent is Windows Explorer. It is also fairly common for browsers to create instances of Adobe Reader \(AcroRd32.exe\) to render PDF documents accessed via the web. The situation gets interesting when you see that AcroRd32.exe invoked a command shell \(cmd.exe\), which then started a\[1\].php.
 
 ## Event Log File
 
