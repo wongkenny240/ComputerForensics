@@ -40,7 +40,7 @@ When viewing the processes as a tree, it’s much easier to determine the possib
 python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-file=processes.dot
 ```
 
-s
+
 
 ![A diagram of processes involved in a malicious PDF exploit delivered via the web](../.gitbook/assets/image%20%281%29.png)
 
