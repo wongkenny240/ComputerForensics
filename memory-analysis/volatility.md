@@ -5,10 +5,13 @@
 **Analysing System Process**
 
 Volatility provides a few commands you can use for extracting information about processes:
+
 * **pslist** finds and walks the doubly linked list of processes and prints a summary of the data. This method typically cannot show you terminated or hidden processes.
 * **pstree** takes the output from pslist and formats it in a tree view, so you can easily see **parent and child relationships**.
-* **psscan** scans for _EPROCESS objects instead of relying on the linked list. This plugin can also find **terminated and unlinked (hidden) processes**.
+* **psscan** scans for \_EPROCESS objects instead of relying on the linked list. This plugin can also find **terminated and unlinked \(hidden\) processes**.
 * **psxview** locates processes using alternate process listings, so you can then crossreference different sources of information and reveal malicious discrepancies.
+
+![output of the pslist command](../.gitbook/assets/image%20%283%29.png)
 
 ```text
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
