@@ -1,5 +1,29 @@
 # Volatility
 
+## System Background
+
+```text
+$ python vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
+```
+The imageinfo output tells you the suggested profile that you should pass as the parameter to --profile=PROFILE when using other plugins. 
+
+```text
+Suggested Profile(s) : Win7SP0x64, Win7SP1x64, Win2008R2SP0x64, Win2008R2SP1x64
+                     AS Layer1 : AMD64PagedMemory (Kernel AS)
+                     AS Layer2 : FileAddressSpace (/Users/Michael/Desktop/win7_trial_64bit.raw)
+                      PAE type : PAE
+                           DTB : 0x187000L
+                          KDBG : 0xf80002803070
+          Number of Processors : 1
+     Image Type (Service Pack) : 0
+                KPCR for CPU 0 : 0xfffff80002804d00L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image date and time : 2012-02-22 11:29:02 UTC+0000
+     Image local date and time : 2012-02-22 03:29:02 -0800
+```
+
+
+
 ## System Process
 
 **Analysing System Process**
