@@ -18,5 +18,6 @@
 
 ## Memory Analysis
 
+* [Process](memory-analysis/process.md)
 * [Volatility](memory-analysis/volatility.md)
 
