@@ -2,11 +2,11 @@
 
 ## Enscript Help Function
 
-![Enscript Help](../.gitbook/assets/image%20%287%29.png)
+![Enscript Help](../.gitbook/assets/image%20%288%29.png)
 
-![Help Window](../.gitbook/assets/image%20%282%29.png)
+![Help Window](../.gitbook/assets/image%20%283%29.png)
 
-![Code Example](../.gitbook/assets/image%20%286%29.png)
+![Code Example](../.gitbook/assets/image%20%287%29.png)
 
 ## Enscript Shortcut Key
 
