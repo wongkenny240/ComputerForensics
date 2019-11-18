@@ -1,6 +1,6 @@
 # Volatility
 
-## System Background
+## System Profile
 
 ```text
 $ python vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
