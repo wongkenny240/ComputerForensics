@@ -40,7 +40,9 @@ When viewing the processes as a tree, it’s much easier to determine the possib
 python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-file=processes.dot
 ```
 
-s
+ss
+
+
 
 ## Event Log File
 
