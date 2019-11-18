@@ -11,33 +11,13 @@ Volatility provides a few commands you can use for extracting information about 
 * **psscan** scans for \_EPROCESS objects instead of relying on the linked list. This plugin can also find **terminated and unlinked \(hidden\) processes**.
 * **psxview** locates processes using alternate process listings, so you can then crossreference different sources of information and reveal malicious discrepancies.
 
-![output of the pslist command](../.gitbook/assets/image%20%283%29.png)
-
 ```text
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
-Volatility Foundation Volatility Framework 2.4
-Offset(V) Name PID PPID Thds Hnds Sess Start
----------- -------------- ------ ----- ----- ------- ----- -------------------
-0x823c8830 System 4 0 56 537 -----
-0x81e7e180 smss.exe 580 4 3 19 ----- 2013-03-14 03:02:22
-0x82315da0 csrss.exe 644 580 10 449 0 2013-03-14 03:02:25
-0x81f37948 winlogon.exe 668 580 18 515 0 2013-03-14 03:02:26
-0x81fec128 services.exe 712 668 15 281 0 2013-03-14 03:02:27
-[snip]
-0x81eb4300 vmtoolsd.exe 1684 1300 6 213 0 2013-03-14 03:02:45
-0x8210b9c8 IEXPLORE.EXE 1764 1300 16 642 0 2013-03-14 03:03:04
-0x81e79020 firefox.exe 180 1300 27 447 0 2013-03-14 03:03:05
-0x81cb63d0 wuauclt.exe 1576 1072 3 104 0 2013-03-14 03:03:40
-0x81e86bf8 alg.exe 1836 712 5 102 0 2013-03-14 03:04:00
-0x8209eda0 wscntfy.exe 2672 1072 1 28 0 2013-03-14 03:04:01
-0x82013340 jucheck.exe 2388 1656 2 104 0 2013-03-14 03:07:45
-0x81e79418 thunderbird.exe 3832 1300 30 339 0 2013-03-14 03:12:54
-0x8202b398 AcroRd32.exe 3684 180 0 ------- 0 2013-03-14 14:19:16
-0x81ecd3c0 cmd.exe 3812 3684 1 33 0 2013-03-14 14:19:29
-0x81f55bd0 a[1].php 2280 3812 1 139 0 2013-03-14 14:19:30
-0x8223b738 IEXPLORE.EXE 2276 2280 7 280 0 2013-03-14 14:19:32
-0x822c8a58 AcroRd32.exe 2644 180 0 ------- 0 2013-03-14 14:40:16
 ```
+
+![output of the pslist command](../.gitbook/assets/image%20%283%29.png)
+
+
 
 ## Event Log File
 
