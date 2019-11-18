@@ -44,7 +44,14 @@ python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-
 
 alternate process listings
 
-
+* Process object scanning: This is the pool-scanning approach discussed in Chapter 5. Remember that the pool tags it finds are nonessential; thus, they can also be manipulated to evade the scanner.
+* Thread scanning: Because every process must have at least one active thread, you can scan for _ETHREAD objects and then map them back to their owning process. The member used for mapping is either _ETHREAD.ThreadsProcess (Windows XP and 2003) or _ETHREAD.Tcb.Process (Windows Vista and later). Thus, even if a rootkit manipulated the process’ pool tags to hide from psscan, it would also need to go
+back and modify the pool tags for all the process’ threads.
+* CSRSS handle table: As discussed in the critical system process descriptions, csrss.exe is involved in the creation of every process and thread (with the exception of itself and the processes that started before it). Thus, you can walk this process’ handle table, as described later in the chapter, and identify all _EPROCESS objects that way.
+* PspCid table: This is a special handle table located in kernel memory that stores a reference to all active process and thread objects. The PspCidTable member of the kernel debugger data structure points to the table. Two rootkit detection tools, Blacklight
+and IceSword, relied on the PspCid table to find hidden processes. However, the author of FUTo (see http://www.openrce.org/articles/full_view/19) proved it was still possible to hide by removing processes from the table.
+* Session processes: The SessionProcessLinks member of _EPROCESS associates all processes that belong to a particular user’s logon session. It’s not any harder to unlink a process from this list, as opposed to the ActiveProcessLinks list. But because live system APIs don’t depend on it, attackers rarely find value in targeting it.
+* Desktop threads: One of the structures discussed in Chapter 14 is the Desktop (tagDESKTOP). These structures store a list of all threads attached to each desktop, and you can easily map a thread back to its owning process.
 
 ## Event Log File
 
