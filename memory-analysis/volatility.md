@@ -11,6 +11,8 @@ Volatility provides a few commands you can use for extracting information about 
 * **psscan** scans for \_EPROCESS objects instead of relying on the linked list. This plugin can also find **terminated and unlinked \(hidden\) processes**.
 * **psxview** locates processes using alternate process listings, so you can then crossreference different sources of information and reveal malicious discrepancies.
 
+### pslist 
+
 ```text
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 ```
@@ -25,6 +27,8 @@ $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 * Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer \(indicated by the dashed lines\). If the exit time column were displayed \(we truncated it to prevent lines from wrapping on the page\), you’d see that these two processes have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them \(see The Mis-leading Active in PsActiveProcessHead:[http://mnin.blogspot.com/2011/03/mis-leading-active-in.html](http://mnin.blogspot.com/2011/03/mis-leading-active-in.html)\).
 * The process with PID 2280 \(a\[1\].php\) has an invalid extension for executables—it claims to be a PHP file. Furthermore, based on its creation time, it has a temporal relationship with several other processes that started during the same minute \(14:19:XX\), including a command shell \(cmd.exe\).
 
+### pstree
+
 ```text
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pstree
 ```
@@ -32,6 +36,8 @@ $ python vol.py -f lab.mem --profile=WinXPSP3x86 pstree
 ![](../.gitbook/assets/image%20%284%29.png)
 
 When viewing the processes as a tree, it’s much easier to determine the possible events that took place during the attack. You can see that firefox.exe \(PID 180\) was started by explorer.exe \(PID 1300\). This is normal—anytime you launch an application via the start menu or by double-clicking a desktop icon, the parent is Windows Explorer. It is also fairly common for browsers to create instances of Adobe Reader \(AcroRd32.exe\) to render PDF documents accessed via the web. The situation gets interesting when you see that AcroRd32.exe invoked a command shell \(cmd.exe\), which then started a\[1\].php.
+
+### psscan
 
 ```text
 python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-file=processes.dot
@@ -41,15 +47,15 @@ python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-
 
 ### Alternate process listings
 
-* Process object scanning: This is the pool-scanning approach discussed in Chapter 5. Remember that the pool tags it finds are nonessential; thus, they can also be manipulated to evade the scanner.
-* Thread scanning: Because every process must have at least one active thread, you can scan for \_ETHREAD objects and then map them back to their owning process. The member used for mapping is either \_ETHREAD.ThreadsProcess \(Windows XP and 2003\) or \_ETHREAD.Tcb.Process \(Windows Vista and later\). Thus, even if a rootkit manipulated the process’ pool tags to hide from psscan, it would also need to go
+* _Process object scanning_: This is the pool-scanning approach discussed in Chapter 5. Remember that the pool tags it finds are nonessential; thus, they can also be manipulated to evade the scanner.
+* _Thread scanning_: Because every process must have at least one active thread, you can scan for \_ETHREAD objects and then map them back to their owning process. The member used for mapping is either \_ETHREAD.ThreadsProcess \(Windows XP and 2003\) or \_ETHREAD.Tcb.Process \(Windows Vista and later\). Thus, even if a rootkit manipulated the process’ pool tags to hide from psscan, it would also need to go
 
   back and modify the pool tags for all the process’ threads.
 
-* CSRSS handle table: As discussed in the critical system process descriptions, csrss.exe is involved in the creation of every process and thread \(with the exception of itself and the processes that started before it\). Thus, you can walk this process’ handle table, as described later in the chapter, and identify all \_EPROCESS objects that way.
-* PspCid table: This is a special handle table located in kernel memory that stores a reference to all active process and thread objects. The PspCidTable member of the kernel debugger data structure points to the table. Two rootkit detection tools, Blacklight and IceSword, relied on the PspCid table to find hidden processes. However, the author of FUTo \(see [http://www.openrce.org/articles/full\_view/19](http://www.openrce.org/articles/full_view/19)\) proved it was still possible to hide by removing processes from the table.
-* Session processes: The SessionProcessLinks member of \_EPROCESS associates all processes that belong to a particular user’s logon session. It’s not any harder to unlink a process from this list, as opposed to the ActiveProcessLinks list. But because live system APIs don’t depend on it, attackers rarely find value in targeting it.
-* Desktop threads: One of the structures discussed in Chapter 14 is the Desktop \(tagDESKTOP\). These structures store a list of all threads attached to each desktop, and you can easily map a thread back to its owning process.
+* _CSRSS handle table_: As discussed in the critical system process descriptions, csrss.exe is involved in the creation of every process and thread \(with the exception of itself and the processes that started before it\). Thus, you can walk this process’ handle table, as described later in the chapter, and identify all \_EPROCESS objects that way.
+* _PspCid table_: This is a special handle table located in kernel memory that stores a reference to all active process and thread objects. The PspCidTable member of the kernel debugger data structure points to the table. Two rootkit detection tools, Blacklight and IceSword, relied on the PspCid table to find hidden processes. However, the author of FUTo \(see [http://www.openrce.org/articles/full\_view/19](http://www.openrce.org/articles/full_view/19)\) proved it was still possible to hide by removing processes from the table.
+* _Session processes_: The SessionProcessLinks member of \_EPROCESS associates all processes that belong to a particular user’s logon session. It’s not any harder to unlink a process from this list, as opposed to the ActiveProcessLinks list. But because live system APIs don’t depend on it, attackers rarely find value in targeting it.
+* _Desktop threads_: One of the structures discussed in Chapter 14 is the Desktop \(tagDESKTOP\). These structures store a list of all threads attached to each desktop, and you can easily map a thread back to its owning process.
 
 ## Event Log File
 
@@ -120,7 +126,7 @@ Logs located on the disk at
 
 Note: To find the equivalent security IDs for Windows Vista, 2008, and 7 machines, add 4096 to the ID used for Windows XP/2003. For example, to find events that are related to someone logging on to a Windows 7 machine, the ID of interest would be **4624** instead of 528.
 
-#### Dumpfiles
+#### dumpfiles
 
 You must extract the logs from memory using the **dumpfiles** plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology \(finding and dumping the event log of choice\) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching \(regular expression\) capabilities.
 
