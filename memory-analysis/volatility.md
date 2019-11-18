@@ -23,7 +23,6 @@ $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 
 * All processes, including the system-critical ones, are running in session 0, which indicates this is an older \(Windows XP or 2003\) machine \(that is, before session 0 isolation\) and that only one user is currently logged on.
 * Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer \(indicated by the dashed lines\). If the exit time column were displayed \(we truncated it to prevent lines from wrapping on the page\), you’d see that these two processes have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them \(see The Mis-leading Active in PsActiveProcessHead:[http://mnin.blogspot.com/2011/03/mis-leading-active-in.html](http://mnin.blogspot.com/2011/03/mis-leading-active-in.html)\).
-
 * The process with PID 2280 \(a\[1\].php\) has an invalid extension for executables—it claims to be a PHP file. Furthermore, based on its creation time, it has a temporal relationship with several other processes that started during the same minute \(14:19:XX\), including a command shell \(cmd.exe\).
 
 ```text
@@ -40,7 +39,7 @@ python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-
 
 ![A diagram of processes involved in a malicious PDF exploit delivered via the web](../.gitbook/assets/image%20%281%29.png)
 
-alternate process listings
+### Alternate process listings
 
 * Process object scanning: This is the pool-scanning approach discussed in Chapter 5. Remember that the pool tags it finds are nonessential; thus, they can also be manipulated to evade the scanner.
 * Thread scanning: Because every process must have at least one active thread, you can scan for \_ETHREAD objects and then map them back to their owning process. The member used for mapping is either \_ETHREAD.ThreadsProcess \(Windows XP and 2003\) or \_ETHREAD.Tcb.Process \(Windows Vista and later\). Thus, even if a rootkit manipulated the process’ pool tags to hide from psscan, it would also need to go
@@ -53,6 +52,8 @@ alternate process listings
 * Desktop threads: One of the structures discussed in Chapter 14 is the Desktop \(tagDESKTOP\). These structures store a list of all threads attached to each desktop, and you can easily map a thread back to its owning process.
 
 ## Event Log File
+
+### Before Vista
 
 **Finding Event Log File in Memory**
 
@@ -91,7 +92,7 @@ $ cat osession.txt
 [snip]
 ```
 
-**Logging Policies**
+### **Logging Policies**
 
 ```text
 $ python vol.py -f XPSP3x86.vmem auditpol --profile=WinXPSP3x86
@@ -109,7 +110,7 @@ Audit Dir Service Access: S/F
 Audit Account Logon Events: S/F
 ```
 
-**Windows Vista, 2008, and 7 Event Logs**
+### **Windows Vista, 2008, and 7 Event Logs**
 
 Logs located on the disk at
 
@@ -119,7 +120,9 @@ Logs located on the disk at
 
 Note: To find the equivalent security IDs for Windows Vista, 2008, and 7 machines, add 4096 to the ID used for Windows XP/2003. For example, to find events that are related to someone logging on to a Windows 7 machine, the ID of interest would be **4624** instead of 528.
 
-You must extract the logs from memory using the dumpfiles plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology \(finding and dumping the event log of choice\) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching \(regular expression\) capabilities.
+#### Dumpfiles
+
+You must extract the logs from memory using the **dumpfiles** plugin and then parse them with a tool external to Volatility. You can choose either a targeted methodology \(finding and dumping the event log of choice\) or you can choose to dump all event logs by making use of the dumpfiles plugin’s pattern matching \(regular expression\) capabilities.
 
 ```text
 $ python vol.py –f Win7SP1x86.vmem --profile=Win7SP1x86 dumpfiles --regex .evtx$ --ignore-case --dump-dir output
@@ -278,3 +281,4 @@ REG_SZ mswinnt : (S) "C:\Users\Andrew\Desktop\mswinnt.exe"
 ```
 
 ## Network
+
