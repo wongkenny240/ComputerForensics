@@ -22,9 +22,7 @@ $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
   Furthermore, if you suspect a client-side attack vector \(such as a drive-by download or phishing exploit\), it is wise to mine these processes for data related to the incident because there’s a good chance that one or more of them was involved.
 
 * All processes, including the system-critical ones, are running in session 0, which indicates this is an older \(Windows XP or 2003\) machine \(that is, before session 0 isolation\) and that only one user is currently logged on.
-* Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer \(indicated by the dashed lines\). If the exit time column were displayed \(we truncated it to prevent lines from wrapping on the page\), you’d see that these two processes
-
-  have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them \(see The Mis-leading Active in PsActiveProcessHead:[http://mnin.blogspot.com/2011/03/mis-leading-active-in.html](http://mnin.blogspot.com/2011/03/mis-leading-active-in.html)\).
+* Two of the AcroRd32.exe processes have 0 threads and an invalid handle table pointer \(indicated by the dashed lines\). If the exit time column were displayed \(we truncated it to prevent lines from wrapping on the page\), you’d see that these two processes have actually terminated. They’re “stuck” in the active process list because another process has an open handle to them \(see The Mis-leading Active in PsActiveProcessHead:[http://mnin.blogspot.com/2011/03/mis-leading-active-in.html](http://mnin.blogspot.com/2011/03/mis-leading-active-in.html)\).
 
 * The process with PID 2280 \(a\[1\].php\) has an invalid extension for executables—it claims to be a PHP file. Furthermore, based on its creation time, it has a temporal relationship with several other processes that started during the same minute \(14:19:XX\), including a command shell \(cmd.exe\).
 
