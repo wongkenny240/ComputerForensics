@@ -68,19 +68,21 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 
 1. Insert the CAINE OS USB into the target machine. Boot from BIOS \(F2\). Select the USB as the boot drive
 2. After startup, connect storage harddisk to the target machine
-3. Mount storage harddisk
-   Create mount point
+3. Mount storage harddisk Create mount point
+
    ```text
     mkdir /media/drive
    ```
+
    Mount Drive in RW mode
 
    ```text
     sudo mount /dev/sdc2 /media/drive -rw
    ```
+
 4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\) 
 
-![](../.gitbook/assets/image%20%284%29.png)
+![Fill in the information and click OK](../.gitbook/assets/image%20%284%29.png)
 
-5. Click Start to start the acquistion
+1. Click Start to start the acquistion
 
