@@ -80,9 +80,8 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
     sudo mount /dev/sdc2 /media/drive -rw
    ```
 
-4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\) 
+4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\)
+5. Click OK to start the acquisition 
 
 ![Fill in the information and click OK](../.gitbook/assets/image%20%284%29.png)
-
-1. Click Start to start the acquistion
 
