@@ -70,11 +70,15 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 2. After startup, connect storage harddisk to the target machine
 3. Mount storage harddisk
 
+Create mount point
 ```text
-$ ls /media
-$ ls /media/sdc2
-$ sudo mount /dev/sdc2 -rw
-$ ls /media/sdc2
+# mkdir /media/drive 
+```
+
+Mount Drive in RW mode
+
+```text
+# sudo mount /dev/sdc2 /media/drive -rw
 ```
 4. Open guymager and select Calculate MD5 and Verify image after acquisition (takes twice as long) 
-5. click Start
+5. Click Start to start the acquistion
