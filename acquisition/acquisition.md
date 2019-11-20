@@ -64,3 +64,17 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 10. Select your drive and press Enter
 11. Choose the path for your evidence file and prefix it with the path to the mount path e.g. `/case/casename/evidence` to `/mnt/winfat/cases/casename/evidence/XXX001`
 
+## Guymager (Caine OS)
+
+1. Insert the CAINE OS USB into the target machine. Boot from BIOS (F2). Select the USB as the boot drive
+2. After startup, connect storage harddisk to the target machine
+3. Mount storage harddisk
+
+```text
+$ ls /media
+$ ls /media/sdc2
+$ sudo mount /dev/sdc2 -rw
+$ ls /media/sdc2
+```
+4. Open guymager and select Calculate MD5 and Verify image after acquisition (takes twice as long) 
+5. click Start
