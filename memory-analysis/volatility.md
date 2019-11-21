@@ -8,11 +8,14 @@ $ python vol.py -f [name of image file] –profile=[profile] [plugin]
 
 ## System Profile
 
+### imageinfo
+
 ```text
 $ python vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
 ```
 
-The imageinfo output tells you the suggested profile that you should pass as the parameter to --profile=PROFILE when using other plugins.
+The imageinfo output tells you the suggested profile that you should pass as the parameter to --profile=PROFILE when using other plugins. Since the profile tells volatility the format and type of memory objects that should be present in the RAM dump, getting the
+profile correct is an important first step before any further analysis.
 
 ```text
 Suggested Profile(s) : Win7SP0x64, Win7SP1x64, Win2008R2SP0x64, Win2008R2SP1x64
@@ -28,6 +31,14 @@ Suggested Profile(s) : Win7SP0x64, Win7SP1x64, Win2008R2SP0x64, Win2008R2SP1x64
            Image date and time : 2012-02-22 11:29:02 UTC+0000
      Image local date and time : 2012-02-22 03:29:02 -0800
 ```
+
+### 
+
+```text
+$ python vol.py -f [image file name] kgdbscan
+```
+To further narrow down the most likely profile, the above command will use the kernel debugger data block scan plugin to make a profile suggestion based on the KDBG header.
+
 
 ## System Process
 
