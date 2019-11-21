@@ -52,9 +52,6 @@ Remove Sort:
 ![](../.gitbook/assets/2019-04-04-14_52_15-greenshot.png)
 
 * Recover Folders
-
-
-
 * Hash Analysis
 * File Signatures Analysis
 * Finding Email
