@@ -28,6 +28,7 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 2. In EnCase, either create a new case or open an existing one
 3. Add Evidence &gt; Add Local Device
 4. Select the device that is write-blocked
+5. In the Evidence tab, right click the item we would like to acquire, Select Process Evidence -&gt; Acquire
 
 ![Detect Tableau Hardware](../.gitbook/assets/image%20%2814%29.png)
 
