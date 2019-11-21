@@ -2,7 +2,7 @@
 
 ## Enscript Help Function
 
-![Enscript Help](../.gitbook/assets/image%20%2810%29.png)
+![Enscript Help](../.gitbook/assets/image%20%2811%29.png)
 
 ![Help Window](../.gitbook/assets/image%20%283%29.png)
 

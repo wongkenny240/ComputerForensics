@@ -29,6 +29,10 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 3. Add Evidence &gt; Add Local Device
 4. Select the device that is write-blocked
 
+![Detect Tableau Hardware](../.gitbook/assets/image%20%2810%29.png)
+
+
+
 ## Tableau Duplicator
 
 ## LinEn \(Linux\)
