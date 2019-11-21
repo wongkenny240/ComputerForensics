@@ -331,6 +331,8 @@ REG_SZ mswinnt : (S) "C:\Users\Andrew\Desktop\mswinnt.exe"
 C:\> netstat -anob
 ```
 
+### netscan
+
 The primary Volatility plugin for determining network connections in Windows systems beyond Windows XP is the plugin. It will carve through the memory dump looking for artifacts from network activity, which means it may find sessions that were active or inactive at the time of the RAM dump.
 
 ```text
