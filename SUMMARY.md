@@ -21,4 +21,5 @@
 * [Process](memory-analysis/process.md)
 * [Volatility](memory-analysis/volatility.md)
 * [Registry](memory-analysis/registry.md)
+* [Timeline](memory-analysis/timeline.md)
 
