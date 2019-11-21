@@ -24,6 +24,13 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 
 ## Tableau Write Blocker
 
+1. Connect the target disk to the write blocker 
+2. In EnCase, either create a new case or open an existing one
+3. Add Evidence &gt; Add Local Device
+4. Select the device that is write-blocked
+
+## Tableau Duplicator
+
 ## LinEn \(Linux\)
 
 {% hint style="info" %}
