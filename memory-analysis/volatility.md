@@ -1,5 +1,11 @@
 # Volatility
 
+## Base Command
+
+```text
+$ python vol.py -f [name of image file] –profile=[profile] [plugin]
+```
+
 ## System Profile
 
 ```text
