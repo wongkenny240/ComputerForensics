@@ -349,4 +349,22 @@ Internet Explorer’s history file (index.dat) is not only loaded by the browser
 You can use the yarascan plugin to get an initial idea of where index.dat file mappings may exist in process memory. Because
 the file’s signature includes "Client UrlCache", that string will make a good starting point. This command is shown in the code that follows.
 
+```text
+$ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "Client UrlCache" -p 2580,3004
+Volatility Foundation Volatility Framework 2.4
+Rule: r1
+Owner: Process iexplore.exe Pid 2580
+0x00270000 43 6c 69 65 6e 74 20 55 72 6c 43 61 63 68 65 20 Client.UrlCache
+0x00270010 4d 4d 46 20 56 65 72 20 35 2e 32 00 00 80 00 00 .MMF.Ver.5.2....
+0x00270020 00 40 00 00 80 00 00 00 20 00 00 00 00 00 00 00 .@..............
+0x00270030 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+Rule: r1
+Owner: Process iexplore.exe Pid 2580
+0x00260000 43 6c 69 65 6e 74 20 55 72 6c 43 61 63 68 65 20 Client.UrlCache
+0x00260010 4d 4d 46 20 56 65 72 20 35 2e 32 00 00 80 00 00 .MMF.Ver.5.2....
+0x00260020 00 50 00 00 80 00 00 00 54 00 00 00 00 00 00 00 .P......T.......
+0x00260030 00 00 20 03 00 00 00 00 55 ff 00 00 00 00 00 00 ........U.......
+[snip]
+```
+
 ## iehistory
