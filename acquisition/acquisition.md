@@ -29,9 +29,15 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 3. Add Evidence &gt; Add Local Device
 4. Select the device that is write-blocked
 
-![Detect Tableau Hardware](../.gitbook/assets/image%20%2810%29.png)
+![Detect Tableau Hardware](../.gitbook/assets/image%20%2814%29.png)
 
+![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%289%29.png)
 
+![Location tab](../.gitbook/assets/image%20%284%29.png)
+
+![Format tab](../.gitbook/assets/image%20%285%29.png)
+
+![Advanced tab](../.gitbook/assets/image%20%281%29.png)
 
 ## Tableau Duplicator
 
@@ -94,5 +100,5 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\)
 5. Click OK to start the acquisition 
 
-![Fill in the information and click OK](../.gitbook/assets/image%20%284%29.png)
+![Fill in the information and click OK](../.gitbook/assets/image%20%287%29.png)
 

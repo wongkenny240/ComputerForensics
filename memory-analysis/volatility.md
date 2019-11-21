@@ -56,7 +56,7 @@ Volatility provides a few commands you can use for extracting information about 
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 ```
 
-![output of the pslist command](../.gitbook/assets/image%20%288%29.png)
+![output of the pslist command](../.gitbook/assets/image%20%2812%29.png)
 
 * Three browsers are running \(two instances of IEXPLORE.EXE and one firefox .exe\), an e‑mail client \(thunderbird.exe\), and Adobe Reader \(AcroRd32.exe\). Thus, this machine is very likely to be a client or workstation, as opposed to a server.
 
@@ -72,7 +72,7 @@ $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pstree
 ```
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 When viewing the processes as a tree, it’s much easier to determine the possible events that took place during the attack. You can see that firefox.exe \(PID 180\) was started by explorer.exe \(PID 1300\). This is normal—anytime you launch an application via the start menu or by double-clicking a desktop icon, the parent is Windows Explorer. It is also fairly common for browsers to create instances of Adobe Reader \(AcroRd32.exe\) to render PDF documents accessed via the web. The situation gets interesting when you see that AcroRd32.exe invoked a command shell \(cmd.exe\), which then started a\[1\].php.
 
@@ -82,7 +82,7 @@ When viewing the processes as a tree, it’s much easier to determine the possib
 python vol.py psscan –f memory.bin --profile=Win7SP1x64 --output=dot --output-file=processes.dot
 ```
 
-![A diagram of processes involved in a malicious PDF exploit delivered via the web](../.gitbook/assets/image%20%281%29.png)
+![A diagram of processes involved in a malicious PDF exploit delivered via the web](../.gitbook/assets/image%20%282%29.png)
 
 ### Alternate process listings
 
