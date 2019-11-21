@@ -1,6 +1,6 @@
 # Timeline
 
-## log2timeline
+## log2timeline/plaso
 
 ### psteal.py
 
