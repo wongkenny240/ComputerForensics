@@ -341,10 +341,12 @@ $ python vol.py -f win764bit.raw --profile=Win7SP0x64 netscan
 
 ![output of the netscan plugin](../.gitbook/assets/image%20%283%29.png)
 
+
+
+### yarascan
+
 All web browsers optionally save a user’s browsing history in a file on disk. Before the browser process can access that information, it reads the file’s contents into RAM.
 Internet Explorer’s history file (index.dat) is not only loaded by the browser but it’s also loaded by all processes, including Windows Explorer and malware samples that use the WinINet API (InternetConnect, InternetReadFile, HttpSendRequest, etc.) to access HTTP, HTTPS, or FTP sites.
-
-## yarascan
 
 You can use the yarascan plugin to get an initial idea of where index.dat file mappings may exist in process memory. Because
 the file’s signature includes "Client UrlCache", that string will make a good starting point. This command is shown in the code that follows.
@@ -367,4 +369,4 @@ Owner: Process iexplore.exe Pid 2580
 [snip]
 ```
 
-## iehistory
+### iehistory
