@@ -370,3 +370,101 @@ Owner: Process iexplore.exe Pid 2580
 ```
 
 ### iehistory
+
+
+http://www.forensicswiki.org/wiki/Internet_Explorer_History_File_Format
+
+Starting with IE 10, the format and storage mechanism changed drastically 
+(http://hh.diva-portal.org/smash/get/diva2:635743/FULLTEXT02.pdf).
+
+```text
+$ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "/(URL |REDR|LEAK)/" -p 2580,3004
+```
+
+```text
+$ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 iehistory -p 2580,3004
+```
+The history data can be quite interesting. However, it can also be verbose, so you might want to try the CSV option and open it as a spreadsheet for sorting and filtering. This can be done by appending the --output=csv option to your command, as shown here:
+
+```text
+$ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 iehistory -p 2580,3004 --output=csv
+```
+
+```text
+$ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "/[a-zA-Z0-9\-\.]+\.(com|org|net|mil|edu|biz|name|info)/" -p 3004
+```
+
+
+To access the hosts file, use the filescan and dumpfiles plugins, as shown in the following commands. The first command finds the physical offset of the hosts file’s _FILE_OBJECT structure. 
+
+```text
+$ python vol.py -f infectedhosts.dmp filescan | grep -i hosts
+Volatility Foundation Volatility Framework 2.4
+0x0000000002192f90 1 0 R--rw- \Device\HarddiskVolume1\WINDOWS\system32\drivers\etc\hosts
+```
+The second command extracts the file’s content to disk.
+```text
+$ python vol.py -f infectedhosts.dmp dumpfiles -Q 0x2192f90 -D OUTDIR --name
+Volatility Foundation Volatility Framework 2.4
+DataSectionObject 0x02192f90 None \Device\HarddiskVolume1\WINDOWS\system32\drivers\etc\hosts
+```
+
+The next command shows the entries in the infected system’s hosts file. As a result of these entries, programs on the running machine are not able to access any popular antivirus websites or update servers.
+```text
+$ strings OUTDIR/file.None.0x8211f1f8.hosts.dat
+# Copyright (c) 1993-1999 Microsoft Corp.
+[snip]
+127.0.0.1 localhost
+127.0.0.1 avp.com
+127.0.0.1 ca.com
+127.0.0.1 customer.symantec.com
+127.0.0.1 dispatch.mcafee.com
+127.0.0.1 f-secure.com
+127.0.0.1 kaspersky.com
+127.0.0.1 liveupdate.symantec.com
+```
+
+## Investigating Service Activity
+
+
+### Get-Service PowerShell command 
+
+```text
+PS C:\Users\Jake> Get-Service
+Status Name DisplayName
+------ ---- -----------
+Stopped AdobeARMservice Adobe Acrobat Update Service
+Running AeLookupSvc Application Experience
+Stopped ALG Application Layer Gateway Service
+Stopped AppIDSvc Application Identity
+Running Appinfo Application Information
+Stopped AppMgmt Application Management
+Stopped aspnet_state ASP.NET State Service
+Running AudioEndpointBu... Windows Audio Endpoint Builder
+Running Audiosrv Windows Audio
+Stopped AxInstSV ActiveX Installer (AxInstSV)
+Stopped BDESVC BitLocker Drive Encryption Service
+Running BFE Base Filtering Engine
+[snip]
+```
+
+### sc query
+
+Another option that you can access from a standard command shell (that is, not PowerShell) is the sc query command. The following list shows the installed services along with their types and current states:
+
+```text
+C:\Users\Jake> sc query
+```
+
+
+### scanning memory for services
+
+There are a few ways to enumerate services by parsing process memory. A programmer named EiNSTeiN_ wrote a tool called Hidden Service Detector (hsd), which runs on live Windows systems. It works by scanning the memory of services.exe for PServiceRecordListHead—a symbol that points to the beginning of the doubly-linked list of _SERVICE_RECORD structures on XP and 2003 systems. In particular, hsd scans services.exe for the pattern of bytes that make up the following instructions:
+
+```text
+// WinXP, Win2k3
+56 8B 35 xx xx xx xx = MOV ESI, DWORD PTR DS:[PServiceRecordListHead]
+// Win2k
+8B 0D xx xx xx xx = MOV ECX, DWORD PTR DS:[PServiceRecordListHead]
+```
+
