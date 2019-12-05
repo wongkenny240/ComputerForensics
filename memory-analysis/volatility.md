@@ -24,7 +24,7 @@ root@SIFT-Workstation:/# vol.py malfind -h
 -------------------------------------------------------
 Module Halfind
 -------------------------------------------------------
-[HALWARE] Find hidden and injected code
+[MALWARE] Find hidden and injected code
 ```
 
 ## System Profile
