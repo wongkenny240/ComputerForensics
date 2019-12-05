@@ -20,6 +20,7 @@
 
 * [Process](memory-analysis/process.md)
 * [Volatility](memory-analysis/volatility.md)
+* [Volatility](memory-analysis/volatility-plugin.md)
 * [Registry](memory-analysis/registry.md)
 * [Timeline](memory-analysis/timeline.md)
 
