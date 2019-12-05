@@ -13,6 +13,8 @@ psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.cs
 
 ## SleutKit
 
+Extract filesystem bodyfile from .E01 file
+
 ```text
 fls -r -m /Evidence1.E01 > Evidence1-bodyfile
 ```
@@ -22,5 +24,12 @@ fls -r -m /Evidence1.E01 > Evidence1-bodyfile
 Run the timeliner plugin against image file
 
 ```text
-volatility -f /path/to/image.001 --profile=<profile> timeliner --output=body > Evidence1-timeliner.body
+vol.py -f /path/to/image.001 --profile=<profile> timeliner --output=body > Evidence1-timeliner.body
 ```
+
+Run the mftparser volatility plugin
+```text
+vol.py -f /path/to/image.001 --profile=<profile> mftparser --output=body > Evidence1-mftparser.body
+```
+
+
