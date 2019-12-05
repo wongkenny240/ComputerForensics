@@ -32,4 +32,20 @@ Run the mftparser volatility plugin
 vol.py -f /path/to/image.001 --profile=<profile> mftparser --output=body > Evidence1-mftparser.body
 ```
 
+Apply whitelist
 
+```text
+Temporary\ Internet \Files
+PrivacIE
+Content.IE5
+IETldCache
+ACPI
+MSIE\ Cache\ File
+THREAD
+\(\$FILE\_NAME \)
+DLL\ LOADTIME
+```
+
+```text
+grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
+```
