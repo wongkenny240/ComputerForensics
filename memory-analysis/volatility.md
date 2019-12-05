@@ -6,6 +6,27 @@
 $ python vol.py -f [name of image file] –profile=[profile] [plugin]
 ```
 
+### help flag
+The -h flag gives configuration information in Volatility
+
+* Used alone it identifies the version, currently loaded plugins, and
+common parameters
+* Use -h with a plugin to get details and plugin-specific usage
+
+```text
+root@SIFT-Workstation:/# vol.py malfind -h
+-D DUMP_DIR, --dump-dir=DUMP_DIR
+                      Directory in which to dump executable files
+-Y YARA_RULES, --yara-rules=YARA_RULES
+                      Use YARA rules in addition to finding injected code
+-K, --kernel          Scan kernel modules
+
+-------------------------------------------------------
+Module Halfind
+-------------------------------------------------------
+[HALWARE] Find hidden and injected code
+```
+
 ## System Profile
 
 ### imageinfo
