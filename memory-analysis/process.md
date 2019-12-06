@@ -11,3 +11,7 @@
 * **explorer.exe**: You’ll see one Windows Explorer process for each logged-on user. It is responsible for handling a variety of user interactions such as GUI-based folder navigation, presenting the start menu, and so on. It also has access to sensitive material such as the documents you open and credentials you use to log in to FTP sites via Windows Explorer.
 * **smss.exe**: The session manager is the first real user-mode process that starts during the boot sequence. It is responsible for creating the sessions that isolate OS services from the various users who may log on via the console or Remote Desktop Protocol \(RDP\).
 
+![](../.gitbook/assets/windows-process-diagram.jpg)
+
+
+
