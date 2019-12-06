@@ -24,3 +24,4 @@
 * [Registry](memory-analysis/registry.md)
 * [Timeline](memory-analysis/timeline.md)
 * [Analysis Steps](memory-analysis/analysis-steps.md)
+

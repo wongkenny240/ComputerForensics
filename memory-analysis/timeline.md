@@ -10,7 +10,6 @@ This will produce a csv file containing all the events from an image
 psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
 ```
 
-
 ## SleutKit
 
 Extract filesystem bodyfile from .E01 file
@@ -28,6 +27,7 @@ vol.py -f /path/to/image.001 --profile=<profile> timeliner --output=body > Evide
 ```
 
 Run the mftparser volatility plugin
+
 ```text
 vol.py -f /path/to/image.001 --profile=<profile> mftparser --output=body > Evidence1-mftparser.body
 ```
@@ -49,3 +49,4 @@ DLL\ LOADTIME
 ```text
 grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 ```
+

@@ -7,10 +7,13 @@ $ python vol.py -f [name of image file] –profile=[profile] [plugin]
 ```
 
 ### help flag
+
 The -h flag gives configuration information in Volatility
 
 * Used alone it identifies the version, currently loaded plugins, and
-common parameters
+
+  common parameters
+
 * Use -h with a plugin to get details and plugin-specific usage
 
 ```text
@@ -362,15 +365,11 @@ $ python vol.py -f win764bit.raw --profile=Win7SP0x64 netscan
 
 ![output of the netscan plugin](../.gitbook/assets/image%20%283%29.png)
 
-
-
 ### yarascan
 
-All web browsers optionally save a user’s browsing history in a file on disk. Before the browser process can access that information, it reads the file’s contents into RAM.
-Internet Explorer’s history file (index.dat) is not only loaded by the browser but it’s also loaded by all processes, including Windows Explorer and malware samples that use the WinINet API (InternetConnect, InternetReadFile, HttpSendRequest, etc.) to access HTTP, HTTPS, or FTP sites.
+All web browsers optionally save a user’s browsing history in a file on disk. Before the browser process can access that information, it reads the file’s contents into RAM. Internet Explorer’s history file \(index.dat\) is not only loaded by the browser but it’s also loaded by all processes, including Windows Explorer and malware samples that use the WinINet API \(InternetConnect, InternetReadFile, HttpSendRequest, etc.\) to access HTTP, HTTPS, or FTP sites.
 
-You can use the yarascan plugin to get an initial idea of where index.dat file mappings may exist in process memory. Because
-the file’s signature includes "Client UrlCache", that string will make a good starting point. This command is shown in the code that follows.
+You can use the yarascan plugin to get an initial idea of where index.dat file mappings may exist in process memory. Because the file’s signature includes "Client UrlCache", that string will make a good starting point. This command is shown in the code that follows.
 
 ```text
 $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "Client UrlCache" -p 2580,3004
@@ -392,11 +391,9 @@ Owner: Process iexplore.exe Pid 2580
 
 ### iehistory
 
+[http://www.forensicswiki.org/wiki/Internet\_Explorer\_History\_File\_Format](http://www.forensicswiki.org/wiki/Internet_Explorer_History_File_Format)
 
-http://www.forensicswiki.org/wiki/Internet_Explorer_History_File_Format
-
-Starting with IE 10, the format and storage mechanism changed drastically 
-(http://hh.diva-portal.org/smash/get/diva2:635743/FULLTEXT02.pdf).
+Starting with IE 10, the format and storage mechanism changed drastically \([http://hh.diva-portal.org/smash/get/diva2:635743/FULLTEXT02.pdf](http://hh.diva-portal.org/smash/get/diva2:635743/FULLTEXT02.pdf)\).
 
 ```text
 $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "/(URL |REDR|LEAK)/" -p 2580,3004
@@ -405,6 +402,7 @@ $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "/(URL |REDR|LE
 ```text
 $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 iehistory -p 2580,3004
 ```
+
 The history data can be quite interesting. However, it can also be verbose, so you might want to try the CSV option and open it as a spreadsheet for sorting and filtering. This can be done by appending the --output=csv option to your command, as shown here:
 
 ```text
@@ -415,15 +413,16 @@ $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 iehistory -p 2580,3004 --ou
 $ python vol.py -f win7_x64.dmp --profile=Win7SP0x64 yarascan -Y "/[a-zA-Z0-9\-\.]+\.(com|org|net|mil|edu|biz|name|info)/" -p 3004
 ```
 
-
-To access the hosts file, use the filescan and dumpfiles plugins, as shown in the following commands. The first command finds the physical offset of the hosts file’s _FILE_OBJECT structure. 
+To access the hosts file, use the filescan and dumpfiles plugins, as shown in the following commands. The first command finds the physical offset of the hosts file’s \_FILE\_OBJECT structure.
 
 ```text
 $ python vol.py -f infectedhosts.dmp filescan | grep -i hosts
 Volatility Foundation Volatility Framework 2.4
 0x0000000002192f90 1 0 R--rw- \Device\HarddiskVolume1\WINDOWS\system32\drivers\etc\hosts
 ```
+
 The second command extracts the file’s content to disk.
+
 ```text
 $ python vol.py -f infectedhosts.dmp dumpfiles -Q 0x2192f90 -D OUTDIR --name
 Volatility Foundation Volatility Framework 2.4
@@ -431,6 +430,7 @@ DataSectionObject 0x02192f90 None \Device\HarddiskVolume1\WINDOWS\system32\drive
 ```
 
 The next command shows the entries in the infected system’s hosts file. As a result of these entries, programs on the running machine are not able to access any popular antivirus websites or update servers.
+
 ```text
 $ strings OUTDIR/file.None.0x8211f1f8.hosts.dat
 # Copyright (c) 1993-1999 Microsoft Corp.
@@ -447,8 +447,7 @@ $ strings OUTDIR/file.None.0x8211f1f8.hosts.dat
 
 ## Investigating Service Activity
 
-
-### Get-Service PowerShell command 
+### Get-Service PowerShell command
 
 ```text
 PS C:\Users\Jake> Get-Service
@@ -471,16 +470,15 @@ Running BFE Base Filtering Engine
 
 ### sc query
 
-Another option that you can access from a standard command shell (that is, not PowerShell) is the sc query command. The following list shows the installed services along with their types and current states:
+Another option that you can access from a standard command shell \(that is, not PowerShell\) is the sc query command. The following list shows the installed services along with their types and current states:
 
 ```text
 C:\Users\Jake> sc query
 ```
 
-
 ### scanning memory for services
 
-There are a few ways to enumerate services by parsing process memory. A programmer named EiNSTeiN_ wrote a tool called Hidden Service Detector (hsd), which runs on live Windows systems. It works by scanning the memory of services.exe for PServiceRecordListHead—a symbol that points to the beginning of the doubly-linked list of _SERVICE_RECORD structures on XP and 2003 systems. In particular, hsd scans services.exe for the pattern of bytes that make up the following instructions:
+There are a few ways to enumerate services by parsing process memory. A programmer named EiNSTeiN\_ wrote a tool called Hidden Service Detector \(hsd\), which runs on live Windows systems. It works by scanning the memory of services.exe for PServiceRecordListHead—a symbol that points to the beginning of the doubly-linked list of \_SERVICE\_RECORD structures on XP and 2003 systems. In particular, hsd scans services.exe for the pattern of bytes that make up the following instructions:
 
 ```text
 // WinXP, Win2k3
