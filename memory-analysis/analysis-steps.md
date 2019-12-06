@@ -2,25 +2,25 @@
 
 * Identify rogue processes
   * Analyse processes
-* Legitimate process?
-* Name spelled right?
-* Fits with system context?
+   * Legitimate process?
+   * Name spelled right?
+   * Fits with system context?
 * Full path
-* Is the process executable in the usual place?
-* Is it running from user or temp directories?
+  * Is the process executable in the usual place?
+   * Is it running from user or temp directories?
 * Parent process
-* Is it as expected?
+  * Is it as expected?
 * Command line
-* Does it have the right switches?
+  * Does it have the right switches?
 * Start time
-* Was it started at boot or something else?
-* Did the process start close the time of a known incident?
+  * Was it started at boot or something else?
+  * Did the process start close the time of a known incident?
 * Security ID
-* Does the SID make sense? Would a system process run with a user accounts’ SID?
+  * Does the SID make sense? Would a system process run with a user accounts’ SID?
 * Analysing process objects
-* DLLs
-* Handles
-* Files and directories
+  * DLLs
+  * Handles
+  * Files and directories
 * Look at occurrance of use. Malware files should, historically, be the least accessed files on the system
 * Registry
 * Events
