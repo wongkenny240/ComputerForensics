@@ -489,12 +489,12 @@ There are a few ways to enumerate services by parsing process memory. A programm
 
 ## Dump process from memory
 
-
 This will dump the process.
 
 ```text
 $ python vol.py -f /path/to/memory/dump.001 --profile=<profile> procdump -p <pid of process> --dump-dir=./path/to/save/to/
 ```
+
 ```text
 $ python vol.py -f /path/to/memory/dump.001 --profile=<profile> memdump -p <pid of process> --dump-dir=./path/to/save/to/
 ```
@@ -506,3 +506,4 @@ This will dump the process and all of its loaded modules so you can analyse it, 
 ```text
 $ python vol.py -f /path/to/memory/dump.001 --profile=<profile> mimikatz > mimikatz-results.txt
 ```
+
