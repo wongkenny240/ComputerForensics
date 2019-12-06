@@ -10,7 +10,7 @@ This will produce a csv file containing all the events from an image
 psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
 ```
 
-## SleutKit
+### SleutKit
 
 Extract filesystem bodyfile from .E01 file
 
@@ -18,7 +18,7 @@ Extract filesystem bodyfile from .E01 file
 fls -r -m /Evidence1.E01 > Evidence1-bodyfile
 ```
 
-## Volatility
+### Volatility
 
 Run the timeliner plugin against image file
 
@@ -30,6 +30,18 @@ Run the mftparser volatility plugin
 
 ```text
 vol.py -f /path/to/image.001 --profile=<profile> mftparser --output=body > Evidence1-mftparser.body
+```
+
+Combine the memory timeline and mftparser timeline to the filesytem bodyfile
+
+```text
+cat Evidence1-timeliner.body >> Evidence1-bodyfile
+cat Evidence1-mftparser.body >> Evidence1-bodyfile
+```
+
+Extract thge combined filesystem and memory timeline
+```text
+mactime -d -b Evidence1-bodyfile [date start e.g. 20xx-xx-xx]..[date end] > Evidence1-mactime-timeline.csv
 ```
 
 Apply whitelist
