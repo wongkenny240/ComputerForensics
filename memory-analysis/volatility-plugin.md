@@ -33,3 +33,17 @@ Volatility "winesap" Plugin:
 
 ## baseline
 
+PROCESSBL A plugin that compares the running processes in 2 memory images
+
+* can be used to detect newly started processes
+* can be used to detect newly loaded DLLs
+
+SERVICESBL A plugin that compares the services in 2 memory images
+
+* can be used to detect modification of service configuration
+* can be used to detect newly installed services
+
+DRIVERBL A plugin that compares the kernel drivers in 2 memory images
+
+* can be used to detect newly installed / loaded drivers
+
