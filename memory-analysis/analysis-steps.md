@@ -28,16 +28,16 @@
    * Sockets
 * Network artifacts
  * Suspicious ports
-   * out-of-the-ordinary ports
-   * listening ports (backdoors)
+  * out-of-the-ordinary ports
+  * listening ports (backdoors)
  * Suspicious connections
-   * Anything connecting out
-   * Known bad-IPs
-   * Creation time matching an incident
+  * Anything connecting out
+  * Known bad-IPs
+  * Creation time matching an incident
  * Suspicious processes
-   * Should this process have networking capabilities?
+  * Should this process have networking capabilities?
 * Detecting code injection
-   * Look for DLL injection and process hollowing
+  * Look for DLL injection and process hollowing
 * Rootkit detection
  * Not a big thing anymore, most AV does a good job at detecting this
  * Hides in
