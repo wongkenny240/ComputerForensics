@@ -487,7 +487,7 @@ There are a few ways to enumerate services by parsing process memory. A programm
 8B 0D xx xx xx xx = MOV ECX, DWORD PTR DS:[PServiceRecordListHead]
 ```
 
-## Dump process from Memory
+## Dump process from memory
 
 
 This will dump the process.
@@ -501,3 +501,8 @@ $ python vol.py -f /path/to/memory/dump.001 --profile=<profile> memdump -p <pid 
 
 This will dump the process and all of its loaded modules so you can analyse it, run strings and such. Use strings -a -t d -e l to treat everything as text.
 
+## Extract credentials from a memory dump
+
+```text
+$ python vol.py -f /path/to/memory/dump.001 --profile=<profile> mimikatz > mimikatz-results.txt
+```
