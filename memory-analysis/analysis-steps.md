@@ -2,7 +2,7 @@
 description: Analysis steps for memory image
 ---
 
-# Analysis Steps
+# Analysis Keypoints
 
 * Identify rogue processes
   * Analyse processes
