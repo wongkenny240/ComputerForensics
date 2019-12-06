@@ -23,5 +23,12 @@ The plugin will check for the following:
 
 In addition, it will show a count of unusual processes as well as processes with no parent process.
 
+## winesap
+
+For detecting persistence
+
+Volatility "winesap" Plugin:
+
+
 ## baseline
 
