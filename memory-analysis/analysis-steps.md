@@ -24,8 +24,8 @@
       * Look at occurrance of use. Malware files should, historically, be the least accessed files on the system
     * Registry
     * Events
-    * Threads
-    * Sockets
+   * Threads
+   * Sockets
 * Network artifacts
   * Suspicious ports
     * out-of-the-ordinary ports
