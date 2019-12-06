@@ -1,7 +1,7 @@
 # Memory analysis process
 
 * Identify rogue processes
-* Analyse processes
+  * Analyse processes
 * Legitimate process?
 * Name spelled right?
 * Fits with system context?
