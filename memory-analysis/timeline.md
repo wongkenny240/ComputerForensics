@@ -10,6 +10,9 @@ This will produce a csv file containing all the events from an image
 psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
 ```
 
+
+## How to create a timeline from harddrive image and memory dump with SleutKit and timeliner plugin?
+
 ### SleutKit
 
 Extract filesystem bodyfile from .E01 file
@@ -63,3 +66,4 @@ DLL\ LOADTIME
 grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 ```
 
+## How to create a supertime line with log2timeline?
