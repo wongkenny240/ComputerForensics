@@ -103,3 +103,11 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 
 ![Fill in the information and click OK](../.gitbook/assets/image%20%289%29.png)
 
+
+## Convert a hibernation file to a memory dump
+
+A hibernation file is stored in C:\hiberfile.sys if you have hibernation enabled. It contains parts of the memory at the time of hibernation, depending on the version of Windows. Run this to covert it to a raw image for further processing with Volatility.
+
+```text
+volatility -f /path/to/hiberfile.sys --profile=<profile> imagecopy -O /path/to/output/folder/hibermemory.raw
+```
