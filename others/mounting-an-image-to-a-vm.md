@@ -2,22 +2,21 @@
 
  For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux as a virtualization platforms.  
   
-**Windows Part**  
+ **Windows Part**  
   
-1. Open FTK Imager and mount the .e01 image as a **physical** \(only\) device in **Writable** mode
-
-![](../.gitbook/assets/image%20%285%29.png)
-
+1. Open FTK Imager and mount the .e01 image as a **physical** \(only\) device in **Writable** mode  
+  
+![](https://habrastorage.org/webt/lb/c6/lv/lbc6lvyxg1ezhi-lvzhv4bw4_uq.gif)  
+  
 2. Notice a resulting device name. In this case it's a **PhysicalDrive3**  
   
-3. Open VMware Workstation and create a new VM, but **don't create a virtual disk** \(or remove one if exist\). You have to choose **Use a Physical Disk** in the Virtual Machine Settings or add a new virtual disk as primary to the existing VM. You remember that our .e01 image is **PhysicalDrive3** now
-
-![](../.gitbook/assets/image%20%2812%29.png)
-
-4. So, you just need to start a VM 
-
-![](../.gitbook/assets/image%20%2813%29.png)
-
+3. Open VMware Workstation and create a new VM, but **don't create a virtual disk** \(or remove one if exist\). You have to choose **Use a Physical Disk** in Virtual Machine Setting or add a new virtual disk as primary to the existing VM. You remember that our .e01 image is **PhysicalDrive3** now  
+  
+![](https://habrastorage.org/webt/dp/4a/6f/dp4a6fqh_24o4ze2lbnv8xybvpi.gif)  
+  
+4. So, you just need to start a VM and watching some IT magic  
+  
+![](https://habrastorage.org/webt/tl/k8/ad/tlk8adlpbniuw69wvv5msg6pa_g.gif)  
 Linux Part \(SIFT\) 
 
 1. The mostly typical tool using to attach .e01 images is ewfmount.py script. But there is a one hard limitation — this image being attached in **Read-only mode**. It's inappropriate for virtual machine. Therefore we'll use **xmount** command like:  
