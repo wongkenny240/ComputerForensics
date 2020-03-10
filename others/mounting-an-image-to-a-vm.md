@@ -18,3 +18,27 @@
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
+Linux Part \(SIFT\) 
+
+1. The mostly typical tool using to attach .e01 images is ewfmount.py script. But there is a one hard limitation — this image being attached in **Read-only mode**. It's inappropriate for virtual machine. Therefore we'll use **xmount** command like:  
+
+
+```text
+sudo xmount --in ewf <path_to_image> --cache <path_to_cache_file> --out vdi <path_to_mount_point>
+```
+
+  
+The main features of xmount for us — it mounts the image in Read-Write mode and it can take a lot of image types on input. You can check for xmount syntax [here](https://github.com/mika/xmount/blob/master/README).  
+  
+![](https://habrastorage.org/webt/cf/lt/p7/cfltp73nepf_wxuf5gcph_vif98.gif)  
+  
+2. Ok, now we have a .vdi image in /mnt/windows\_mount  
+  
+3. Let's open a VirtualBox and create a new VM with our .vdi image \(choose existing disk\) as a primary disk  
+  
+![](https://habrastorage.org/webt/l4/ly/fd/l4lyfdkcsloromsy4ilflmntqxi.gif)  
+  
+4. Finally just boot up the VM and enjoy!  
+  
+![](https://habrastorage.org/webt/df/5m/mc/df5mmcf7s2rotceezw8htzgs0ui.gif)
+
