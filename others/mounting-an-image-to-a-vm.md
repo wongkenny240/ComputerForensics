@@ -2,7 +2,7 @@
 
  For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux as a virtualization platforms.  
   
- **Windows Part**  
+ ## Windows Part  
   
 1. Open FTK Imager and mount the .e01 image as a **physical** \(only\) device in **Writable** mode  
   
@@ -17,7 +17,8 @@
 4. So, you just need to start a VM and watching some IT magic  
   
 ![](https://habrastorage.org/webt/tl/k8/ad/tlk8adlpbniuw69wvv5msg6pa_g.gif)  
-Linux Part \(SIFT\) 
+
+## Linux Part \(SIFT\) 
 
 1. The mostly typical tool using to attach .e01 images is ewfmount.py script. But there is a one hard limitation — this image being attached in **Read-only mode**. It's inappropriate for virtual machine. Therefore we'll use **xmount** command like:  
 
