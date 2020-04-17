@@ -74,4 +74,12 @@ The originating machine would be noteworthy if you have plugged in an NTFS drive
 
 The system time of the creation time of the volume will tell you when the snapshot was created, This time is important as you know which shadow copy volume might contain your data. From the output of vssadmin, note the total number of shadow copy volumes from the machine
 
+Live examination of VSS
+* vssadmin + mslink + robocopy 
+* FTK Imager, EnCase 
+* ShadowExplorer, VSCToolset, ShadowKit 
+Offline analysis
+* Reconnoitre – Commercial
+* libvshadow (DD style RAW image input for use on Linux / Mac)
+
 
