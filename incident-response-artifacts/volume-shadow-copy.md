@@ -13,6 +13,8 @@ All volume shadow copy files are stored in the ‘System Volume Information’ f
 
 The number ***3808876b-c176-4e48-b7ae-04046e6cc752***, is a unique identifier specific to the volume shadow service.
 
+![](../.gitbook/assets/vss.png)
+
 ## System Snapshot Frequency
 ### Windows Vista,
 The system snapshot is scheduled to take place every ***24 hours***. 
@@ -35,6 +37,7 @@ http://digitalforensics.sans.org/community/downloads
 ```
 [File] -> [Add Evidence Item] -> [Contents of a Folder]
 ```
+![](../.gitbook/assets/vss_imaging.emf)
 
 ### robocopy
 ```
