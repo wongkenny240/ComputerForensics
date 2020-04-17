@@ -24,8 +24,19 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 * Monitor the file you use for booting and save the results to a file 
 * Speed up booting with prefetched files 
 #### Application Prefetching 
-Cache manager monitors the first 10 seconds of application initial launch 
-Monitor the file used for 10 seconds and save the result as a file 
-Faster initial execution speed with prefetch files when rerunning prefetched applications 
-The maximum number of files is 128. 
-Automatically delete unused files when the limit is exceeded
+* Cache manager monitors the first 10 seconds of application initial launch 
+* Monitor the file used for 10 seconds and save the result as a file 
+* Faster initial execution speed with prefetch files when rerunning prefetched applications 
+* The maximum number of files is 128. 
+* Automatically delete unused files when the limit is exceeded
+
+### Information that can be obtained from the prefetch file 
+* Application name 
+* Application Execution Count 
+* Application's last run time (FILETIME, 64-Bit Timestmamp) 
+* Reference list (path to DLL, SDB, NLS, INI, etc. required for execution) 
+* Integrated analysis using file system time information (creation, modification, access time) 
+* Automatic prefetch file generation when malicious code is executed 
+* Boot-prefetch file detects malware loaded at boot 
+* List of loaded libraries and files can be checked from the reference list
+
