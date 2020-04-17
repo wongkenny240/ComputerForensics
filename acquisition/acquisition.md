@@ -30,9 +30,9 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 4. Select the device that is write-blocked
 5. In the Evidence tab, right click the item we would like to acquire, Select Process Evidence -&gt; Acquire
 
-![Detect Tableau Hardware](../.gitbook/assets/image%20%2820%29.png)
+![Detect Tableau Hardware](../.gitbook/assets/image%20%2821%29.png)
 
-![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2815%29.png)
+![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2816%29.png)
 
 ![Location tab](../.gitbook/assets/image%20%286%29.png)
 
@@ -101,7 +101,7 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\)
 5. Click OK to start the acquisition 
 
-![Fill in the information and click OK](../.gitbook/assets/image%20%2810%29.png)
+![Fill in the information and click OK](../.gitbook/assets/image%20%2811%29.png)
 
 ## Convert a hibernation file to a memory dump
 
