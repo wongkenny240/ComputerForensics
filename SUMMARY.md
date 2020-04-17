@@ -32,6 +32,7 @@
 
 ## Incident Response Artifacts
 
+* [Windows Event Logs](incident-response-artifacts/windows-event-logs.md)
 * [Prefetch](incident-response-artifacts/prefetch.md)
 * [File system log](incident-response-artifacts/file-system-log.md)
 
