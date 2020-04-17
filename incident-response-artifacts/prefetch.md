@@ -62,3 +62,21 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 
 [https://www.tzworks.net/prototype\_page.php?proto\_id=1](https://www.tzworks.net/prototype_page.php?proto_id=1)
 
+## Prefetch Registry Key 
+
+```
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
+```
+EnablePrefetcher Key:
+
+```
+0 = Disabled
+1 = Application prefetching enabled
+2 = Boot prefetching enabled (default on Windows 2003 only)
+3 = Application and Boot prefetching enabled (default)
+```
+
+Task Scheduler calls Windows Disk Defragmenter every three (3) days
+When idle, lists of files and directories referenced during boot process and application startups is processed
+
+* The processed result is stored in Layout.ini in the Prefetch directory, and is subsequently passed to the Disk Defragmenter, instructing it to re-order those files into sequential positions on the physical hard drive
