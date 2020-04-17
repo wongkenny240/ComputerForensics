@@ -30,4 +30,33 @@ http://dfstream.blogspot.com/p/vsc-toolset.html
 http://digitalforensics.sans.org/community/downloads
 ### ShadowExplorer
 
+## VSS Imaging
+### FTK Imager
+```
+[File] -> [Add Evidence Item] -> [Contents of a Folder]
+```
+
+### robocopy
+```
+C:\> robocopy C:\VSC1\Users\[xxx] F:\VSC1 /S /XJ /COPY:DAT /NFL /NDL /w:0 /r:0
+```
+```
+/S: Copy subdirectory except empty directory
+/XJ: The intersection is not copied
+/COPY:DAT: Copy data, attributes and time information (D = Data, A = Attributes, T = Timestamps)
+/NFL: Do not log file list
+/NDL: Do not log directory listing
+/ w: 0: wait time while trying again
+/ r: 0: Retry count for failed copy
+```
+
+Copy only specific file types (robocopy)
+
+```
+C:\> robocopy C:\VSC1\Users F:\VSC1 *.jpg *.bmp *.png /S /XJ /COPY:DAT /NFL /NDL /w:0 /r:0
+```
+
+### VSS Live Examination
+
+
 
