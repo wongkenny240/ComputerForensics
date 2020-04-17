@@ -50,7 +50,7 @@ EVT files were scrapped for a new XML-based format using the extension .evtx. Th
 %SYSTEMROOT%\System32\Winevt\Logs\Security.evtx
 ```
 
-![An example of event log](../.gitbook/assets/image%20%2810%29.png)
+![An example of event log](../.gitbook/assets/Event%20log.png)
 
 User Name The account used to log on. 
 
@@ -60,7 +60,7 @@ Logon ID A unique session identifier. You can use this value as a search term or
 
 Logon Type A code referencing the type of logon initiated by the user. The following table provides further detail on the Logon Type field and its possible values:
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/logon_type.png)
 
 Here is a brief description of each type:
 #### Interactive 
