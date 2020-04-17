@@ -30,9 +30,9 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 4. Select the device that is write-blocked
 5. In the Evidence tab, right click the item we would like to acquire, Select Process Evidence -&gt; Acquire
 
-![Detect Tableau Hardware](../.gitbook/assets/image%20%2819%29.png)
+![Detect Tableau Hardware](../.gitbook/assets/image%20%2820%29.png)
 
-![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2814%29.png)
+![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2815%29.png)
 
 ![Location tab](../.gitbook/assets/image%20%286%29.png)
 

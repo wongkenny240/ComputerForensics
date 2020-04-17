@@ -80,7 +80,7 @@ Volatility provides a few commands you can use for extracting information about 
 $ python vol.py -f lab.mem --profile=WinXPSP3x86 pslist
 ```
 
-![output of the pslist command](../.gitbook/assets/image%20%2817%29.png)
+![output of the pslist command](../.gitbook/assets/image%20%2818%29.png)
 
 * Three browsers are running \(two instances of IEXPLORE.EXE and one firefox .exe\), an e‑mail client \(thunderbird.exe\), and Adobe Reader \(AcroRd32.exe\). Thus, this machine is very likely to be a client or workstation, as opposed to a server.
 

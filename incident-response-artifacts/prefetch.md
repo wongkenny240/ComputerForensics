@@ -48,35 +48,44 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 
 ### WinPrefetchView – Nirsoft
 
-[http://www.nirsoft.net/utils/win\_prefetch\_view.html](http://www.nirsoft.net/utils/win_prefetch_view.html)
+{% embed url="http://www.nirsoft.net/utils/win\_prefetch\_view.html" %}
+
+![](../.gitbook/assets/image%20%2814%29.png)
 
 ### PrefetchForensics – Mark Woan
 
-[https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md](https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md)
+{% embed url="https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md" %}
+
+
 
 ### APFA\(Advanced Prefetch File Analyzer\) – ASH368
 
-[http://www.ash368.com/](http://www.ash368.com/)
+{% embed url="http://www.ash368.com/" %}
+
+
 
 ### Windows Prefetch Parser – TZWorks
 
-[https://www.tzworks.net/prototype\_page.php?proto\_id=1](https://www.tzworks.net/prototype_page.php?proto_id=1)
+{% embed url="https://www.tzworks.net/prototype\_page.php?proto\_id=1" %}
 
-## Prefetch Registry Key 
 
-```
+
+## Prefetch Registry Key
+
+```text
 HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
 ```
+
 EnablePrefetcher Key:
 
-```
+```text
 0 = Disabled
 1 = Application prefetching enabled
 2 = Boot prefetching enabled (default on Windows 2003 only)
 3 = Application and Boot prefetching enabled (default)
 ```
 
-Task Scheduler calls Windows Disk Defragmenter every three (3) days
-When idle, lists of files and directories referenced during boot process and application startups is processed
+Task Scheduler calls Windows Disk Defragmenter every three \(3\) days When idle, lists of files and directories referenced during boot process and application startups is processed
 
 * The processed result is stored in Layout.ini in the Prefetch directory, and is subsequently passed to the Disk Defragmenter, instructing it to re-order those files into sequential positions on the physical hard drive
+
