@@ -50,7 +50,7 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 
 {% embed url="http://www.nirsoft.net/utils/win\_prefetch\_view.html" %}
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/Prefetch%20sample.png)
 
 ### PrefetchForensics – Mark Woan
 
