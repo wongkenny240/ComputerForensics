@@ -58,5 +58,20 @@ C:\> robocopy C:\VSC1\Users F:\VSC1 *.jpg *.bmp *.png /S /XJ /COPY:DAT /NFL /NDL
 
 ### VSS Live Examination
 
+Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin.
+To obtain a list of the shadows execute:
+
+```
+C:\> vssadmin list shadows /for=C:
+```
+This command will list the available shadows for the C-drive volume.
+
+Things to notice:
+
+The shadow copy volume is the name of the volume that we will use to examine the contents of that specific volume. You might want to write the exact name down.
+
+The originating machine would be noteworthy if you have plugged in an NTFS drive from another shadow copy-enabled machine.
+
+The system time of the creation time of the volume will tell you when the snapshot was created, This time is important as you know which shadow copy volume might contain your data. From the output of vssadmin, note the total number of shadow copy volumes from the machine
 
 
