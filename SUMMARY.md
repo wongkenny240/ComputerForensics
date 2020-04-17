@@ -33,4 +33,5 @@
 ## Incident Response Artifacts
 
 * [Prefetch](incident-response-artifacts/prefetch.md)
+* [File system log](incident-response-artifacts/file-system-log.md)
 
