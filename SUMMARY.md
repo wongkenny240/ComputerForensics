@@ -30,3 +30,7 @@
 * [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
 * [Untitled](others/untitled.md)
 
+## Incident Response Artifacts
+
+* [Prefetch](incident-response-artifacts/prefetch.md)
+

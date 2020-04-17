@@ -1,0 +1,6 @@
+# Prefetch
+
+Path
+
+%SystemRoot%\Prefetc
+
