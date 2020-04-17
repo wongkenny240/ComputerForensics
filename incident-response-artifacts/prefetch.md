@@ -48,27 +48,21 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 
 ### WinPrefetchView – Nirsoft
 
-{% embed url="http://www.nirsoft.net/utils/win\_prefetch\_view.html" %}
+{% embed url="http://www.nirsoft.net/utils/win\_prefetch\_view.html" caption="" %}
 
-![](../.gitbook/assets/Prefetch%20sample.png)
+![](../.gitbook/assets/prefetch-sample.png)
 
 ### PrefetchForensics – Mark Woan
 
-{% embed url="https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md" %}
-
-
+{% embed url="https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md" caption="" %}
 
 ### APFA\(Advanced Prefetch File Analyzer\) – ASH368
 
-{% embed url="http://www.ash368.com/" %}
-
-
+{% embed url="http://www.ash368.com/" caption="" %}
 
 ### Windows Prefetch Parser – TZWorks
 
-{% embed url="https://www.tzworks.net/prototype\_page.php?proto\_id=1" %}
-
-
+{% embed url="https://www.tzworks.net/prototype\_page.php?proto\_id=1" caption="" %}
 
 ## Prefetch Registry Key
 
