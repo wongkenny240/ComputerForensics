@@ -52,16 +52,16 @@ EVT files were scrapped for a new XML-based format using the extension .evtx. Th
 
 ![An example of event log](../.gitbook/assets/Event%20log.png)
 
-### User Name 
+#### User Name 
 The account used to log on. 
 
-### Domain 
+#### Domain 
 The domain associated with the user name. If the user name is a local account, this field will contain the system’s host name. 
 
-### Logon ID 
+#### Logon ID 
 A unique session identifier. You can use this value as a search term or filter to find all event log entries associated with this specific logon session. 
 
-### Logon Type 
+#### Logon Type 
 A code referencing the type of logon initiated by the user. The following table provides further detail on the Logon Type field and its possible values:
 
 ![](../.gitbook/assets/logon_type.png)
