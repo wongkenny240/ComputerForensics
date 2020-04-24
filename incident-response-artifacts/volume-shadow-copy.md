@@ -34,13 +34,15 @@ You may notice that this is not exact. Windows Vista will not take volume snapsh
 
 ### VSC-Toolset
 
-[http://dfstream.blogspot.com/p/vsc-toolset.html](http://dfstream.blogspot.com/p/vsc-toolset.html)
+{% embed url="http://dfstream.blogspot.com/p/vsc-toolset.html" %}
 
 ### libvshadow \(SIFT\)
 
-[http://digitalforensics.sans.org/community/downloads](http://digitalforensics.sans.org/community/downloads)
+{% embed url="http://digitalforensics.sans.org/community/downloads" %}
 
 ### ShadowExplorer
+
+{% embed url="https://www.shadowexplorer.com/downloads.html" %}
 
 ## VSS Imaging
 

@@ -17,7 +17,7 @@
   * There should be only **one** copy of **services.exe** on a system
   * Should be running from the **system32** directory.
 * **svchost.exe**: 
-  * A clean system has multiple shared host processes running concurrently, each providing a container for DLLs that implement services.   * Their **parent** should be **services.exe**, and the path to their executable should point to the **system32** directory. 
+  * A clean system has multiple shared host processes running concurrently, each providing a container for DLLs that implement services.    _Their **parent** should be **services.exe**, and the path to their executable should point to the \*system32_ directory. 
   * A few of the common names \(such as scvhost.exe and svch0st.exe\) can be used by malware to blend in with these processes.
 * **lsass.exe**: 
   * The local security authority subsystem process is responsible for enforcing the security policy, verifying passwords, and creating access tokens. As such, it’s often the target of code injection because the **plaintext password hashes** can be found in its private memory space. 
@@ -37,6 +37,4 @@
   * It is responsible for creating the sessions that isolate OS services from the various users who may log on via the console or Remote Desktop Protocol \(RDP\).
 
 ![](../.gitbook/assets/windows-process-diagram.jpg)
-
-
 
