@@ -115,11 +115,16 @@ Live examination of VSS
 * Reconnoitre – Commercial
 * libvshadow \(DD style RAW image input for use on Linux / Mac\)
 
-Mount disk image in Arsenal Image Mounter in “Write Temporary“ Mode 
+Offline Analysis
 
-Launch ShadowExplorer as Administrator 
+1. Mount disk image in Arsenal Image Mounter in “Write Temporary“ Mode
+2. Launch ShadowExplorer as Administrator
+3. Browse Snapshots
+4. Extract Files using Right Click -&gt; Export  
 
-Browse Snapshots 
 
-Extract Files using Right Click -&gt; Export
+
+ 
+
+
 
