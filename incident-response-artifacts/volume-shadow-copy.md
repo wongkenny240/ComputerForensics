@@ -78,11 +78,22 @@ C:\> robocopy C:\VSC1\Users F:\VSC1 *.jpg *.bmp *.png /S /XJ /COPY:DAT /NFL /NDL
 
 ### VSS Live Examination
 
-Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin. To obtain a list of the shadows execute:
+Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin. 
+
+To obtain a list of the shadows execute:
 
 ```text
 C:\> vssadmin list shadows /for=C:
 ```
+
+To create a symbolic link via mklink to mount the shadow copy to a directory of your choice:
+
+```text
+mklink /D [target directory] [Shadow Copy Volume]
+```
+The shadow copy—a mirror of the volume’s entire file system at the time of the
+snapshot—will now be available within the linked directory.
+
 
 This command will list the available shadows for the C-drive volume.
 
