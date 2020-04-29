@@ -21,7 +21,6 @@
 * [Process](memory-analysis/process.md)
 * [Volatility](memory-analysis/volatility.md)
 * [Volatility Plugin](memory-analysis/volatility-plugin.md)
-* [Registry](memory-analysis/registry.md)
 * [Timeline](memory-analysis/timeline.md)
 * [Analysis Keypoints](memory-analysis/analysis-steps.md)
 
@@ -32,6 +31,7 @@
 
 ## Incident Response Artifacts
 
+* [Registry](incident-response-artifacts/registry.md)
 * [Volume Shadow Copy](incident-response-artifacts/volume-shadow-copy.md)
 * [Windows Event Logs](incident-response-artifacts/windows-event-logs.md)
 * [Prefetch](incident-response-artifacts/prefetch.md)
