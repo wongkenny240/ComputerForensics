@@ -34,15 +34,15 @@ You may notice that this is not exact. Windows Vista will not take volume snapsh
 
 ### VSC-Toolset
 
-{% embed url="http://dfstream.blogspot.com/p/vsc-toolset.html" %}
+{% embed url="http://dfstream.blogspot.com/p/vsc-toolset.html" caption="" %}
 
 ### libvshadow \(SIFT\)
 
-{% embed url="http://digitalforensics.sans.org/community/downloads" %}
+{% embed url="http://digitalforensics.sans.org/community/downloads" caption="" %}
 
 ### ShadowExplorer
 
-{% embed url="https://www.shadowexplorer.com/downloads.html" %}
+{% embed url="https://www.shadowexplorer.com/downloads.html" caption="" %}
 
 ## VSS Imaging
 
@@ -78,7 +78,7 @@ C:\> robocopy C:\VSC1\Users F:\VSC1 *.jpg *.bmp *.png /S /XJ /COPY:DAT /NFL /NDL
 
 ### VSS Live Examination
 
-Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin. 
+Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin.
 
 To obtain a list of the shadows execute:
 
@@ -91,9 +91,8 @@ To create a symbolic link via mklink to mount the shadow copy to a directory of 
 ```text
 mklink /D [target directory] [Shadow Copy Volume]
 ```
-The shadow copy—a mirror of the volume’s entire file system at the time of the
-snapshot—will now be available within the linked directory.
 
+The shadow copy—a mirror of the volume’s entire file system at the time of the snapshot—will now be available within the linked directory.
 
 This command will list the available shadows for the C-drive volume.
 
@@ -109,10 +108,18 @@ Live examination of VSS
 
 * vssadmin + mslink + robocopy 
 * FTK Imager, EnCase 
-* ShadowExplorer, VSCToolset, ShadowKit 
+* ShadowExplorer, VSCToolset, ShadowKit
 
   Offline analysis
 
 * Reconnoitre – Commercial
 * libvshadow \(DD style RAW image input for use on Linux / Mac\)
+
+Mount disk image in Arsenal Image Mounter in “Write Temporary“ Mode 
+
+Launch ShadowExplorer as Administrator 
+
+Browse Snapshots 
+
+Extract Files using Right Click -&gt; Export
 

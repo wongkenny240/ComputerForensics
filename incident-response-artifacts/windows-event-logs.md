@@ -50,7 +50,7 @@ EVT files were scrapped for a new XML-based format using the extension .evtx. Th
 %SYSTEMROOT%\System32\Winevt\Logs\Security.evtx
 ```
 
-![An example of event log](../.gitbook/assets/Event%20log.png)
+![An example of event log](../.gitbook/assets/event-log.png)
 
 #### User Name
 
