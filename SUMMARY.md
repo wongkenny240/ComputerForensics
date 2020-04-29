@@ -21,8 +21,8 @@
 * [Process](memory-analysis/process.md)
 * [Volatility](memory-analysis/volatility.md)
 * [Volatility Plugin](memory-analysis/volatility-plugin.md)
-* [Timeline](memory-analysis/timeline.md)
 * [Analysis Keypoints](memory-analysis/analysis-steps.md)
+* [Timeline](memory-analysis/timeline.md)
 
 ## Others
 
