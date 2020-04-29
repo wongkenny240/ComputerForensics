@@ -126,7 +126,7 @@ The system time of the creation time of the volume will tell you when the snapsh
 3. Browse Snapshots
 4. Extract Files using Right Click -&gt; Export  
 
-**Volume Shadow Copies in the Registry**
+## Volume Shadow Copies in the Registry
 
 We can also recover information about our Volume Shadow Copies, and their characteristics, from the Windows Registry. 
 
