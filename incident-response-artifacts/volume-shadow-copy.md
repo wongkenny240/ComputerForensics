@@ -76,6 +76,20 @@ Copy only specific file types \(robocopy\)
 C:\> robocopy C:\VSC1\Users F:\VSC1 *.jpg *.bmp *.png /S /XJ /COPY:DAT /NFL /NDL /w:0 /r:0
 ```
 
+## VSS Examination
+
+Live examination of VSS
+
+* vssadmin + mslink + robocopy 
+* FTK Imager, EnCase 
+* ShadowExplorer, VSCToolset, ShadowKit
+
+  Offline analysis
+
+* Reconnoitre – Commercial
+* libvshadow \(DD style RAW image input for use on Linux / Mac\)
+
+
 ### VSS Live Examination
 
 Obtain a list of existing shadow volumes in the Volume Shadow Copy Service by executing the tool vssadmin.
@@ -104,18 +118,8 @@ The originating machine would be noteworthy if you have plugged in an NTFS drive
 
 The system time of the creation time of the volume will tell you when the snapshot was created, This time is important as you know which shadow copy volume might contain your data. From the output of vssadmin, note the total number of shadow copy volumes from the machine
 
-Live examination of VSS
 
-* vssadmin + mslink + robocopy 
-* FTK Imager, EnCase 
-* ShadowExplorer, VSCToolset, ShadowKit
-
-  Offline analysis
-
-* Reconnoitre – Commercial
-* libvshadow \(DD style RAW image input for use on Linux / Mac\)
-
-Offline Analysis
+### Offline Analysis
 
 1. Mount disk image in Arsenal Image Mounter in “Write Temporary“ Mode
 2. Launch ShadowExplorer as Administrator
