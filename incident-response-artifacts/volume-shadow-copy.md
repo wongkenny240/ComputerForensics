@@ -99,6 +99,8 @@ To obtain a list of the shadows execute:
 C:\> vssadmin list shadows /for=C:
 ```
 
+This command will list the available shadows for the C-drive volume.
+
 To create a symbolic link via mklink to mount the shadow copy to a directory of your choice:
 
 ```text
@@ -109,7 +111,6 @@ mklink /D [target directory] [Shadow Copy Volume]
 
 The shadow copy—a mirror of the volume’s entire file system at the time of the snapshot—will now be available within the linked directory.
 
-This command will list the available shadows for the C-drive volume.
 
 Things to notice:
 
