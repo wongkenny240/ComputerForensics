@@ -128,13 +128,15 @@ The system time of the creation time of the volume will tell you when the snapsh
 
 **Volume Shadow Copies in the Registry**
 
-We can also recover information about our Volume Shadow Copies, and their characteristics, from the Windows Registry. There are multiple locations of interest, especially as this is a Windows service. The following registry key provides information on the service itself:
+We can also recover information about our Volume Shadow Copies, and their characteristics, from the Windows Registry. 
+
+There are multiple locations of interest, especially as this is a Windows service. The following registry key provides information on the service itself:
 
 ```text
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSS
 ```
 
-For this post, I’ll focus on the following registry key:
+And the following registry key:
 
 ```text
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BackupRestore
