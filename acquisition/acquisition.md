@@ -45,7 +45,7 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 ## LinEn \(Linux\)
 
 {% hint style="info" %}
-Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to console mode By change `id:5:initdefault:.` to `id:3:initdefault:.`
+Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to console mode by changing `id:5:initdefault:.` to `id:3:initdefault:.`
 {% endhint %}
 
 1. Attached the target drive to the Linux imaging platform
