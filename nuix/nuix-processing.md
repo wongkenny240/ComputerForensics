@@ -48,14 +48,13 @@ Traversal. For forensic images, I always select “process loose file and forens
 
 Recover deleted files from disk images. I like to have this option enabled so deleted content is already identified and recovered prior to any further processing of the evidence. If I choose to do carving and indexing of unallocated space, I do that in a separate reprocessing step.
 
-#### Example of Decryption
+### Example of Decryption
 
 ![Export View &amp;gt; Export View to File](../.gitbook/assets/image%20%2827%29.png)
 
 ![](../.gitbook/assets/image%20%2831%29.png)
 
-Export View &amp;gt; Export View to File
-Save the word list to a csv file
+Export View &gt; Export View to File to save the word list to a csv file
 
 ![Copy the password list from the csv file to a text file ](../.gitbook/assets/image%20%2829%29.png)
 
@@ -67,7 +66,7 @@ Reload Items from Source Data
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
-Evidence Processing Settings &gt; Decryption Keys &gt; Word list &gt; Import Words 
+Evidence Processing Settings &gt; Decryption Keys &gt; Word list &gt; Import Words
 
 Select our password txt file to import the word list
 
