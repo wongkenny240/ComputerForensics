@@ -145,4 +145,11 @@ I deselect any volumes I do not want to include for analysis, typically only sel
 
 ## Sample Processing Settings
 
+![From Nuix Webinar](../.gitbook/assets/image%20%2840%29.png)
+
+Tier 1
+
+![](../.gitbook/assets/image%20%2839%29.png)
+
+In the ‘MIME Type Filtering’ tab deselect the following: SpreadsheetsCSV files \(deselect Descendants\) System Files Microsoft Registry Decoded Data Microsoft Registry Key Containers Java Archive Microsoft Registry File No DataInaccessible Content LogsAll
 
