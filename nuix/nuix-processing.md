@@ -145,7 +145,7 @@ I deselect any volumes I do not want to include for analysis, typically only sel
 
 ## Sample Processing Settings
 
-![From Nuix Webinar](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 ### Tier 1
 
@@ -165,7 +165,7 @@ In the ‘MIME Type Filtering’ tab deselect the following:
 
 ### Tier 2
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2842%29.png)
 
 These settings will be run across only those files selected for deeper analysis. This will populate the Full Text Indices for those files, as well as allow for Near Duplicate highlighting, entity extraction and analysis/linking, and enhanced multimedia filtering.
 
@@ -180,4 +180,6 @@ In the ‘MIME Type Filtering’ tab deselect the following:
 |  | Microsoft Registry File |
 | No Data | Inaccessible Content |
 | Logs | All |
+
+
 
