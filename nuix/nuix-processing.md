@@ -108,7 +108,7 @@ Select our word list in the drop down box
 
 ![](../.gitbook/assets/image%20%2828%29.png)
 
-Wait for evidence processing
+Wait for evidence processing to complete
 
 ![](../.gitbook/assets/image%20%2833%29.png)
 
