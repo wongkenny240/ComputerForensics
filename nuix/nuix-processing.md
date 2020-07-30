@@ -18,7 +18,20 @@ Data Processing Settings
 
 ![Data Processing Settings](../.gitbook/assets/image%20%2825%29.png)
 
-Nuix Workstation offers the following options for processing evidence: Options Description Perform Item Identification Enables further indexing options to be performed on individual items beyond a light scan of the file system properties on the outside of items. If this option is not selected, Nuix Workstation creates an "Unknown Binary File" entry for each physical file it encounters along with only limited file system metadata. Calculate processing size up-front Enables the progress bar to display progress during the ingestion process by the physical file size of the evidence. Traversal
+Nuix Workstation offers the following options for processing evidence: 
+|Options | Description|
+| ------------- | ------------- |
+|Perform Item Identification |Enables further indexing options to be performed on individual items beyond a light scan of the file system properties on the outside of items. If this option is not selected, Nuix Workstation creates an "Unknown Binary File" entry for each physical file it encounters along with only limited file system metadata. |
+|Calculate processing size up-front |Enables the progress bar to display progress during the ingestion process by the physical file size of the evidence. |
+|Traversal| Three options are available for traversing the documents at the time of ingestion.
+Select one of the following options:
+Full traversal will extract all items completely according to the evidence
+processing settings selected below.
+Process loose files but not their contents allow a quick directory listing of all
+the files presented for ingestion without any further extraction.
+Process loose files and forensic images but not their contents allow
+forensic images to be treated like a file directory along with any loose files for
+ingestion without any further extraction.|
 
 
 
