@@ -49,8 +49,7 @@ Nuix Workstation offers the following options for processing evidence:
 | :--- | :--- |
 |Analysis Language |Select the language, either English or Japanese, to be used for text indexing. Only one language can be used per the evidence store and cannot be changed when using the Reuse Evidence Store option. |
 |Use stop words | By selecting this option, the stop words, or noise words, for the selected language will not be indexed. The English language stop words are: a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will and with.
-|Use stemming | When this option is set, Nuix Workstation creates a different type of text index that stores only stemmed components of words. For example, if the search word is
-"control", having this option enabled returns documents containing "control", "controlling", "controller", "controls" not just returning only “control”. Once set, the option is applicable to the entire case.|
+|Use stemming | When this option is set, Nuix Workstation creates a different type of text index that stores only stemmed components of words. For example, if the search word is "control", having this option enabled returns documents containing "control", "controlling", "controller", "controls" not just returning only “control”. Once set, the option is applicable to the entire case.|
 
 For forensic E01 image, Perform Item Identification are usually selected. The checkbox essentially enables the MIME types tab. If this is not selected, Nuix will not be able to initially identify file types for classification under the Filtered Items section.
 
