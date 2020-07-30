@@ -14,7 +14,11 @@ Use the “-“ button to delete an existing profile.
 
 When you create a profile, you have the capability to make it available to everyone \(local computer\), or just for a specific user.
 
+Data Processing Settings
 
+![Data Processing Settings](../.gitbook/assets/image%20%2825%29.png)
+
+Nuix Workstation offers the following options for processing evidence: Options Description Perform Item Identification Enables further indexing options to be performed on individual items beyond a light scan of the file system properties on the outside of items. If this option is not selected, Nuix Workstation creates an "Unknown Binary File" entry for each physical file it encounters along with only limited file system metadata. Calculate processing size up-front Enables the progress bar to display progress during the ingestion process by the physical file size of the evidence. Traversal
 
 
 
