@@ -12,6 +12,12 @@
 * [Advanced EnCase](encase/advanced-encase.md)
 * [EnScript](encase/enscript.md)
 
+## Nuix
+
+* [Nuix Processing](nuix/nuix-processing.md)
+* [Nuix General](nuix/nuix-general.md)
+* [Nuix Scripting](nuix/nuix-scripting.md)
+
 ## Malware Analysis
 
 * [Malware Hunting](malware-analysis/malware-analysis.md)
