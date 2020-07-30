@@ -155,10 +155,10 @@ In the ‘MIME Type Filtering’ tab deselect the following:
 |File Group|File Type|
 | :--- | :--- |
 |Spreadsheets |CSV files \(deselect Descendants\) |
-|System Files| Microsoft Registry Decoded Data 
-Microsoft Registry Key| 
-|Containers |Java Archive 
-Microsoft Registry File| 
+|System Files| Microsoft Registry Decoded Data |
+||Microsoft Registry Key| 
+|Containers |Java Archive |
+||Microsoft Registry File| 
 |No Data|Inaccessible Content |
 |Logs|All|
 
