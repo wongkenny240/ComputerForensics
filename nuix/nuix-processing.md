@@ -44,8 +44,9 @@ Nuix Workstation offers the following options for processing evidence:
 | Index unallocated space | This will text strip the unallocated space for text index searches. The resulting item will be the entire unallocated space when a match is found. |
 | Carve file system unallocated space | Carves files from the system unallocated space. It is recommended that this setting is only used when reloading selected unallocated space items after initial processing. |
 
-Text Indexing Settings
+### Text Indexing Settings
 |Options| Description|
+| :--- | :--- |
 |Analysis Language |Select the language, either English or Japanese, to be used for text indexing. Only one language can be used per the evidence store and cannot be changed when using the Reuse Evidence Store option. |
 |Use stop words | By selecting this option, the stop words, or noise words, for the selected language will not be indexed. The English language stop words are: a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will and with.
 |Use stemming | When this option is set, Nuix Workstation creates a different type of text index that stores only stemmed components of words. For example, if the search word is
