@@ -52,7 +52,7 @@ Recover deleted files from disk images. I like to have this option enabled so de
 
 ![](../.gitbook/assets/image%20%2831%29.png)
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![Copy the password list from the csv file to a text file ](../.gitbook/assets/image%20%2829%29.png)
 
 ![Reload Items from Source Data](../.gitbook/assets/image%20%2826%29.png)
 
