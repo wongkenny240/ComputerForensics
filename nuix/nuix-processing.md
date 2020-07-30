@@ -20,6 +20,8 @@ When you create a profile, you have the capability to make it available to every
 
 Nuix Workstation offers the following options for processing evidence:
 
+### Evidence Settings
+
 | Options | Description |
 | :--- | :--- |
 | Perform Item Identification | Enables further indexing options to be performed on individual items beyond a light scan of the file system properties on the outside of items. If this option is not selected, Nuix Workstation creates an "Unknown Binary File" entry for each physical file it encounters along with only limited file system metadata. |
@@ -31,7 +33,7 @@ Nuix Workstation offers the following options for processing evidence:
 | Process loose files but not their contents | allow a quick directory listing of all the files presented for ingestion without any further extraction. |
 | Process loose files and forensic images but not their contents | allow forensic images to be treated like a file directory along with any loose files for ingestion without any further extraction. |
 
-Deleted File Recovery and Forensic Settings
+### Deleted File Recovery and Forensic Settings
 
 | Options | Description |
 | :--- | :--- |
@@ -47,6 +49,28 @@ For forensic E01 image, Perform Item Identification are usually selected. The ch
 Traversal. For forensic images, I always select “process loose file and forensic images but not their contents”. This selection performs a directory listing of all files but does not perform any further analysis of file contents
 
 Recover deleted files from disk images. I like to have this option enabled so deleted content is already identified and recovered prior to any further processing of the evidence. If I choose to do carving and indexing of unallocated space, I do that in a separate reprocessing step.
+
+## Decryption Keys
+The Decryption Keys tab enables you to manage password lists and configure keys and passwords used when processing.
+
+### Password Discovery
+
+Password bank for decrypting files enables you to manage password lists by adding manually or importing a word list via a txt file. The password bank:
+
+* Is done at the case level.
+
+* Provides ingestion time decryption time of items.
+
+* Supports the following formats:
+  * Microsoft Office 2010+ (.docx, .xlsx, .pptx),
+  * Microsoft Office pre-2010 (.doc, .xls, .ppt),
+  * Adobe PDF documents (.pdf),
+  * Zip archives (.zip),
+  * 7Zip archives (.7z)
+  * Bitlocker
+  * FileVault2
+
+
 
 ### Example of Decryption
 
