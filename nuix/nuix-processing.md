@@ -26,13 +26,9 @@ Nuix Workstation offers the following options for processing evidence:
 
 |Traversal Options| Description
 | ------------- | ------------- |
-| Full traversal| will extract all items completely according to the evidence
-processing settings selected below.|
-|Process loose files but not their contents| allow a quick directory listing of all
-the files presented for ingestion without any further extraction.
-|Process loose files and forensic images but not their contents| allow
-forensic images to be treated like a file directory along with any loose files for
-ingestion without any further extraction.|
+| Full traversal| will extract all items completely according to the evidence processing settings selected below.|
+|Process loose files but not their contents| allow a quick directory listing of all the files presented for ingestion without any further extraction.
+|Process loose files and forensic images but not their contents| allow forensic images to be treated like a file directory along with any loose files for ingestion without any further extraction.|
 
 
 
