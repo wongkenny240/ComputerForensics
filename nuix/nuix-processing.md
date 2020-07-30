@@ -151,29 +151,33 @@ I deselect any volumes I do not want to include for analysis, typically only sel
 
 ![](../.gitbook/assets/image%20%2839%29.png)
 
-In the ‘MIME Type Filtering’ tab deselect the following: 
-|File Group|File Type|
+In the ‘MIME Type Filtering’ tab deselect the following:
+
+| File Group | File Type |
 | :--- | :--- |
-|Spreadsheets |CSV files \(deselect Descendants\) |
-|System Files| Microsoft Registry Decoded Data |
-||Microsoft Registry Key| 
-|Containers |Java Archive |
-||Microsoft Registry File| 
-|No Data|Inaccessible Content |
-|Logs|All|
+| Spreadsheets | CSV files \(deselect Descendants\) |
+| System Files | Microsoft Registry Decoded Data |
+|  | Microsoft Registry Key |
+| Containers | Java Archive |
+|  | Microsoft Registry File |
+| No Data | Inaccessible Content |
+| Logs | All |
 
 ### Tier 2
+
+![](../.gitbook/assets/image%20%2841%29.png)
 
 These settings will be run across only those files selected for deeper analysis. This will populate the Full Text Indices for those files, as well as allow for Near Duplicate highlighting, entity extraction and analysis/linking, and enhanced multimedia filtering.
 
 In the ‘MIME Type Filtering’ tab deselect the following:
-|File Group|File Type|
+
+| File Group | File Type |
 | :--- | :--- |
-|Spreadsheets|CSV files (deselect Descendants)|
-|System Files |Microsoft Registry Decoded Data|
-||Microsoft Registry Key|
-|Containers |Java Archive|
-||Microsoft Registry File|
-|No Data| Inaccessible Content|
-|Logs|All|
+| Spreadsheets | CSV files \(deselect Descendants\) |
+| System Files | Microsoft Registry Decoded Data |
+|  | Microsoft Registry Key |
+| Containers | Java Archive |
+|  | Microsoft Registry File |
+| No Data | Inaccessible Content |
+| Logs | All |
 
