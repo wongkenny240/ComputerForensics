@@ -33,7 +33,7 @@
 ## Others
 
 * [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
-* [NAS](others/NAS.md)
+* [NAS](others/nas.md)
 
 ## Incident Response Artifacts
 

@@ -111,7 +111,6 @@ mklink /D [target directory] [Shadow Copy Volume]
 
 The shadow copy—a mirror of the volume’s entire file system at the time of the snapshot—will now be available within the linked directory.
 
-
 Things to notice:
 
 The shadow copy volume is the name of the volume that we will use to examine the contents of that specific volume. You might want to write the exact name down.
@@ -129,7 +128,7 @@ The system time of the creation time of the volume will tell you when the snapsh
 
 ## Volume Shadow Copies in the Registry
 
-We can also recover information about our Volume Shadow Copies, and their characteristics, from the Windows Registry. 
+We can also recover information about our Volume Shadow Copies, and their characteristics, from the Windows Registry.
 
 There are multiple locations of interest, especially as this is a Windows service. The following registry key provides information on the service itself:
 
