@@ -119,3 +119,14 @@ This tab allows you to deploy the scripts (or Java code) prior to starting your 
 
 In the Worker Script tab, select the language to enter your script.
 
+
+Please refer to Nuix Scription Worker script section for more details
+
+## Pre-Filtering the Evidence 
+You can choose specific files or folders to add as evidence from within compound files here. Some examples include:
+* Exchange Database Files (*.EDB): Process only specific custodian mailboxes from within an EDB or select only a single custodian's Inbox or Calendar for processing.
+* Forensic Images (E01, L01, DD): Process only specific folders from within an image (Documents and Settings or Users).
+* NSF files: Selectively process-specific views from within a Lotus NSF file, instead of extracting all documents.
+
+I deselect any volumes I do not want to include for analysis, typically only selecting the operating system volume and Unallocated Space.
+
