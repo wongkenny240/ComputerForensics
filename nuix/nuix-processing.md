@@ -54,6 +54,9 @@ Recover deleted files from disk images. I like to have this option enabled so de
 
 ![](../.gitbook/assets/image%20%2831%29.png)
 
+Export View &amp;gt; Export View to File
+Save the word list to a csv file
+
 ![Copy the password list from the csv file to a text file ](../.gitbook/assets/image%20%2829%29.png)
 
 Copy the password list from the csv file to a text file
