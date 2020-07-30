@@ -51,34 +51,33 @@ Traversal. For forensic images, I always select “process loose file and forens
 Recover deleted files from disk images. I like to have this option enabled so deleted content is already identified and recovered prior to any further processing of the evidence. If I choose to do carving and indexing of unallocated space, I do that in a separate reprocessing step.
 
 ## Decryption Keys
+
 The Decryption Keys tab enables you to manage password lists and configure keys and passwords used when processing.
+
+![Decryption Keys](../.gitbook/assets/image%20%2834%29.png)
 
 ### Password Discovery
 
 Password bank for decrypting files enables you to manage password lists by adding manually or importing a word list via a txt file. The password bank:
 
 * Is done at the case level.
-
 * Provides ingestion time decryption time of items.
-
 * Supports the following formats:
-  * Microsoft Office 2010+ (.docx, .xlsx, .pptx),
-  * Microsoft Office pre-2010 (.doc, .xls, .ppt),
-  * Adobe PDF documents (.pdf),
-  * Zip archives (.zip),
-  * 7Zip archives (.7z)
+  * Microsoft Office 2010+ \(.docx, .xlsx, .pptx\),
+  * Microsoft Office pre-2010 \(.doc, .xls, .ppt\),
+  * Adobe PDF documents \(.pdf\),
+  * Zip archives \(.zip\),
+  * 7Zip archives \(.7z\)
   * Bitlocker
   * FileVault2
 
-
-
 The following options are displayed:
-|Options| Description|
-| :--- | :--- |
-|Password Directory Mode| Select word-list if you want to add a word list. By default, Password Directory Mode is set to None. This must be selected each time you ingest or reload items. It is disabled by default since it is a time-consuming process.|
-|Word list| When selecting word-list as the mode, the drop-down list enables you to select word-lists. It is recommended to keep .txt files for different cases. |
-|Manage password lists| Enables you to add word list, password, import and export words. Add a word list, click +. To import words into the word list, click Import Words option and select a .txt file. To export, click Export Words and specify the file name and location.|
 
+| Options | Description |
+| :--- | :--- |
+| Password Directory Mode | Select word-list if you want to add a word list. By default, Password Directory Mode is set to None. This must be selected each time you ingest or reload items. It is disabled by default since it is a time-consuming process. |
+| Word list | When selecting word-list as the mode, the drop-down list enables you to select word-lists. It is recommended to keep .txt files for different cases. |
+| Manage password lists | Enables you to add word list, password, import and export words. Add a word list, click +. To import words into the word list, click Import Words option and select a .txt file. To export, click Export Words and specify the file name and location. |
 
 ### Example of Decryption
 
