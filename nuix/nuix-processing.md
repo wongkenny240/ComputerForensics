@@ -113,3 +113,9 @@ Wait for evidence processing to complete
 
 Decryption Password will be shown
 
+
+## Worker Script
+This tab allows you to deploy the scripts (or Java code) prior to starting your data processing. This allows you to carry out these operations at the earliest opportunity, improves efficiency and allows for a greater level of flexibility managing your investigation workflow.
+
+In the Worker Script tab, select the language to enter your script.
+
