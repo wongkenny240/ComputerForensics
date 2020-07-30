@@ -143,3 +143,6 @@ You can choose specific files or folders to add as evidence from within compound
 
 I deselect any volumes I do not want to include for analysis, typically only selecting the operating system volume and Unallocated Space.
 
+## Sample Processing Settings
+
+
