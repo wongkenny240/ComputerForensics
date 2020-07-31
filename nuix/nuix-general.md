@@ -15,5 +15,33 @@ The Registry/Database Viewer tab is used to review the contents of the Windows R
 
 ![Viewing SQLite Database](../.gitbook/assets/image%20%2838%29.png)
 
+
+Items Menu
+The Items menu contains commands for editing, managing, and finding items in the case.
+|Items Command| Function|
+| ------------- | ------------- |
+|Tags |Add and remove tags, including items in the associated family and/or duplicates. You can also remove a tag from the selected item(s), including items in the associated family and/or duplicates. Family relationships are generated when items are extracted from other items, such as a zip file or email with attachments. Documents with other items embedded within them, such as a Microsoft Word document with an embedded Excel Spreadsheet,PowerPoint Presentation, or video clip are also examples. Each of these items would be considered related and in a family.|
+|Custom Metadata| Add and remove custom metadata, and apply the selected Custom Metadata template.|
+|Custodian |Assign and unassign custodians with options to include associated family items.|
+|Item Set |Add items to and remove items from item sets.|
+|Review Job |Add items to and remove items from a Fast Review job.|
+|Production Set| Enables you to: 
+* Create a production set.
+* Add items to a production set based on the specified sort order.
+* Import and annotate document ID lists.
+* Renumber a production set.
+* Generate or delete print previews.
+* Apply export rules to a production set.
+* Remove items from a production set.
+* Markup Add or edit markup sets, and process bulk redaction. |
+|Cluster Run | Generating clusters, adding items to an existing cluster, and removing clusters.|
+|Automatic Classifier| Create Automatic Classifier, add and remove training items, build model,automatically classify items, remove automatically classified items, remove skipped items, export model, import model and delete automatic classifiers.
+|Exclude Items| Exclude items from being available for further case activity using a new or existing exclusion rule. This suppresses the items within the data set, including items in the associated family and/or duplicates.|
+|Delete Items| Delete all records and their descendants from the case. |
+|Populate Stores| Regenerate both the binary natives store and the PDF image store with options to format the PDF images on generation.|
+
+
+
+
 ![](../.gitbook/assets/image%20%2843%29.png)
 
