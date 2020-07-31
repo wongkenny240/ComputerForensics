@@ -15,5 +15,5 @@ The Registry/Database Viewer tab is used to review the contents of the Windows R
 
 ![Viewing SQLite Database](../.gitbook/assets/image%20%2838%29.png)
 
-
+![](../.gitbook/assets/image%20%2843%29.png)
 
