@@ -95,7 +95,13 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
     </tr>
     <tr>
       <td style="text-align:left">Delete Items</td>
-      <td style="text-align:left">Delete all records and their descendants from the case.</td>
+      <td style="text-align:left">
+        <p>
+        Delete all records and their descendants from the case.
+        </p>
+        <p>![](../.gitbook/assets/image%20%2843%29.png)
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Populate Stores</td>
@@ -105,5 +111,5 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
   </tbody>
 </table>
 
-![](../.gitbook/assets/image%20%2843%29.png)
+
 
