@@ -99,8 +99,6 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
         <p>
         Delete all records and their descendants from the case.
         </p>
-        <p><em> ![](../.gitbook/assets/image%20%2843%29.png) </em>
-        </p>
       </td>
     </tr>
     <tr>
@@ -111,5 +109,5 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
   </tbody>
 </table>
 
-
+![Delete Item](../.gitbook/assets/image%20%2843%29.png)
 
