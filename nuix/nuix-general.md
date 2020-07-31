@@ -57,21 +57,17 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
     <tr>
       <td style="text-align:left">Production Set</td>
       <td style="text-align:left">
-        <p>Enables you to: <em> </em>
+        <p>Enables you to:</p>
+        <p><em>Create a production set.</em>
         </p>
-        <p><em>Create a production set. </em> 
+        <p>Add items to a production set based on the specified sort order.</p>
+        <p><em>Import and annotate document ID lists.</em>
         </p>
-        <p>Add items to a production set based on the specified sort order. <em> </em>
+        <p>Renumber a production set.</p>
+        <p><em>Generate or delete print previews.</em>
         </p>
-        <p><em>Import and annotate document ID lists. </em> 
-        </p>
-        <p>Renumber a production set. <em> </em>
-        </p>
-        <p><em>Generate or delete print previews. </em> 
-        </p>
-        <p>Apply export rules to a production set. <em> </em>
-        </p>
-        <p><em>Remove items from a production set. </em> 
+        <p>Apply export rules to a production set.</p>
+        <p><em>Remove items from a production set.</em>
         </p>
         <p>Markup Add or edit markup sets, and process bulk redaction.</p>
       </td>
@@ -95,11 +91,7 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
     </tr>
     <tr>
       <td style="text-align:left">Delete Items</td>
-      <td style="text-align:left">
-        <p>
-        Delete all records and their descendants from the case.
-        </p>
-      </td>
+      <td style="text-align:left">Delete all records and their descendants from the case.</td>
     </tr>
     <tr>
       <td style="text-align:left">Populate Stores</td>
@@ -109,5 +101,7 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
   </tbody>
 </table>
 
-![Delete Item](../.gitbook/assets/image%20%2843%29.png)
+![Delete Items](../.gitbook/assets/image%20%2843%29.png)
+
+
 
