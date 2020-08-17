@@ -28,6 +28,10 @@ For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux
 
 ![](../.gitbook/assets/image%20%2848%29.png)
 
+
+
+Note: This is useful to unlock physical image of Windows 10 in a Windows 10 environment.
+
 ## Linux Part \(SIFT\)
 
 1. The mostly typical tool using to attach .e01 images is ewfmount.py script. But there is a one hard limitation — this image being attached in **Read-only mode**. It's inappropriate for virtual machine. Therefore we'll use **xmount** command like:  
