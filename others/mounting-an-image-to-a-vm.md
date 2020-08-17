@@ -30,7 +30,7 @@ For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux
 
 
 
-Note: This is useful to unlock physical image of Windows 10 in a Windows 10 environment.
+_Note: This is useful to unlock physical image of Windows 10 in a Windows 10 environment._
 
 ## Linux Part \(SIFT\)
 
