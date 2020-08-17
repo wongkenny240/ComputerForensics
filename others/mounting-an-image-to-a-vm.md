@@ -21,6 +21,13 @@ For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux
 
 ## Arsenal Image Mounter
 
+![Mount disk image](../.gitbook/assets/image%20%2847%29.png)
+
+1. Select Mount disk image and select the file you want to mount
+2. I usually select write temporary disk device
+
+![](../.gitbook/assets/image%20%2848%29.png)
+
 ## Linux Part \(SIFT\)
 
 1. The mostly typical tool using to attach .e01 images is ewfmount.py script. But there is a one hard limitation — this image being attached in **Read-only mode**. It's inappropriate for virtual machine. Therefore we'll use **xmount** command like:  
