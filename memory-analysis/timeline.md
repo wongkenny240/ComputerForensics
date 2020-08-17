@@ -64,6 +64,8 @@ DLL\ LOADTIME
 ```text
 grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 ```
+## Timeline Explorer by Eric Zimmerman
+
 
 ## How to create a supertime line with log2timeline?
 
