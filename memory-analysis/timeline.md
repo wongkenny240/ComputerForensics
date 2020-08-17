@@ -74,7 +74,7 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 
 ![Timeline explorer](../.gitbook/assets/image%20%2844%29.png)
 
-## Shortcut key:
+### Shortcut key:
 
 Several useful shortcuts include:
 
