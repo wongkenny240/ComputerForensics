@@ -41,7 +41,7 @@ cat Evidence1-timeliner.body >> Evidence1-bodyfile
 cat Evidence1-mftparser.body >> Evidence1-bodyfile
 ```
 
-Extract thge combined filesystem and memory timeline
+Extract the combined filesystem and memory timeline
 
 ```text
 mactime -d -b Evidence1-bodyfile [date start e.g. 20xx-xx-xx]..[date end] > Evidence1-mactime-timeline.csv
