@@ -1,6 +1,6 @@
 # Acquisition Method
 
-Encryption Detection
+## Encryption Detection \(EDD.exe\)
 
 A good practice is to check for encryption before performing acquisition to avoid running into trouble
 
