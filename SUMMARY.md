@@ -34,6 +34,7 @@
 
 * [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
 * [NAS](others/nas.md)
+* [Samba](others/samba.md)
 
 ## Incident Response Artifacts
 
