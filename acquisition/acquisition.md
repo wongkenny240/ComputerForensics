@@ -1,5 +1,13 @@
 # Acquisition Method
 
+Encryption Detection
+
+A good practice is to check for encryption before performing acquisition to avoid running into trouble
+
+One good tool to peform such task is EDD.exe by magnet forensic
+
+Just run the EDD.exe and it will tell you which volume is encrypted.
+
 ![](../.gitbook/assets/image%20%2849%29.png)
 
 ## Memory Acquisition \(FTK Imager Lite\)
