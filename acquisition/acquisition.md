@@ -1,5 +1,7 @@
 # Acquisition Method
 
+![](../.gitbook/assets/image%20%2849%29.png)
+
 ## Memory Acquisition \(FTK Imager Lite\)
 
 File &gt; Capture Memory
