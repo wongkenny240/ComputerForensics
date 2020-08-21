@@ -14,10 +14,6 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\
 C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Office\Recent\
 ```
 
-UFTLnkParser – Ultimate Forensic Tool
-
-[http](http://forensic-proof.com/resources)[://](http://forensic-proof.com/resources)[forensic-proof.com/resources](http://forensic-proof.com/resources)
-
 Windows LNK Parsing Utility \(lp\) – TZWorks
 
 [https](https://www.tzworks.net/prototype_page.php?proto_id=11)[://](https://www.tzworks.net/prototype_page.php?proto_id=11)[www.tzworks.net/prototype\_page.php?proto\_id=11](https://www.tzworks.net/prototype_page.php?proto_id=11)
