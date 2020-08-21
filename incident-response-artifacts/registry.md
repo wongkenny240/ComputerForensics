@@ -22,3 +22,5 @@ The Data is stored in the main folders in a Tree like structure which is called 
 |HKEY_USERS |HKU |NTUSER.DAT file existing in the user root folder|
 |HKEY_CURRENT_CONFIG|HKCC|Contents of HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current|
 |HKEY_PERFORMANCE_DATA|HKPD|Performance count (not accessible through the registry editor, accessible only with registry functions)|
+
+
