@@ -74,5 +74,17 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ![](../.gitbook/assets/image%20%2854%29.png)
 
+
+### Search term list
+
+#### Windows 7 
+```
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
+```
+
+List of search terms when using search in Windows 7 Explorer
+
+
+
 ### USB
 
