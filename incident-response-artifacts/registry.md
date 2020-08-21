@@ -74,22 +74,22 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ![](../.gitbook/assets/image%20%2854%29.png)
 
-
 ### Search term list
 
-#### Windows 7 
-```
+#### Windows 7
+
+```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 ```
 
 * List of search terms when using search in Windows 7 Explorer
 * Vista does not store the search term list in the registry.
 * Check the order of search word usage through the MRUListEx key value
-* 10 -> 0F -> 0E -> 0D -> 0C -> 0B -> 0A -> 04 -> 09 -> 08 -> 07 -> 06 -> 05 -> 03 -> 02 -> 01 -> 00
-
+* 10 -&gt; 0F -&gt; 0E -&gt; 0D -&gt; 0C -&gt; 0B -&gt; 0A -&gt; 04 -&gt; 09 -&gt; 08 -&gt; 07 -&gt; 06 -&gt; 05 -&gt; 03 -&gt; 02 -&gt; 01 -&gt; 00
 
 ### Recently opened files
-```
+
+```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 ```
 
@@ -100,24 +100,31 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 
 ### Recently executed command
 
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 ```
-HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU 
-```
-* List of commands executed through “Start -> Run” or “Ctrl + R”
 
+* List of commands executed through “Start -&gt; Run” or “Ctrl + R”
+* The order of the most recently executed commands is the alphabetical order of the MRUList.
+
+
+
+![](../.gitbook/assets/image%20%2856%29.png)
 
 ### USB
-USB storage medium identification procedure
-1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
-* Connection notification using device's unique identification number (device descriptor)
-* Device descriptor - includes manufacturer, serial number, driver information, etc.
-2. PnP administrator sets Device Class ID based on received information and searches for appropriate driver
-3. If there is no driver, the PnP administrator in user mode receives the driver from the firmware of the device, loads it, and writes it to the registry.
 
-```
+USB storage medium identification procedure 1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
+
+* Connection notification using device's unique identification number \(device descriptor\)
+* Device descriptor - includes manufacturer, serial number, driver information, etc.
+* PnP administrator sets Device Class ID based on received information and searches for appropriate driver
+* If there is no driver, the PnP administrator in user mode receives the driver from the firmware of the device, loads it, and writes it to the registry.
+
+```text
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{DID, device class identifier}
 HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
 ```
 
-4. The device driver installation process is saved in a log file.
-* As a result, traces of USB devices can be identified through log files (setupapi.log) and registry.
+1. The device driver installation process is saved in a log file.
+2. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
+
