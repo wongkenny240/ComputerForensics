@@ -82,8 +82,8 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 ```
 
-List of search terms when using search in Windows 7 Explorer
-
+* List of search terms when using search in Windows 7 Explorer
+* Vista does not store the search term list in the registry.
 
 
 ### USB
