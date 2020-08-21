@@ -62,7 +62,7 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 * Saves various traces for each application and version
 * Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
 
-![File MRU with Registry Explorer](../.gitbook/assets/image%20%2854%29.png)
+![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
 
 ### Last logged in user
 
@@ -71,6 +71,8 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 ```
 
 * _**DefaultUserName**_ value represents the last logged in user
+
+![](../.gitbook/assets/image%20%2854%29.png)
 
 ### USB
 
