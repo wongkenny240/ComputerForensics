@@ -14,10 +14,18 @@ Jump List Path
 ```
 * Items automatically left by the operating system 
 * Recent List \(Recent\) or Frequently Used List \(Frequent\) 
+
 ```
 %UserProfile%\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations 
 ```
+
 * Items managed by the application itself 
 * Task List
 
 ## Importance of Jump Lists
+
+
+## Examination Tools
+
+JumpLister, by WoanWare www.woanware.co.uk/forensics/jumplister.html
+JumpListParser (jmp), by TZWorks tzworks.net/prototype_page.php?proto_id=20
