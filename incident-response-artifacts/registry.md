@@ -74,7 +74,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ![](../.gitbook/assets/image%20%2854%29.png)
 
-### Search term list
+### Search term list \(Explorer\)
 
 #### Windows 7
 
@@ -87,7 +87,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 * Check the order of search word usage through the MRUListEx key value
 * 10 -&gt; 0F -&gt; 0E -&gt; 0D -&gt; 0C -&gt; 0B -&gt; 0A -&gt; 04 -&gt; 09 -&gt; 08 -&gt; 07 -&gt; 06 -&gt; 05 -&gt; 03 -&gt; 02 -&gt; 01 -&gt; 00
 
-### Recently opened files
+### Recently opened files \(Explorer\)
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
@@ -98,7 +98,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 * Vista/7 – Recent Items
 * Check the order of search word usage through the MRUListEx key value
 
-### Recently executed command
+### Recently executed command \(Explorer\)
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
@@ -108,6 +108,14 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
 ![](../.gitbook/assets/image%20%2856%29.png)
+
+### Typed Paths \(Explorer\)
+
+
+
+### UserAssist
+
+
 
 ### USB
 

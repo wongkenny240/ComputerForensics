@@ -9,18 +9,19 @@ GParted combines both of these into one coordinated interface.
 
 ![](../.gitbook/assets/image%20%2850%29.png)
 
-Select &lt;New&gt; 
+Select &lt;New&gt;
 
 Edit samba configuration \(_/etc/samba/smb.conf_\)
 
 Change the path to the new partition or the path you want to share.
 
-```
+```text
 /etc/samba/smb.conf
 ```
 
-An example of configuration is as below (i.e. the files part):
-```
+An example of configuration is as below \(i.e. the files part\):
+
+```text
 [global]  
 workgroup = workgroup  
 security = share  
