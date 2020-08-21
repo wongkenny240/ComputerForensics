@@ -25,7 +25,10 @@ The Data is stored in the main folders in a Tree like structure which is called 
 | HKEY\_CURRENT\_CONFIG | HKCC | Contents of HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current |
 | HKEY\_PERFORMANCE\_DATA | HKPD | Performance count \(not accessible through the registry editor, accessible only with registry functions\) |
 
+## CurrentVersion
+
 ![SOFTWARE\Microsoft\Windows\ CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
 
+'''
 SOFTWARE\Microsoft\Windows CurrentVersion
-
+'''
