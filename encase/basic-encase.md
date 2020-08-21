@@ -63,7 +63,7 @@ Remove Sort:
 * The gray blocks with the raised bump in the center are unallocated sectors or clusters. 
 * Go to a sector by typing in the sector number -&gt; Go To feature from its menu on the Disk View toolbar
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 
 ## File Types view
 
