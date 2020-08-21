@@ -15,7 +15,7 @@ The Data is stored in the main folders in a Tree like structure which is called 
 
 
 |Root key |Abbreviation |Explanation |
-|:--|:--|
+| :--- | :--- |:--- |
 |HKEY_CLASSES_ROOT |HKCR | HKLM\SOFTWARE\Classes and HKU\<SID>\Classes |
 |HKEY_CURRENT_USER |HKCU |Subkey of the currently logged in user among the user profiles under HKU |
 |HKEY_LOCAL_MACHINE |HKLM |Collection of hive files and memory hive existing on the system |
