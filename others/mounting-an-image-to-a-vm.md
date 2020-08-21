@@ -15,7 +15,7 @@ For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux
 
 ![](https://habrastorage.org/webt/dp/4a/6f/dp4a6fqh_24o4ze2lbnv8xybvpi.gif)
 
-1. So, you just need to start a VM and watching some IT magic  
+3. So, you just need to start a VM and watching some IT magic  
 
 ![](https://habrastorage.org/webt/tl/k8/ad/tlk8adlpbniuw69wvv5msg6pa_g.gif)
 
