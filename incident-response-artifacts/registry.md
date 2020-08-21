@@ -164,12 +164,12 @@ HKLM\SYSTEM\ControlSet00X\Enum\USB
 
 
 
-```text
-Connected volume name
-HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices
-Search for a key including product name or serial number among subkeys
-FriendlyName
-•When the device name is set-the set device name
-• When the device name is not set-the connected volume name
+####　Connected volume name
 ```
+HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices
+```
+Under Devices, search for a key including product name or serial number among subkeys
+
+***FriendlyName***
+
 
