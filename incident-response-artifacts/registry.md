@@ -84,7 +84,8 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 
 * List of search terms when using search in Windows 7 Explorer
 * Vista does not store the search term list in the registry.
-
+* Check the order of search word usage through the MRUListEx key value
+* 10 -> 0F -> 0E -> 0D -> 0C -> 0B -> 0A -> 04 -> 09 -> 08 -> 07 -> 06 -> 05 -> 03 -> 02 -> 01 -> 00
 
 ### USB
 
