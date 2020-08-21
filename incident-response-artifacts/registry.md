@@ -25,7 +25,7 @@ The Data is stored in the main folders in a Tree like structure which is called 
 | HKEY\_CURRENT\_CONFIG | HKCC | Contents of HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current |
 | HKEY\_PERFORMANCE\_DATA | HKPD | Performance count \(not accessible through the registry editor, accessible only with registry functions\) |
 
-## CurrentVersion
+### CurrentVersion
 
 ![SOFTWARE\Microsoft\Windows CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
 
@@ -45,7 +45,7 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![](../.gitbook/assets/image%20%2853%29.png)
 
-MS OFFICE usage trace
+### Microsoft Office usage trace
 
 * Recently opened folder
 
@@ -62,3 +62,11 @@ MS OFFICE usage trace
 * Saves various traces for each application and version
 * Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
 
+
+### Last logged in user
+```
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+```
+* ***DefaultUserName*** value represents the last logged in user
+
+### USB
