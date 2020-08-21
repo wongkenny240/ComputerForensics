@@ -34,5 +34,5 @@ JumpLister, by WoanWare
 
 JumpListParser \(jmp\), by TZWorks 
 
-tzworks.net/prototype\_page.php?proto\_id=20
+[tzworks.net/prototype\_page.php?proto\_id=20](https://tzworks.net/prototype_page.php?proto_id=20)
 
