@@ -39,6 +39,7 @@
 ## Incident Response Artifacts
 
 * [Registry](incident-response-artifacts/registry.md)
+* [LNK File](incident-response-artifacts/lnk-file.md)
 * [Volume Shadow Copy](incident-response-artifacts/volume-shadow-copy.md)
 * [Windows Event Logs](incident-response-artifacts/windows-event-logs.md)
 * [Prefetch](incident-response-artifacts/prefetch.md)
