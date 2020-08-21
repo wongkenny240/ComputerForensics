@@ -15,7 +15,9 @@ Edit samba configuration \(_/etc/samba/smb.conf_\)
 
 Change the path to the new partition or the path you want to share.
 
-> _/etc/samba/smb.conf_
+```
+/etc/samba/smb.conf
+```
 
 ```
 [global]  
