@@ -29,6 +29,6 @@ The Data is stored in the main folders in a Tree like structure which is called 
 
 ![SOFTWARE\Microsoft\Windows\ CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
 
-'''
+```
 SOFTWARE\Microsoft\Windows CurrentVersion
-'''
+```
