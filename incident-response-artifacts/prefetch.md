@@ -52,6 +52,8 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 
 ![](../.gitbook/assets/prefetch-sample.png)
 
+![](../.gitbook/assets/image%20%2872%29.png)
+
 ### PrefetchForensics – Mark Woan
 
 {% embed url="https://github.com/woanware/woanware.github.io/blob/master/forensics/prefetchforensics.md" caption="" %}

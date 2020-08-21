@@ -46,5 +46,3 @@
 * [NAS](others/nas.md)
 * [Samba](others/samba.md)
 
-
-
