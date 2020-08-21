@@ -18,7 +18,7 @@ The Data is stored in the main folders in a Tree like structure which is called 
 
 | Root key | Abbreviation | Explanation |
 | :--- | :--- | :--- |
-| HKEY\_CLASSES\_ROOT | HKCR | HKLM\SOFTWARE\Classes and HKU\\Classes |
+| HKEY\_CLASSES\_ROOT | HKCR | HKLM\SOFTWARE\Classes and HKU\Classes |
 | HKEY\_CURRENT\_USER | HKCU | Subkey of the currently logged in user among the user profiles under HKU |
 | HKEY\_LOCAL\_MACHINE | HKLM | Collection of hive files and memory hive existing on the system |
 | HKEY\_USERS | HKU | NTUSER.DAT file existing in the user root folder |
@@ -27,15 +27,21 @@ The Data is stored in the main folders in a Tree like structure which is called 
 
 ## CurrentVersion
 
-![SOFTWARE\Microsoft\Windows\ CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
+![SOFTWARE\Microsoft\Windows CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
 
+```text
+SOFTWARE\Microsoft\Windows\CurrentVersion
 ```
-SOFTWARE\Microsoft\Windows CurrentVersion
-```
+
 Program Usage Log
 
-* •List of files opened in Paint
-```
-HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List
-```
-File{#Number}–The lower the number, the most recently opened file (saving the value at the point of exiting Paint)
+* List of files opened in Paint
+
+  ```text
+  HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List
+  ```
+
+  File{\#Number}–The lower the number, the most recently opened file \(saving the value at the point of exiting Paint\)
+
+![](../.gitbook/assets/image%20%2853%29.png)
+
