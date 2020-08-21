@@ -1,22 +1,24 @@
 # Jump Lists
 
-What is the Jump List? 
+What is the Jump List?
 
-Enabled by default with new application log added from Windows 7 
+Enabled by default with new application log added from Windows 7
 
 Archive access history for all applications
 
 ![](../.gitbook/assets/image%20%2871%29.png)
 
-Jump List Path 
+Jump List Path
+
+```text
+%UserProfile%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations
 ```
-%UserProfile%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations 
-```
+
 * Items automatically left by the operating system 
 * Recent List \(Recent\) or Frequently Used List \(Frequent\) 
 
-```
-%UserProfile%\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations 
+```text
+%UserProfile%\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations
 ```
 
 * Items managed by the application itself 
@@ -24,8 +26,13 @@ Jump List Path
 
 ## Importance of Jump Lists
 
-
 ## Examination Tools
 
-JumpLister, by WoanWare www.woanware.co.uk/forensics/jumplister.html
-JumpListParser (jmp), by TZWorks tzworks.net/prototype_page.php?proto_id=20
+JumpLister, by WoanWare 
+
+[https://github.com/woanware/JumpLister](https://github.com/woanware/JumpLister)[ ](https://github.com/woanware/JumpLister)
+
+JumpListParser \(jmp\), by TZWorks 
+
+tzworks.net/prototype\_page.php?proto\_id=20
+
