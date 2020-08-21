@@ -27,8 +27,16 @@ File &gt; Capture Memory
 7. Select the write-blocked target device \(blue check\) &gt; Finish &gt; double click the evidence &gt; Acquire
 
 {% hint style="info" %}
-Write Block = writes are prevented but are cached locally to prevent Windows error messages Write Protect = writes are prevented, nothing is cached locally, and Windows launches error messages when writes are attempted
+Write Block = writes are prevented but are cached locally to prevent Windows error messages 
+
+Write Protect = writes are prevented, nothing is cached locally, and Windows launches error messages when writes are attempted
 {% endhint %}
+
+![](../.gitbook/assets/image%20%2862%29.png)
+
+![Acquire &amp;gt; Acquire](../.gitbook/assets/image%20%2863%29.png)
+
+
 
 After finished acquiring &gt; Physically remove the device &gt; Stop the write-blocking software in EnCase \(Tools &gt; FastBloc SE &gt; Clear All\)
 
