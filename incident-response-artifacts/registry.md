@@ -138,3 +138,23 @@ Precautions when checking registry key last modification time information
 * According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-key security token. 
   * RegSetKeySecurityAPI call -> change the last modification time
 
+
+#### Storage media information
+```
+HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
+```
+* Show manufacturer, product name, and version information through Device Class ID format
+
+
+#### Serial number
+```
+HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
+```
+* Check the serial number through the Unique Instance ID format of the Device Class ID subkey
+
+
+#### Manufacturer ID, Product ID
+```
+HKLM\SYSTEM\ControlSet00X\Enum\USB
+```
+* VID_####&PID_#### -> Manufacturer ID, Product ID
