@@ -107,4 +107,17 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 
 ### USB
+USB storage medium identification procedure
+1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
+* Connection notification using device's unique identification number (device descriptor)
+* Device descriptor - includes manufacturer, serial number, driver information, etc.
+2. PnP administrator sets Device Class ID based on received information and searches for appropriate driver
+3. If there is no driver, the PnP administrator in user mode receives the driver from the firmware of the device, loads it, and writes it to the registry.
 
+```
+HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{DID, device class identifier}
+HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
+```
+
+4. The device driver installation process is saved in a log file.
+* As a result, traces of USB devices can be identified through log files (setupapi.log) and registry.
