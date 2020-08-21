@@ -7,7 +7,8 @@
 * Registry analysis in active system
 * Checkable through RegEdit \(regedit.exe\), RegEdt32 \(regedt32.exe\) \([http://support.microsoft.com/kb/141377](http://support.microsoft.com/kb/141377)\)
 
-  **Offline registry analysis**
+### Offline registry analysis
+
 
 * Registry analysis in inactive systems \(forensic replication drives or images\)
 * Registry Hive file needs to be collected
@@ -37,11 +38,22 @@ Program Usage Log
 
 * List of files opened in Paint
 
-  ```text
-  HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List
-  ```
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List
+```
 
-  File{\#Number}–The lower the number, the most recently opened file \(saving the value at the point of exiting Paint\)
+File{\#Number}–The lower the number, the most recently opened file \(saving the value at the point of exiting Paint\)
 
 ![](../.gitbook/assets/image%20%2853%29.png)
 
+MS OFFICE usage trace
+* Recently opened folder
+```
+HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\Place MRU
+```
+* Recently used files
+```
+HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\File MRU (Recent Files) 
+```
+* Saves various traces for each application and version
+* Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
