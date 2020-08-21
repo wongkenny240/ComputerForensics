@@ -19,6 +19,7 @@ Change the path to the new partition or the path you want to share.
 /etc/samba/smb.conf
 ```
 
+An example of configuration is as below (i.e. the files part):
 ```
 [global]  
 workgroup = workgroup  
