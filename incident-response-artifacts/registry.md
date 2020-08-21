@@ -87,5 +87,24 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 * Check the order of search word usage through the MRUListEx key value
 * 10 -> 0F -> 0E -> 0D -> 0C -> 0B -> 0A -> 04 -> 09 -> 08 -> 07 -> 06 -> 05 -> 03 -> 02 -> 01 -> 00
 
+
+### Recently opened files
+```
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+```
+
+* Files such as recently opened documents, pictures, music, and videos
+* 2000/XP – My Recent Documents
+* Vista/7 – Recent Items
+* Check the order of search word usage through the MRUListEx key value
+
+### Recently executed command
+
+```
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU 
+```
+* List of commands executed through “Start -> Run” or “Ctrl + R”
+
+
 ### USB
 
