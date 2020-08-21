@@ -2,7 +2,7 @@
 
 ## Creating a Case
 
-* Templates: has an extension of .CaseTemplate and is stored in the Users\\Documents\EnCase\Templates folder.
+* Templates: has an extension of .CaseTemplate and is stored in the Users\Documents\EnCase\Templates folder.
 * Case information items with default values
 * Bookmark folders and notes
 * Tag names
@@ -51,16 +51,19 @@ Remove Sort:
 ![](../.gitbook/assets/image%20%2861%29.png)
 
 ## Gallery view
-* See images -> Set Include Folders button in the Tree pane, you can direct the content of the Table pane
+
+* See images -&gt; Set Include Folders button in the Tree pane, you can direct the content of the Table pane
 * EnCase displays images based on the file extension. After the file signature analysis has been completed, the files will display based on their file header information.
 
 ## Disk view
-* Evidence tab -> Place the cursor on device -> Device -> Disk View
+
+* Evidence tab -&gt; Place the cursor on device -&gt; Device -&gt; Disk View
 * By default, you see a series of colored square blocks, each representing one sector. If you would prefer that each block represent a cluster, simply click the check box next to View Clusters on the toolbar for this view. 
 * Blue blocks are allocated sectors or clusters. 
 * The gray blocks with the raised bump in the center are unallocated sectors or clusters. 
-* Go to a sector by typing in the sector number -> Go To feature from its menu on the Disk View toolbar
+* Go to a sector by typing in the sector number -&gt; Go To feature from its menu on the Disk View toolbar
 
+![](../.gitbook/assets/image%20%2862%29.png)
 
 ## File Types view
 
