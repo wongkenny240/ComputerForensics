@@ -79,9 +79,8 @@ EnablePrefetcher Key:
 3 = Application and Boot prefetching enabled (default)
 ```
 
-Task Scheduler calls Windows Disk Defragmenter every three \(3\) days. 
 
-When idle, lists of files and directories referenced during boot process and application startups is processed
-
-* The processed result is stored in Layout.ini in the Prefetch directory, and is subsequently passed to the Disk Defragmenter, instructing it to re-order those files into sequential positions on the physical hard drive
+* Task Scheduler calls Windows Disk Defragmenter every three \(3\) days 
+* When idle, lists of files and directories referenced during boot process and application startups is processed
+* The processed result is stored in ***Layout.ini*** in the Prefetch directory, and is subsequently passed to the Disk Defragmenter, instructing it to re-order those files into sequential positions on the physical hard drive
 
