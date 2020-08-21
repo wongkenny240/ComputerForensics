@@ -26,7 +26,7 @@ This enables analysis of the evidence using other forensic tools, or use it to b
 ![](../.gitbook/assets/image%20%2868%29.png)
 
 1. Device &gt; Share &gt; Mount as Emulated Disk
-2. Selecting “Disable Cache” enables write-emulation, and changes are sent to cache folder \(similar to mounting by FTK imager and Arsenal Image Mounter\)
+2. Selecting “Disable Cache” enables write-emulation, and changes are sent to cache folder \(similar to mounting by FTK imager and Arsenal Image Mounter's "Write temporary disk device"\)
 
 ![](../.gitbook/assets/image%20%2866%29.png)
 
