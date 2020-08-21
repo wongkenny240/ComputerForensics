@@ -113,7 +113,9 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 ### USB
 
-USB storage medium identification procedure 1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
+USB storage medium identification procedure 
+
+1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
 
 * Connection notification using device's unique identification number \(device descriptor\)
 * Device descriptor - includes manufacturer, serial number, driver information, etc.
@@ -125,6 +127,13 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{DID, device class identifier}
 HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
 ```
 
-1. The device driver installation process is saved in a log file.
-2. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
+2. The device driver installation process is saved in a log file.
+
+3. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
+
+Precautions when checking registry key last modification time information 
+
+Each registry key stores the last modification time of the corresponding key. 
+
+Various traces of the USB can be identified by using the last modification time information, but the time of the Enum USB, Enum USBSTOR subkeys should not be considered. According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-wiki security token. •RegSetKeySecurityAPI call change the last modification time
 
