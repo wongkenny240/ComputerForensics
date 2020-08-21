@@ -133,7 +133,8 @@ HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
 
 Precautions when checking registry key last modification time information 
 
-Each registry key stores the last modification time of the corresponding key. 
-
-Various traces of the USB can be identified by using the last modification time information, but the time of the Enum USB, Enum USBSTOR subkeys should not be considered. According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-wiki security token. •RegSetKeySecurityAPI call change the last modification time
+* Each registry key stores the last modification time of the corresponding key. 
+* Various traces of the USB can be identified by using the last modification time information, but the time of the Enum USB, Enum USBSTOR subkeys should not be considered. 
+* According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-wiki security token. 
+  * RegSetKeySecurityAPI call -> change the last modification time
 
