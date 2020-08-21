@@ -9,7 +9,6 @@
 
 ### Offline registry analysis
 
-
 * Registry analysis in inactive systems \(forensic replication drives or images\)
 * Registry Hive file needs to be collected
 
@@ -47,13 +46,19 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 ![](../.gitbook/assets/image%20%2853%29.png)
 
 MS OFFICE usage trace
+
 * Recently opened folder
-```
-HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\Place MRU
-```
+
+  ```text
+  HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\Place MRU
+  ```
+
 * Recently used files
-```
-HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\File MRU (Recent Files) 
-```
+
+  ```text
+  HKU\{USER}\SOFTWARE\Microsoft\Office\{VERSION}\{APP}\File MRU
+  ```
+
 * Saves various traces for each application and version
 * Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
+
