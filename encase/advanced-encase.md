@@ -17,7 +17,7 @@ _Note: To stop the VFS service, double click “Virtual File System” in lower-
 
 
 
-### Mount evidence as PDE
+## Mount evidence as PDE
 
 Mounting evidence by Physical Disk Emulation is like mounting the disk as an actual physical disk attached to the examiner machine. 
 
@@ -29,4 +29,6 @@ This enables analysis of the evidence using other forensic tools, or use it to b
 2. Selecting “Disable Cache” enables write-emulation, and changes are sent to cache folder \(similar to mounting by FTK imager and Arsenal Image Mounter's "Write temporary disk device"\)
 
 ![](../.gitbook/assets/image%20%2866%29.png)
+
+## Booting it into a VM
 
