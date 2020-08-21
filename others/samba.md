@@ -17,20 +17,22 @@ Change the path to the new partition or the path you want to share.
 
 > _/etc/samba/smb.conf_
 
-`[global]  
+```
+[global]  
 workgroup = workgroup  
 security = share  
 encrypt password = yes  
 smb passwd file = /etc/samba/smbpasswd  
 show add printer wizard = No  
-wins support = no`
+wins support = no
 
-`[files]  
+[files]  
 path = /media/sdb1/files  
 guest ok = yes  
 read only = no  
 available = yes  
 browsable = yes  
 public = yes  
-writable = yes`
+writable = yes
+```
 
