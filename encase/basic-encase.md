@@ -50,6 +50,18 @@ Remove Sort:
 
 ![](../.gitbook/assets/image%20%2861%29.png)
 
+## Gallery view
+* See images -> Set Include Folders button in the Tree pane, you can direct the content of the Table pane
+* EnCase displays images based on the file extension. After the file signature analysis has been completed, the files will display based on their file header information.
+
+## Disk view
+* Evidence tab -> Place the cursor on device -> Device -> Disk View
+* By default, you see a series of colored square blocks, each representing one sector. If you would prefer that each block represent a cluster, simply click the check box next to View Clusters on the toolbar for this view. 
+* Blue blocks are allocated sectors or clusters. 
+* The gray blocks with the raised bump in the center are unallocated sectors or clusters. 
+* Go to a sector by typing in the sector number -> Go To feature from its menu on the Disk View toolbar
+
+
 ## File Types view
 
 * Add File Type View &gt; File Types &gt; New
