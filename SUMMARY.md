@@ -30,12 +30,6 @@
 * [Analysis Keypoints](memory-analysis/analysis-steps.md)
 * [Timeline](memory-analysis/timeline.md)
 
-## Others
-
-* [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
-* [NAS](others/nas.md)
-* [Samba](others/samba.md)
-
 ## Incident Response Artifacts
 
 * [Registry](incident-response-artifacts/registry.md)
@@ -45,4 +39,12 @@
 * [Jump Lists](incident-response-artifacts/jump-lists.md)
 * [Prefetch](incident-response-artifacts/prefetch.md)
 * [File system log](incident-response-artifacts/file-system-log.md)
+
+## Others
+
+* [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
+* [NAS](others/nas.md)
+* [Samba](others/samba.md)
+
+
 
