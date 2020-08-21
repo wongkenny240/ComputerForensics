@@ -32,3 +32,10 @@ The Data is stored in the main folders in a Tree like structure which is called 
 ```
 SOFTWARE\Microsoft\Windows CurrentVersion
 ```
+Program Usage Log
+
+* •List of files opened in Paint
+```
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List
+```
+File{#Number}–The lower the number, the most recently opened file (saving the value at the point of exiting Paint)
