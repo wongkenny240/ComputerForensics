@@ -85,6 +85,11 @@ Remove Sort:
 ![](../.gitbook/assets/2019-04-04-14_52_15-greenshot.png)
 
 * Recover Folders
+
+![](../.gitbook/assets/image%20%2870%29.png)
+
+When you turn on the Recover folder structure of NTFS 3.0 files option, recovery will take longer, but will reconstruct \(folder tree\); if you left that unchecked, all found folders will be grouped together without tree structure.
+
 * Hash Analysis
 * File Signatures Analysis
 * Finding Email
