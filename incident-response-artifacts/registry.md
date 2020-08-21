@@ -162,14 +162,17 @@ HKLM\SYSTEM\ControlSet00X\Enum\USB
 
 ![](../.gitbook/assets/image%20%2858%29.png)
 
+#### Connected volume name
 
-
-####　Connected volume name
-```
+```text
 HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices
 ```
+
 Under Devices, search for a key including product name or serial number among subkeys
 
-***FriendlyName***
+_**FriendlyName**_
 
+![](../.gitbook/assets/image%20%2860%29.png)
+
+![](../.gitbook/assets/image%20%2859%29.png)
 
