@@ -107,54 +107,69 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * List of commands executed through “Start -&gt; Run” or “Ctrl + R”
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
-
-
 ![](../.gitbook/assets/image%20%2856%29.png)
 
 ### USB
 
-USB storage medium identification procedure 
+USB storage medium identification procedure
 
 1. When the USB storage medium is connected, the bus driver is sent to the PnP administrator.
-
-* Connection notification using device's unique identification number \(device descriptor\)
-* Device descriptor - includes manufacturer, serial number, driver information, etc.
-* PnP administrator sets Device Class ID based on received information and searches for appropriate driver
-* If there is no driver, the PnP administrator in user mode receives the driver from the firmware of the device, loads it, and writes it to the registry.
+2. Connection notification using device's unique identification number \(device descriptor\)
+3. Device descriptor - includes manufacturer, serial number, driver information, etc.
+4. PnP administrator sets Device Class ID based on received information and searches for appropriate driver
+5. If there is no driver, the PnP administrator in user mode receives the driver from the firmware of the device, loads it, and writes it to the registry.
 
 ```text
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{DID, device class identifier}
 HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
 ```
 
-2. The device driver installation process is saved in a log file.
+1. The device driver installation process is saved in a log file.
+2. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
 
-3. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
-
-Precautions when checking registry key last modification time information 
+Precautions when checking registry key last modification time information
 
 * Each registry key stores the last modification time of the corresponding key. 
 * Various traces of the USB can be identified by using the last modification time information, but the time of the Enum USB, Enum USBSTOR subkeys should not be considered. 
 * According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-key security token. 
-  * RegSetKeySecurityAPI call -> change the last modification time
-
+  * RegSetKeySecurityAPI call -&gt; change the last modification time
 
 #### Storage media information
-```
+
+```text
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 ```
+
 * Show manufacturer, product name, and version information through Device Class ID format
 
-
 #### Serial number
-```
+
+```text
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
 ```
+
 * Check the serial number through the Unique Instance ID format of the Device Class ID subkey
 
+![](../.gitbook/assets/image%20%2857%29.png)
 
 #### Manufacturer ID, Product ID
-```
+
+```text
 HKLM\SYSTEM\ControlSet00X\Enum\USB
 ```
-* VID_####&PID_#### -> Manufacturer ID, Product ID
+
+* VID_\#\#\#\#&PID_\#\#\#\# -&gt; Manufacturer ID, Product ID
+
+![](../.gitbook/assets/image%20%2858%29.png)
+
+
+
+```text
+Connected volume name
+HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices
+Search for a key including product name or serial number among subkeys
+FriendlyName
+•When the device name is set-the set device name
+• When the device name is not set-the connected volume name
+```
+
