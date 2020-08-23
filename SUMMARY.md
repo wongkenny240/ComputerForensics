@@ -20,8 +20,6 @@
 
 ## Malware Analysis
 
-* [Malware Hunting](malware-analysis/malware-analysis.md)
-
 ## Memory Analysis
 
 * [Process](memory-analysis/process.md)
