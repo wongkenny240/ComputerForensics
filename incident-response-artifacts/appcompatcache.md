@@ -3,5 +3,17 @@
 ## Overview
 * Created by Microsoft to identify application compatibility issues, helps developers troubleshoot legacy functions
   * Windows looks at AppCompatCache to determine if modules require shimming for compatibility
-  * The Cache data tracks file path, size, last modified time, and last execution time (depending on OS)
+* The Cache data tracks file path, size, last modified time, and last execution time (depending on OS)
 * Most recent on top, written on shutdown
+
+## Registry Key
+
+XP:
+```
+HKLM\SYSTEM\CurrentControlSet\Control\SessionManager\AppCompatibility\AppCompatCache
+```
+
+Non-XP:
+```
+HKLM\SYSTEM\CurrentControlSet\Control\SessionManager\AppCompatCache\AppCompatCache
+```
