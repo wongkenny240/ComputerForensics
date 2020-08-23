@@ -18,8 +18,6 @@
 * [Nuix General](nuix/nuix-general.md)
 * [Nuix Scripting](nuix/nuix-scripting.md)
 
-## Malware Analysis
-
 ## Memory Analysis
 
 * [Process](memory-analysis/process.md)
