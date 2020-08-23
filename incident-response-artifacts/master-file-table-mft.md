@@ -12,7 +12,7 @@
 * Parent record # - The record number of the parent directory. Each MFT entry only tracks the record number of its immediate parent, rather than its full path on disk. 
 * Active/Inactive flag - MFT entries for deleted files or directories are marked “Inactive.” NTFS will automatically reclaim and replace inactive entries with new active entries to keep the MFT from growing indefinitely.
 * Attributes - Each MFT entry contains a number of “attributes” that contain metadata about a file—everything from timestamps to the physical location of the file’s contents on disk. 
-  Important Attributes included the following:
-  *$STANDARD_INFORMATION
-  *$FILENAME
-  *$DATA.
+ Important Attributes included the following:
+ *$STANDARD_INFORMATION
+ *$FILENAME
+ *$DATA.
