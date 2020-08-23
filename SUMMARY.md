@@ -31,6 +31,7 @@
 ## Incident Response Artifacts
 
 * [Registry](incident-response-artifacts/registry.md)
+* [Master File Table \(MFT\)](incident-response-artifacts/master-file-table-mft.md)
 * [LNK File](incident-response-artifacts/lnk-file.md)
 * [AppCompatCache](incident-response-artifacts/appcompatcache.md)
 * [Volume Shadow Copy](incident-response-artifacts/volume-shadow-copy.md)
