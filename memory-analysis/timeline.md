@@ -49,7 +49,28 @@ psteal.py -o elastic --server 127.0.0.1 --port 9200 --index_name [index name] --
 #### Output as csv
 When output with csv, we can open it with Eric Zimmermen's Timeline Explorer (see below)
 
-## How to create a timeline from harddrive image and memory dump with SleutKit and timeliner plugin?
+
+## Timeline Explorer by Eric Zimmerman
+
+![Color legend of the timeline explorer](../.gitbook/assets/image%20%2845%29.png)
+
+1. Load your combined csv into Timeline Explorer with &lt;Open&gt;
+2. Search with the filter or power filter
+
+![Timeline explorer](../.gitbook/assets/image%20%2844%29.png)
+
+### Shortcut key
+
+Several useful shortcuts include:
+
+CTRL-t: Tag or untag selected rows
+
+CTRL-d: Bring up the Details window for super timelines
+
+CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to exclude the column header
+
+
+## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
 ### SleutKit
 
@@ -103,25 +124,6 @@ DLL\ LOADTIME
 ```text
 grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 ```
-
-## Timeline Explorer by Eric Zimmerman
-
-![Color legend of the timeline explorer](../.gitbook/assets/image%20%2845%29.png)
-
-1. Load your combined csv into Timeline Explorer with &lt;Open&gt;
-2. Search with the filter or power filter
-
-![Timeline explorer](../.gitbook/assets/image%20%2844%29.png)
-
-### Shortcut key
-
-Several useful shortcuts include:
-
-CTRL-t: Tag or untag selected rows
-
-CTRL-d: Bring up the Details window for super timelines
-
-CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to exclude the column header
 
 ## How to create a supertime line with log2timeline?
 
