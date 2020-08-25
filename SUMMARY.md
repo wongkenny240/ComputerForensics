@@ -24,7 +24,6 @@
 * [Volatility](memory-analysis/volatility.md)
 * [Volatility Plugin](memory-analysis/volatility-plugin.md)
 * [Analysis Keypoints](memory-analysis/analysis-steps.md)
-* [Timeline](memory-analysis/timeline.md)
 
 ## Incident Response Artifacts
 
@@ -40,6 +39,7 @@
 
 ## Others
 
+* [Timeline](others/timeline.md)
 * [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
 * [NAS](others/nas.md)
 * [Samba](others/samba.md)

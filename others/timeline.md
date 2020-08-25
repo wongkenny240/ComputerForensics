@@ -39,21 +39,22 @@ psort.py -o l2tcsv -w registrar.csv registrar.plaso "date > '2010-01-01' and dat
 ```
 
 To see a list of support format
-```
+
+```text
 psort.py -o list
 ```
 
-### Timeline Explorer / Elasticsearch (3rd step)
+### Timeline Explorer / Elasticsearch \(3rd step\)
 
 #### Upload to elasticsearch via commandline
 
-```
+```text
 psteal.py -o elastic --server 127.0.0.1 --port 9200 --index_name [index name] --source [image file] -w [plaso storage file]
 ```
 
 #### Output as csv
-When output with csv, we can open it with Eric Zimmermen's Timeline Explorer (see below)
 
+When output with csv, we can open it with Eric Zimmermen's Timeline Explorer \(see below\)
 
 ## Timeline Explorer by Eric Zimmerman
 
@@ -73,7 +74,6 @@ CTRL-t: Tag or untag selected rows
 CTRL-d: Bring up the Details window for super timelines
 
 CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to exclude the column header
-
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
