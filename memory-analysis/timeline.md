@@ -38,6 +38,11 @@ I usually use the date filter to filter away the irrelevant date in this step
 psort.py -o l2tcsv -w registrar.csv registrar.plaso "date > '2010-01-01' and date < '2020-01-01'"
 ```
 
+To see a list of support format
+```
+psort.py -o list
+```
+
 ### Timeline Explorer / Elasticsearch (3rd step)
 
 #### Upload to elasticsearch via commandline
