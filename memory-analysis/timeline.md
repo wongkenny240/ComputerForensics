@@ -34,7 +34,20 @@ psort.py [-a] [-o FORMAT] [-w OUTPUTFILE] [-z TIMEZONE] STORAGE_FILE FILTER
 
 I usually use the date filter to filter away the irrelevant date in this step
 
-### Timeline Explorer / Elasticsearch
+```text
+psort.py -o l2tcsv -w registrar.csv registrar.plaso "date > '2010-01-01' and date < '2020-01-01'"
+```
+
+### Timeline Explorer / Elasticsearch (3rd step)
+
+#### Upload to elasticsearch via commandline
+
+```
+psteal.py -o elastic --server 127.0.0.1 --port 9200 --index_name [index name] --source [image file] -w [plaso storage file]
+```
+
+#### Output as csv
+When output with csv, we can open it with Eric Zimmermen's Timeline Explorer (see below)
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and timeliner plugin?
 
