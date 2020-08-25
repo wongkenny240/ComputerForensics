@@ -2,9 +2,11 @@
 
 ## Plaso
 
-* log2timeline is a command line tool to extract events from individual files, recursing a directory (e.g. mount point) or storage media image or device. log2timeline creates a plaso storage file which can be analyzed with the pinfo and psort tools.
-* psort is a command line tool to post-process plaso storage files. It allows you to filter, sort and run automatic analysis on the contents of plaso storage files.
-* psteal is a command line tool that combines the functionality of log2timeline and psort.
+* log2timeline is a command line tool to extract events from individual files, recursing a directory \(e.g. mount point\) or storage media image or device. log2timeline creates a plaso storage file which can be analyzed with the pinfo and psort tools.
+* psort is a command line tool to post-process plaso storage files. It allows you to filter, sort and run automatic analysis on the contents of plaso storage files.
+* psteal is a command line tool that combines the functionality of log2timeline and psort.
+
+![Plaso tools](../.gitbook/assets/image%20%2874%29.png)
 
 ### psteal.py
 
@@ -14,25 +16,25 @@ This will produce a csv file containing all the events from an image
 psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
 ```
 
-### log2timeline (1st step)
+### log2timeline \(1st step\)
 
-```
+```text
 log2timeline.py [-z TIMEZONE] [-f filterfile] [--parsers PARSER_LIST] -i[-o OFFSET] [--vss] [.plaso dump] [image file] ["FILTER"]
 ```
-Sometimes you may not want to do a complete timeline that extracts events from every discovered file. To do a more targeted timelining, the -f FILTER_FILE parameter can be used.
 
-I usually use the filter_windows.yaml to shorten the loading time for all windows image
+Sometimes you may not want to do a complete timeline that extracts events from every discovered file. To do a more targeted timelining, the -f FILTER\_FILE parameter can be used.
 
-### psort (2nd step)
+I usually use the filter\_windows.yaml to shorten the loading time for all windows image
 
-```
+### psort \(2nd step\)
+
+```text
 psort.py [-a] [-o FORMAT] [-w OUTPUTFILE] [-z TIMEZONE] STORAGE_FILE FILTER
 ```
+
 I usually use the date filter to filter away the irrelevant date in this step
 
 ### Timeline Explorer / Elasticsearch
-
-
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and timeliner plugin?
 
