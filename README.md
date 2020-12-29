@@ -1,6 +1,6 @@
 # Introduction
 
-My Computer Forensics Playbook including Disk Forensics and Memory Forensics
+My Computer Forensics notebook including Disk Forensics and Memory Forensics
 
 Reference: 
 
