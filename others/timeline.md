@@ -63,7 +63,7 @@ When output with csv, we can open it with Eric Zimmermen's Timeline Explorer \(s
 1. Load your combined csv into Timeline Explorer with &lt;Open&gt;
 2. Search with the filter or power filter
 
-![Timeline explorer](../.gitbook/assets/image%20%2844%29.png)
+![Timeline explorer](../.gitbook/assets/image%20%2846%29.png)
 
 ### Shortcut key
 

@@ -44,3 +44,7 @@
 * [NAS](others/nas.md)
 * [Samba](others/samba.md)
 
+## Cloud
+
+* [Azure Forensic](cloud/azure-forensic.md)
+
