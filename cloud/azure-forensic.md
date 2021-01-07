@@ -4,11 +4,23 @@
 
 Azure Security Centre triggers alerts from signatures and heuristics:
 
+![](../.gitbook/assets/image%20%2810%29.png)
+
+![](../.gitbook/assets/image%20%286%29.png)
+
 And Azure also integrates with a number of third party solutions to provide detection capabilities, such as BitDefender:
+
+![](../.gitbook/assets/image%20%2818%29.png)
 
 Microsoft may also send you an alert if they notice clear evidence of a compromise coming from your account:
 
+![](../.gitbook/assets/image%20%2814%29.png)
+
+
+
 Azure Security Centre includes built-in tools to search through logs, and record investigative findings:
+
+![](../.gitbook/assets/image%20%285%29.png)
 
 Source: [https://medium.com/@cloudyforensics/azure-forensics-and-incident-response-c13098a14d8d](https://medium.com/@cloudyforensics/azure-forensics-and-incident-response-c13098a14d8d)
 
@@ -28,7 +40,7 @@ It is possible to acquire a snapshot of a machine within Azure in a number of wa
 
    ![](../.gitbook/assets/image%20%283%29.png)
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 ### libcloudforensic
 
@@ -92,11 +104,11 @@ $snapshot =  New-AzSnapshotConfig `
 3. From the Managed Disk screen you should see an option to ‘**Create VM**’, click this option.
 4. Fill out the required information on the Create VM page
 
-![Create snapshot](../.gitbook/assets/image%20%285%29.png)
+![Create snapshot](../.gitbook/assets/image%20%288%29.png)
 
-![name your snapshot and allocate it to a resource group](../.gitbook/assets/image%20%2810%29.png)
+![name your snapshot and allocate it to a resource group](../.gitbook/assets/image%20%2815%29.png)
 
-![Create a resource &amp;gt; Create Managed Disk](../.gitbook/assets/image%20%288%29.png)
+![Create a resource &amp;gt; Create Managed Disk](../.gitbook/assets/image%20%2813%29.png)
 
-![Source type select Snapshot](../.gitbook/assets/image%20%286%29.png)
+![Source type select Snapshot](../.gitbook/assets/image%20%2811%29.png)
 
