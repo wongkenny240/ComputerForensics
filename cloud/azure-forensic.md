@@ -1,4 +1,37 @@
 # Azure Forensic
 
-Azure Security Centre
+## Azure Security Centre
 
+Azure Security Centre triggers alerts from signatures and heuristics:
+
+And Azure also integrates with a number of third party solutions to provide detection capabilities, such as BitDefender:
+
+Microsoft may also send you an alert if they notice clear evidence of a compromise coming from your account:
+
+Azure Security Centre includes built-in tools to search through logs, and record investigative findings:
+
+
+Source: https://medium.com/@cloudyforensics/azure-forensics-and-incident-response-c13098a14d8d
+
+## Azure Acquisition
+
+It is possible to acquire a snapshot of a machine within Azure in a number of ways, normally in VHD format.
+
+### Magnet AXIOM
+
+### libcloudforensic
+
+### Create a snapshot of VM using the portal or Powershell
+
+#### Use the Azure portal
+To create a snapshot, complete the following steps:
+
+1. On the Azure portal, select Create a resource.
+2. Search for and select Snapshot.
+3. In the Snapshot window, select Create. The Create snapshot window appears.
+4. Enter a Name for the snapshot.
+5. Select an existing Resource group or enter the name of a new one.
+6. Select an Azure datacenter Location.
+7. For Source disk, select the managed disk to snapshot.
+8. Select the Account type to use to store the snapshot. Select Standard_HDD, unless you need the snapshot to be stored on a high-performing disk.
+9. Select Create.
