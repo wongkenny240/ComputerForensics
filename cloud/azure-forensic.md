@@ -35,3 +35,40 @@ To create a snapshot, complete the following steps:
 7. For Source disk, select the managed disk to snapshot.
 8. Select the Account type to use to store the snapshot. Select Standard_HDD, unless you need the snapshot to be stored on a high-performing disk.
 9. Select Create.
+
+#### Use Powershell
+
+
+1. Set some parameters:
+
+```
+$resourceGroupName = 'myResourceGroup' 
+$location = 'eastus' 
+$vmName = 'myVM'
+$snapshotName = 'mySnapshot'  
+```
+
+2. Get the VM:
+
+```
+$vm = Get-AzVM `
+    -ResourceGroupName $resourceGroupName `
+    -Name $vmName
+```
+
+3. Create the snapshot configuration. For this example, the snapshot is of the OS disk:
+
+```
+$snapshot =  New-AzSnapshotConfig `
+    -SourceUri $vm.StorageProfile.OsDisk.ManagedDisk.Id `
+    -Location $location `
+    -CreateOption copy
+```
+
+4. Take the snapshot:
+```
+New-AzSnapshot `
+    -Snapshot $snapshot `
+    -SnapshotName $snapshotName `
+    -ResourceGroupName $resourceGroupName 
+```
