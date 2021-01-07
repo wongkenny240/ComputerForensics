@@ -17,7 +17,11 @@ Source: [https://medium.com/@cloudyforensics/azure-forensics-and-incident-respon
 It is possible to acquire a snapshot of a machine within Azure in a number of ways, normally in VHD format.
 
 ### Magnet AXIOM
-
+1. Go to 'Evidence sources' and select 'Cloud'
+2. Select Azure and fill out the details including: Application ID, Tenant ID, Subscription ID, Client secret
+How to article to obtain the details: https://support.magnetforensics.com/s/article/Find-Azure-authentication-details
+3. Select the VM and click Next
+4. Hit ‘Go,’ ‘Analyze evidence,’
 ![](../.gitbook/assets/image%20%283%29.png)
 
 ### libcloudforensic
