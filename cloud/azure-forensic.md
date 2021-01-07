@@ -57,7 +57,7 @@ $vm = Get-AzVM `
     -Name $vmName
 ```
 
-1. Create the snapshot configuration. For this example, the snapshot is of the OS disk:
+2. Create the snapshot configuration. For this example, the snapshot is of the OS disk:
 
 ```text
 $snapshot =  New-AzSnapshotConfig `
@@ -66,7 +66,7 @@ $snapshot =  New-AzSnapshotConfig `
     -CreateOption copy
 ```
 
-1. Take the snapshot:
+3. Take the snapshot:
 
    ```text
    New-AzSnapshot `
@@ -75,3 +75,9 @@ $snapshot =  New-AzSnapshotConfig `
     -ResourceGroupName $resourceGroupName
    ```
 
+### Spin up a new VM for investigation
+
+1. Select Create a Resource and search for ‘Managed Disks’. 
+2. When creating your Managed Disk, fill out the standard information. However, under ‘Source type’ make sure this is set to ‘Snapshot’ and then select your Snapshot that you have created.
+3. From the Managed Disk screen you should see an option to ‘Create VM’, click this option.
+4. Fill out the required information on the Create VM page
