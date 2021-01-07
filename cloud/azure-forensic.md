@@ -17,12 +17,18 @@ Source: [https://medium.com/@cloudyforensics/azure-forensics-and-incident-respon
 It is possible to acquire a snapshot of a machine within Azure in a number of ways, normally in VHD format.
 
 ### Magnet AXIOM
+
 1. Go to 'Evidence sources' and select 'Cloud'
 2. Select Azure and fill out the details including: Application ID, Tenant ID, Subscription ID, Client secret
-How to article to obtain the details: https://support.magnetforensics.com/s/article/Find-Azure-authentication-details
+
+   How to article to obtain the details: [https://support.magnetforensics.com/s/article/Find-Azure-authentication-details](https://support.magnetforensics.com/s/article/Find-Azure-authentication-details)
+
 3. Select the VM and click Next
 4. Hit ‘Go,’ ‘Analyze evidence,’
-![](../.gitbook/assets/image%20%283%29.png)
+
+   ![](../.gitbook/assets/image%20%283%29.png)
+
+![](../.gitbook/assets/image%20%288%29.png)
 
 ### libcloudforensic
 
@@ -44,7 +50,7 @@ To create a snapshot, complete the following steps:
 
 #### Use Powershell
 
-1. Set some parameters:
+* Set some parameters:
 
 ```text
 $resourceGroupName = 'myResourceGroup' 
@@ -53,7 +59,7 @@ $vmName = 'myVM'
 $snapshotName = 'mySnapshot'
 ```
 
-1. Get the VM:
+* Get the VM:
 
 ```text
 $vm = Get-AzVM `
@@ -61,7 +67,7 @@ $vm = Get-AzVM `
     -Name $vmName
 ```
 
-2. Create the snapshot configuration. For this example, the snapshot is of the OS disk:
+* Create the snapshot configuration. For this example, the snapshot is of the OS disk:
 
 ```text
 $snapshot =  New-AzSnapshotConfig `
@@ -70,14 +76,14 @@ $snapshot =  New-AzSnapshotConfig `
     -CreateOption copy
 ```
 
-3. Take the snapshot:
+* Take the snapshot:
 
-   ```text
-   New-AzSnapshot `
-    -Snapshot $snapshot `
-    -SnapshotName $snapshotName `
-    -ResourceGroupName $resourceGroupName
-   ```
+  ```text
+  New-AzSnapshot `
+   -Snapshot $snapshot `
+   -SnapshotName $snapshotName `
+   -ResourceGroupName $resourceGroupName
+  ```
 
 ### Spin up a new VM for investigation
 
@@ -85,3 +91,8 @@ $snapshot =  New-AzSnapshotConfig `
 2. When creating your Managed Disk, fill out the standard information. However, under ‘Source type’ make sure this is set to ‘Snapshot’ and then select your Snapshot that you have created.
 3. From the Managed Disk screen you should see an option to ‘Create VM’, click this option.
 4. Fill out the required information on the Create VM page
+
+![Create snapshot](../.gitbook/assets/image%20%285%29.png)
+
+![name your snapshot and allocate it to a resource group](../.gitbook/assets/image%20%286%29.png)
+

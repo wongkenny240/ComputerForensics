@@ -121,7 +121,7 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\)
 5. Click OK to start the acquisition 
 
-![Fill in the information and click OK](../.gitbook/assets/image%20%2818%29%20%283%29%20%281%29.png)
+![Fill in the information and click OK](../.gitbook/assets/image%20%2818%29%20%283%29%20%283%29%20%281%29.png)
 
 ## Convert a hibernation file to a memory dump
 
