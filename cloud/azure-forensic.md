@@ -28,7 +28,7 @@ It is possible to acquire a snapshot of a machine within Azure in a number of wa
 
    ![](../.gitbook/assets/image%20%283%29.png)
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 ### libcloudforensic
 
@@ -94,5 +94,9 @@ $snapshot =  New-AzSnapshotConfig `
 
 ![Create snapshot](../.gitbook/assets/image%20%285%29.png)
 
-![name your snapshot and allocate it to a resource group](../.gitbook/assets/image%20%286%29.png)
+![name your snapshot and allocate it to a resource group](../.gitbook/assets/image%20%2810%29.png)
+
+![Create a resource &amp;gt; Create Managed Disk](../.gitbook/assets/image%20%288%29.png)
+
+![Source type select Snapshot](../.gitbook/assets/image%20%286%29.png)
 
