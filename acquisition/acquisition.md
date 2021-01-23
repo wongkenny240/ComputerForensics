@@ -131,3 +131,4 @@ A hibernation file is stored in C:\hiberfile.sys if you have hibernation enabled
 volatility -f /path/to/hiberfile.sys --profile=<profile> imagecopy -O /path/to/output/folder/hibermemory.raw
 ```
 
+## Remote Acquisition
