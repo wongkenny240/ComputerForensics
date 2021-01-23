@@ -33,7 +33,18 @@ The Data is stored in the main folders in a Tree like structure which is called 
 SOFTWARE\Microsoft\Windows\CurrentVersion
 ```
 
-Program Usage Log
+### Last logged in user
+
+```text
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+```
+
+* _**DefaultUserName**_ value represents the last logged in user
+
+![](../.gitbook/assets/image%20%2854%29.png)
+
+
+### Program Usage Log
 
 * List of files opened in Paint
 
@@ -63,16 +74,6 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 * Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
-
-### Last logged in user
-
-```text
-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-```
-
-* _**DefaultUserName**_ value represents the last logged in user
-
-![](../.gitbook/assets/image%20%2854%29.png)
 
 ### Search term list \(Explorer\)
 
