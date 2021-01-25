@@ -5,14 +5,7 @@
 ### Online registry analysis
 
 * Registry analysis in active system
-* Checkable through RegEdit \(regedit.exe\), RegEdt32 \(regedt32.exe\) \([http://support.microsoft.com/kb/141377](http://support.microsoft.com/kb/141377)\)
-
-### Offline registry analysis
-
-* Registry analysis in inactive systems \(forensic replication drives or images\)
-* Registry Hive file needs to be collected
-
-![Registry Key and Value](../.gitbook/assets/image%20%2851%29.png)
+* Viewable through RegEdit \(regedit.exe\), RegEdt32 \(regedt32.exe\) \([http://support.microsoft.com/kb/141377](http://support.microsoft.com/kb/141377)\)
 
 The Data is stored in the main folders in a Tree like structure which is called Hive and its subfolders are called KEYS and SUBKEYS where each component’s configuration is stored called VALUES.
 
@@ -24,6 +17,38 @@ The Data is stored in the main folders in a Tree like structure which is called 
 | HKEY\_USERS | HKU | NTUSER.DAT file existing in the user root folder |
 | HKEY\_CURRENT\_CONFIG | HKCC | Contents of HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current |
 | HKEY\_PERFORMANCE\_DATA | HKPD | Performance count \(not accessible through the registry editor, accessible only with registry functions\) |
+
+![Registry Key and Value](../.gitbook/assets/image%20%2851%29.png)
+
+### Offline registry analysis
+
+* Registry analysis in inactive systems \(forensic replication drives or images\)
+* Registry Hive file needs to be collected
+
+#### System specific hive
+
+Windows maintains five main registry hives in the path below:
+
+```
+%SYSTEMROOT%\system32\config 
+```
+
+Hive files name
+
+```
+SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
+```
+
+#### User specific hive
+
+| Version | Path | 
+| :--- | :--- | 
+| Windows XP and Server 2003 | • \Documents and Settings\<user>\NTUSER.DAT
+• \Documents and Settings\<user>\Local Settings\ApplicationData\Microsoft\Windows\USRCLASS.DAT |
+| Windows Vista, 7, and Server 2008 |• \Users\<user>\NTUSER.DAT
+• \Users\<user>\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
+
+
 
 ### CurrentVersion
 
