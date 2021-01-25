@@ -75,6 +75,26 @@ CTRL-d: Bring up the Details window for super timelines
 
 CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to exclude the column header
 
+## Timesketch
+
+1. Install timesketch using docker. The detailed steps in https://github.com/google/timesketch/blob/master/docs/Installation.md
+2. Create a case after logging in https://127.0.0.1:5000
+3. Upload data using timesketch api
+
+importing python libraries
+
+```python
+from timesketch_api_client import client
+from timesketch_import_client import importer
+```
+
+```python
+ ts = client.TimesketchApi(SERVER_LOCATION, USERNAME, PASSWORD)
+ my_sketch = ts.get_sketch(SKETCH_ID)
+```
+
+
+
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
 ### SleutKit
