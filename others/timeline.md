@@ -12,7 +12,7 @@
 
 This will produce a csv file containing all the events from an image
 
-```bash
+```python
 psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
 ```
 
