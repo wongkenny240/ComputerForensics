@@ -6,6 +6,8 @@
 3. Before you save the collector, you can view and tweak the collection parameters by clicking the Edit Your Script link.
 4. Use Windows Explorer to browse to the directory and then double-click on the file named **RunRedlineAudit.bat**.
 
+## KAPE
+
 ## Windows
 
 | Data to be collected | Command /Tools |
@@ -19,6 +21,14 @@
 | ARP table | arp -a |
 | DNS cache | ipconfig/displaydns |
 | Network connections | netstat -abn |
+| List of services and tasks | Microsoft autoruns |
+| Loaded drivers | NirSoft DriverView |
+| Open files and handles | NirSoft OpenedFilesView |
+| Running processes | Microsoft pslist |
+| Registry (config data) | Microsoft logparser |
+| Event logs (login history) | Microsoft logparser |
+| File system listing | Microsoft logparser |
+|LR output checksum computation | PC-Tools.net md5sums or hashutils |
 
 ## Linux
 
