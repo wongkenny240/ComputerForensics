@@ -43,10 +43,17 @@ SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
 
 | Version | Path | 
 | :--- | :--- | 
-| Windows XP and Server 2003 | • \Documents and Settings\<user>\NTUSER.DAT \n • \Documents and Settings\<user>\Local Settings\ApplicationData\Microsoft\Windows\USRCLASS.DAT |
-| Windows Vista, 7, and Server 2008 |• \Users\<user>\NTUSER.DAT \n • \Users\<user>\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
+| Windows XP and Server 2003 | • \Documents and Settings\<user>\NTUSER.DAT <br />  • \Documents and Settings\<user>\Local Settings\ApplicationData\Microsoft\Windows\USRCLASS.DAT |
+| Windows Vista, 7, and Server 2008 |• \Users\<user>\NTUSER.DAT <br />  • \Users\<user>\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
 
+#### Mapping
 
+| Rootkey | Files | 
+| :--- | :--- | 
+| HKLM\Software | SOFTWARE|  
+| HKLM\Security | SECURITY|
+| HKLM\System | SYSTEM| 
+| HKLM\SAM | SAM| 
 
 ### CurrentVersion
 
