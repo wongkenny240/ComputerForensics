@@ -2,14 +2,16 @@
 
 ## Windows
 
-System date and time date and time
-Time zone systeminfo
-Installed software
+| Data to be collected | Command /Tools |
+| :--- | :--- |
+|System date and time | date and time |
+|Time zone  Installed software 
 General system
 information
 OS version
 Uptime
 File system information
+| systeminfo |
 User accounts net user
 Groups net group
 Network interfaces ipconfg/all
