@@ -363,7 +363,7 @@ The primary Volatility plugin for determining network connections in Windows sys
 $ python vol.py -f win764bit.raw --profile=Win7SP0x64 netscan
 ```
 
-![output of the netscan plugin](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29.png)
+![output of the netscan plugin](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
 
 ### yarascan
 

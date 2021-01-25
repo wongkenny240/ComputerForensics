@@ -1,3 +1,7 @@
+---
+description: Below list out a list of procedures to create computer images
+---
+
 # Acquisition Method
 
 ## Encryption Detection \(EDD.exe\)
@@ -27,7 +31,7 @@ File &gt; Capture Memory
 7. Select the write-blocked target device \(blue check\) &gt; Finish &gt; double click the evidence &gt; Acquire
 
 {% hint style="info" %}
-Write Block = writes are prevented but are cached locally to prevent Windows error messages 
+Write Block = writes are prevented but are cached locally to prevent Windows error messages
 
 Write Protect = writes are prevented, nothing is cached locally, and Windows launches error messages when writes are attempted
 {% endhint %}
@@ -35,8 +39,6 @@ Write Protect = writes are prevented, nothing is cached locally, and Windows lau
 ![](../.gitbook/assets/image%20%2862%29.png)
 
 ![Acquire &amp;gt; Acquire](../.gitbook/assets/image%20%2863%29.png)
-
-
 
 ![Remove Write-Blocking after complete the acquisition](../.gitbook/assets/image%20%2864%29.png)
 
@@ -52,9 +54,9 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 
 ![Detect Tableau Hardware](../.gitbook/assets/image%20%2822%29.png)
 
-![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2816%29%20%281%29.png)
+![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2816%29.png)
 
-![Location tab](../.gitbook/assets/image%20%286%29%20%281%29%20%281%29.png)
+![Location tab](../.gitbook/assets/image%20%286%29%20%281%29%20%282%29.png)
 
 ![Format tab](../.gitbook/assets/image%20%287%29.png)
 
@@ -121,7 +123,7 @@ Edit the inittab file with text editor to change your Linux \(e.g. Helix\) to co
 4. Open guymager and select Calculate MD5 and Verify image after acquisition \(takes twice as long\)
 5. Click OK to start the acquisition 
 
-![Fill in the information and click OK](../.gitbook/assets/image%20%2818%29%20%283%29%20%283%29%20%281%29.png)
+![Fill in the information and click OK](../.gitbook/assets/image%20%2818%29%20%283%29%20%283%29.png)
 
 ## Convert a hibernation file to a memory dump
 
@@ -132,3 +134,4 @@ volatility -f /path/to/hiberfile.sys --profile=<profile> imagecopy -O /path/to/o
 ```
 
 ## Remote Acquisition
+

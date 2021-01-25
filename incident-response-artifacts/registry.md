@@ -43,7 +43,6 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ![](../.gitbook/assets/image%20%2854%29.png)
 
-
 ### Program Usage Log
 
 * List of files opened in Paint
@@ -112,11 +111,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 ### Typed Paths \(Explorer\)
 
-
-
 ### UserAssist
-
-
 
 ### USB
 
