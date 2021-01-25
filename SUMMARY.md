@@ -5,7 +5,7 @@
 ## Acquisition
 
 * [Acquisition Method](acquisition/acquisition.md)
-* [Incident Response Method](acquisition/incident-response-method.md)
+* [Live Data Collection](acquisition/incident-response-method.md)
 
 ## EnCase
 
