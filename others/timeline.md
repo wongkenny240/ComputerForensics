@@ -94,6 +94,7 @@ connect to your timesketch server with your server ip, username and password
  ts = client.TimesketchApi(SERVER_LOCATION, USERNAME, PASSWORD)
  my_sketch = ts.get_sketch(SKETCH_ID)
 ```
+use a streamer to upload the data to the server
 
 ```python
   with importer.ImportStreamer() as streamer:
