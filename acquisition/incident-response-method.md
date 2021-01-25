@@ -10,6 +10,8 @@
 
 ## Windows
 
+Below list out a list of information we need to collection during a live response on Windows PC.
+
 | Data to be collected | Command /Tools |
 | :--- | :--- |
 | System date and time | date and time |
@@ -31,4 +33,6 @@
 |LR output checksum computation | PC-Tools.net md5sums or hashutils |
 
 ## Linux
+
+Below list out a list of information we need to collection during a live response on Linux PC.
 
