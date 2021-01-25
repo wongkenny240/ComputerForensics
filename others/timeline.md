@@ -88,12 +88,23 @@ from timesketch_api_client import client
 from timesketch_import_client import importer
 ```
 
+connect to your timesketch server with your server ip, username and password
+
 ```python
  ts = client.TimesketchApi(SERVER_LOCATION, USERNAME, PASSWORD)
  my_sketch = ts.get_sketch(SKETCH_ID)
 ```
 
+```python
+  with importer.ImportStreamer() as streamer:
+    streamer.set_sketch(my_sketch)
+    streamer.set_timestamp_description('Web Log')
+    streamer.set_timeline_name('excel_import')
+    streamer.set_message_format_string(
+        '{What:s} resulted in {Results:s}, pointed from {URL:s}')
 
+    streamer.add_data_frame(frame)
+```
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
@@ -101,7 +112,7 @@ from timesketch_import_client import importer
 
 Extract filesystem bodyfile from .E01 file
 
-```text
+```bash
 fls -r -m /Evidence1.E01 > Evidence1-bodyfile
 ```
 
@@ -121,14 +132,14 @@ vol.py -f /path/to/image.001 --profile=<profile> mftparser --output=body > Evide
 
 Combine the memory timeline and mftparser timeline to the filesytem bodyfile
 
-```text
+```bash
 cat Evidence1-timeliner.body >> Evidence1-bodyfile
 cat Evidence1-mftparser.body >> Evidence1-bodyfile
 ```
 
 Extract the combined filesystem and memory timeline
 
-```text
+```bash
 mactime -d -b Evidence1-bodyfile [date start e.g. 20xx-xx-xx]..[date end] > Evidence1-mactime-timeline.csv
 ```
 
@@ -146,7 +157,7 @@ THREAD
 DLL\ LOADTIME
 ```
 
-```text
+```bash
 grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 ```
 
