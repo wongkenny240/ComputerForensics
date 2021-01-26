@@ -29,44 +29,42 @@ The Data is stored in the main folders in a Tree like structure which is called 
 
 Windows maintains five main registry hives in the path below:
 
-```
-%SYSTEMROOT%\system32\config 
+```text
+%SYSTEMROOT%\system32\config
 ```
 
 Hive files name
 
-```
+```text
 SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
 ```
 
 #### User specific hive
 
-| Version | Path | 
-| :--- | :--- | 
-| Windows XP and Server 2003 |• \Documents and Settings\<user>\NTUSER.DAT <br />  • \Documents and Settings\<user>\Local Settings\Application Data\Microsoft\Windows\USRCLASS.DAT |
-| Windows Vista, 7, and Server 2008 |• \Users\<user>\NTUSER.DAT <br />  • \Users\<user>\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
+| Version | Path |
+| :--- | :--- |
+| Windows XP and Server 2003 | • \Documents and Settings\\NTUSER.DAT    • \Documents and Settings\\Local Settings\Application Data\Microsoft\Windows\USRCLASS.DAT |
+| Windows Vista, 7, and Server 2008 | • \Users\\NTUSER.DAT    • \Users\\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
 
 #### Mapping
 
-| Rootkey | Files | 
-| :--- | :--- | 
-| HKLM\Software | SOFTWARE|  
-| HKLM\Security | SECURITY|
-| HKLM\System | SYSTEM| 
-| HKLM\SAM | SAM| 
-| HKU\.DEFAULT |DEFAULT|
-|HKU\{SID} | NTUSER.DAT|  
-|HKU\{SID}_Classes | USRCLASS.DAT| 
-|HKEY_CURRENT_CONFIG | HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\XXXX (i.e. HKLM\SYSTEM\ControlSetXXX) | 
-
+| Rootkey | Files |
+| :--- | :--- |
+| HKLM\Software | SOFTWARE |
+| HKLM\Security | SECURITY |
+| HKLM\System | SYSTEM |
+| HKLM\SAM | SAM |
+| HKU.DEFAULT | DEFAULT |
+| HKU{SID} | NTUSER.DAT |
+| HKU{SID}\_Classes | USRCLASS.DAT |
+| HKEY\_CURRENT\_CONFIG | HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\XXXX \(i.e. HKLM\SYSTEM\ControlSetXXX\) |
 
 ### System Configuration Registry Keys
 
-|Key | Value | Description|
-| :--- | :--- |  :--- | 
-|HKLM\System\CurrentControlSet\Control\Computername| Computername, AciveComputername| |
-|HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion||Basic information about the version of the Windows|
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| HKLM\System\CurrentControlSet\Control\Computername | Computername, AciveComputername |  |
+| HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion |  | Basic information about the version of the Windows |
 
 #### CurrentVersion
 

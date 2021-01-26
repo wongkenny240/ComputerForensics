@@ -49,14 +49,13 @@ Also prefer to use docker to run log2timeline and psort as it is the latest vers
 Install docker from docker hub
 
 ```bash
-$ docker pull log2timeline/plaso
-
+docker pull log2timeline/plaso
 ```
 
-Run it from your directory (mount your data directory to docker container's volume (i.e. /data)
+Run it from your directory \(mount your data directory to docker container's volume \(i.e. /data\)
 
 ```bash
-$ docker run -v </YOUR DATA DIR/>:/data log2timeline/plaso log2timeline /data/evidences.plaso /data/evidences
+docker run -v </YOUR DATA DIR/>:/data log2timeline/plaso log2timeline /data/evidences.plaso /data/evidences
 ```
 
 ### Timeline Explorer / Elasticsearch \(3rd step\)
@@ -92,8 +91,8 @@ CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to
 
 ## Timesketch
 
-1. Install timesketch using docker. The detailed steps in https://github.com/google/timesketch/blob/master/docs/Installation.md
-2. Create a case after logging in https://127.0.0.1:5000
+1. Install timesketch using docker. The detailed steps in [https://github.com/google/timesketch/blob/master/docs/Installation.md](https://github.com/google/timesketch/blob/master/docs/Installation.md)
+2. Create a case after logging in [https://127.0.0.1:5000](https://127.0.0.1:5000)
 3. Upload data using timesketch api
 
 importing python libraries
@@ -109,6 +108,7 @@ connect to your timesketch server with your server ip, username and password
  ts = client.TimesketchApi(SERVER_LOCATION, USERNAME, PASSWORD)
  my_sketch = ts.get_sketch(SKETCH_ID)
 ```
+
 use a streamer to upload the data to the server
 
 ```python
