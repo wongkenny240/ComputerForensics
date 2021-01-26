@@ -62,9 +62,8 @@ SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
 
 ### System Configuration Registry Keys
 
-|Basic System Information|
 |Key | Value | Description|
-| :--- | :--- | 
+| :--- | :--- |  :--- | 
 |HKLM\System\CurrentControlSet\Control\Computername| Computername, AciveComputername| |
 |HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion||Basic information about the version of the Windows|
 
