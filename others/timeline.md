@@ -44,6 +44,21 @@ To see a list of support format
 psort.py -o list
 ```
 
+Also prefer to use docker to run log2timeline and psort as it is the latest version
+
+Install docker from docker hub
+
+```bash
+$ docker pull log2timeline/plaso
+
+```
+
+Run it from your directory (mount your data directory to docker container's volume (i.e. /data)
+
+```bash
+$ docker run -v </YOUR DATA DIR/>:/data log2timeline/plaso log2timeline /data/evidences.plaso /data/evidences
+```
+
 ### Timeline Explorer / Elasticsearch \(3rd step\)
 
 #### Upload to elasticsearch via commandline
