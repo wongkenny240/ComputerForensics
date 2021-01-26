@@ -17,7 +17,7 @@ The -h flag gives configuration information in Volatility
 * Use -h with a plugin to get details and plugin-specific usage
 
 ```text
-root@SIFT-Workstation:/# vol.py malfind -h
+$ python vol.py malfind -h
 -D DUMP_DIR, --dump-dir=DUMP_DIR
                       Directory in which to dump executable files
 -Y YARA_RULES, --yara-rules=YARA_RULES
