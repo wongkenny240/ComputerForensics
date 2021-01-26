@@ -59,7 +59,17 @@ SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
 |HKU\{SID}_Classes | USRCLASS.DAT| 
 |HKEY_CURRENT_CONFIG | HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\XXXX (i.e. HKLM\SYSTEM\ControlSetXXX) | 
 
-### CurrentVersion
+
+### System Configuration Registry Keys
+
+|Basic System Information|
+|Key | Value | Description|
+| :--- | :--- | 
+|HKLM\System\CurrentControlSet\Control\Computername| Computername, AciveComputername| |
+|HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion||Basic information about the version of the Windows|
+
+
+#### CurrentVersion
 
 ![SOFTWARE\Microsoft\Windows CurrentVersion](../.gitbook/assets/image%20%2852%29.png)
 
