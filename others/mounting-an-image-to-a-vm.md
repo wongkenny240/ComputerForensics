@@ -24,11 +24,11 @@ For this case I'll use a VMware Workstation for Windows and VirtualBox for Linux
 ![Mount disk image](../.gitbook/assets/image%20%2847%29.png)
 
 1. Select Mount disk image and select the file you want to mount
-2. I usually select write temporary disk device
+2. I usually select **Write temporary disk device**
 
 ![](../.gitbook/assets/image%20%2848%29.png)
 
-_Note: This is useful to unlock physical image of Windows 10 in a Windows 10 environment._
+_Note: This is useful to unlock physical image of Windows 10 by mounting the physical image in a Windows 10 environment._
 
 ## Linux Part \(SIFT\)
 
