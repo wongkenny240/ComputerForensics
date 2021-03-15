@@ -22,7 +22,7 @@ psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.cs
 log2timeline.py [-z TIMEZONE] [-f filterfile] [--parsers PARSER_LIST] -i[-o OFFSET] [--vss] [.plaso dump] [image file] ["FILTER"]
 ```
 
-Sometimes you may not want to do a complete timeline that extracts events from every discovered file. To do a more targeted timelining, the -f FILTER\_FILE parameter can be used.
+Sometimes you may not want to do a complete timeline that extracts events from every discovered file. To do a more targeted timelining, the **-f FILTER\_FILE** parameter can be used.
 
 I usually use the filter\_windows.yaml to shorten the loading time for all windows image
 
