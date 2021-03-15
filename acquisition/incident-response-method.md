@@ -9,7 +9,11 @@
 
 ## KAPE
 
-Update KAPE with the powershell script with the administrator command prompt
+Update KAPE with the powershell script with the administrator command prompt:
+
+```
+powershell -ep Bypass .\Get-KAPEUpdate.ps1
+```
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
