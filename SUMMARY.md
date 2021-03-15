@@ -41,7 +41,7 @@
 ## Others
 
 * [Timeline](others/timeline.md)
-* [Mounting an image to a VM](others/mounting-an-image-to-a-vm.md)
+* [Mounting an image](others/mounting-an-image-to-a-vm.md)
 * [NAS](others/nas.md)
 * [Samba](others/samba.md)
 * [Docker](others/docker.md)

@@ -1,4 +1,4 @@
-# Mounting an image to a VM
+# Mounting an image
 
 ## FTK Imager
 
