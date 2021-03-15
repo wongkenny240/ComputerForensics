@@ -9,6 +9,10 @@
 
 ## KAPE
 
+Update KAPE with the powershell script with the administrator command prompt
+
+![](../.gitbook/assets/image%20%2816%29.png)
+
 ## Windows
 
 Below list out a list of information we need to collection during a live response on Windows PC.
