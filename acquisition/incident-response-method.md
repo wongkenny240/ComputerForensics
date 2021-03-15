@@ -17,6 +17,12 @@ powershell -ep Bypass .\Get-KAPEUpdate.ps1
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
+Manually replace the Targets and Modules folders with the one inside KapeFiles-master
+
+![](../.gitbook/assets/image%20%2819%29.png)
+
+Run command
+
 ## bulk\_extractor
 
 
