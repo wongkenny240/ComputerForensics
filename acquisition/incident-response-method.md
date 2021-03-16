@@ -1,17 +1,19 @@
 # Live Data Collection
 
-# Fast Collection
+## Live Data Collection
 
-## Redline
+## Fast Collection
+
+### Redline
 
 1. Installed Redline on your system and launch the tool
 2. Click the option **Create Comprehensive Collector**. Then browse to the location you would like to save the collector \(preferably an USB or external hard drive\).  
 3. Before you save the collector, you can view and tweak the collection parameters by clicking the Edit Your Script link.
 4. Use Windows Explorer to browse to the directory and then double-click on the file named **RunRedlineAudit.bat**.
 
-## KAPE
+### KAPE
 
-### Update
+#### Update
 
 Update KAPE with the powershell script with the administrator command prompt:
 
@@ -31,18 +33,21 @@ In order to run the Modules, place all the executables under KAPE\Modules\bin
 
 Note: KAPE\Modules\bin\regripper should contains p2x5124.dll
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
-Note: KAPE\Modules\bin\tln_tools should contains 
+Note: KAPE\Modules\bin\tln\_tools should contains
 
-Run command
+![](../.gitbook/assets/image%20%2875%29.png)
 
+Run different Target to collect different items
 
-## bulk\_extractor
+KAPE also provide a gui \(i.e. gkape.exe\) 
 
+### bulk\_extractor
 
-# Traditional Method of Collection
-## Windows
+## Traditional Method of Collection
+
+### Windows
 
 Below list out a list of information we need to collection during a live response on Windows PC.
 
@@ -66,7 +71,7 @@ Below list out a list of information we need to collection during a live respons
 | File system listing | Microsoft logparser |
 | LR output checksum computation | PC-Tools.net md5sums or hashutils |
 
-## Linux
+### Linux
 
 Below list out a list of information we need to collection during a live response on Linux PC.
 
