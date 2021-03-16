@@ -44,7 +44,7 @@ To see a list of support format
 psort.py -o list
 ```
 
-Also prefer to use docker to run log2timeline and psort as it is the latest version
+Also we can use docker to run log2timeline and psort as it is the latest version and we don't need to bother with the dependencies
 
 Install docker from docker hub
 
