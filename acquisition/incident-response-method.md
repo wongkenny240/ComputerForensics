@@ -23,6 +23,12 @@ Manually replace the Targets and Modules folders with the one inside KapeFiles-m
 
 Run command
 
+In order to run the Modules, place all the executable under KAPE\Modules\bin
+
+Note: KAPE\Modules\bin\regripper should contains p2x5124.dll
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
 ## bulk\_extractor
 
 
