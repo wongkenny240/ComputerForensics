@@ -2,7 +2,7 @@
 
 ## Live Data Collection
 
-## Fast Collection
+## Fast IR Collection
 
 ### Redline
 
