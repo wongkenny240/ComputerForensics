@@ -1,5 +1,7 @@
 # Live Data Collection
 
+# Fast Collection
+
 ## Redline
 
 1. Installed Redline on your system and launch the tool
@@ -8,6 +10,8 @@
 4. Use Windows Explorer to browse to the directory and then double-click on the file named **RunRedlineAudit.bat**.
 
 ## KAPE
+
+### Update
 
 Update KAPE with the powershell script with the administrator command prompt:
 
@@ -21,8 +25,6 @@ Manually replace the Targets and Modules folders with the one inside KapeFiles-m
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-Run command
-
 In order to run the Modules, place all the executables under KAPE\Modules\bin
 
 ![](../.gitbook/assets/image%20%2844%29.png)
@@ -31,10 +33,15 @@ Note: KAPE\Modules\bin\regripper should contains p2x5124.dll
 
 ![](../.gitbook/assets/image%20%2820%29.png)
 
+Note: KAPE\Modules\bin\tln_tools should contains 
+
+Run command
+
+
 ## bulk\_extractor
 
 
-
+# Traditional Method of Collection
 ## Windows
 
 Below list out a list of information we need to collection during a live response on Windows PC.
