@@ -37,6 +37,7 @@
 * [Jump Lists](incident-response-artifacts/jump-lists.md)
 * [Prefetch](incident-response-artifacts/prefetch.md)
 * [File system log](incident-response-artifacts/file-system-log.md)
+* [Browser](incident-response-artifacts/browser.md)
 
 ## Others
 
