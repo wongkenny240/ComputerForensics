@@ -135,3 +135,10 @@ volatility -f /path/to/hiberfile.sys --profile=<profile> imagecopy -O /path/to/o
 
 ## Remote Acquisition
 
+### F-Response
+
+#### Tactical
+
+
+#### Consultant + Covert
+
