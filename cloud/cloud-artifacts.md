@@ -48,5 +48,8 @@ SOFTWARE\Microsoft\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\DropBoxEx
 NTUSER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Dropbox
 NTUSER\Software\Microsoft\Windows\CurrentVersion\UFH\SHC
 NTUSER\Software\Dropbox\InstallPath
-
 ```
+
+We can obtain
+* Install Location
+* Installed version
