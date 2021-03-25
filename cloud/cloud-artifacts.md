@@ -99,10 +99,10 @@ The **snapshot.db** is a SQLITE3 DB containing information about local and cloud
   * Shared
 
 * Local_entry
-* File name
-* Modified (UNIX Timestamp)
-* Checksum (MD5 hash)
-* Size
+  * File name
+  * Modified (UNIX Timestamp)
+  * Checksum (MD5 hash)
+  * Size
 
 * After file deletion the file information is removed from the cloud_entry and the local_entry table
 
