@@ -87,11 +87,37 @@ We can obtain from the industry
 Google provides a Mac OS X and Windows and desktop client.
 
 snapshot.db
+
+The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
+* Cloud_entry table
+* File name
+* Created (UNIX Timestamp)
+* Modified (UNIX Timestamp)
+* URL
+* Checksum (MD5 hash)
+* Size
+* Shared
+
+* Local_entry
+* File name
+* Modified (UNIX Timestamp)
+* Checksum (MD5 hash)
+* Size
+
+* After file deletion the file information is removed from the cloud_entry and the local_entry table
+
+
 ```
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\snapshot.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\snapshot.db
 ```
 sync_config.db
+
+The **sync_config.db** is a SQLITE3 DB containing profile configuration
+* Client version installed
+* Local Sync Root Path
+* User Email
+
 ```
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
