@@ -26,9 +26,22 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 
 * Configuration files are mostly encrypted
 
-host.dbx and host.db is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in Base64
+**host.dbx** and **host.db** is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in **Base64**
 
+* **Filecache.dbx** located in the folder
 
+```
+C:\Documents and Settings\<username>\Application Data\Dropbox
+```
+* Windows Protection Folder
+```
+C:\Documents and Settings\<username>\Application Data\Microsoft\Protect
+```
+* Registry value
+```
+NTUSER.DAT\Software\Dropbox\ks\Client
+```
+* User’s password
 
 ### File Created
 
