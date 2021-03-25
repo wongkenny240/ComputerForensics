@@ -74,3 +74,14 @@ We can obtain from the industry
 * Install Location
 * Installed version
 
+### Uninstall
+
+* During the uninstall process the client config folder is removed
+* The registry key NTUSER\Software\Dropbox is preserved (but without values)
+* The prefetch files are not deleted
+* Local copy of the file is not deleted
+
+
+## Google Drive
+
+
