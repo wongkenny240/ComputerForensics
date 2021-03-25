@@ -26,7 +26,9 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 
 * Configuration files are mostly encrypted
 
-host.dbx and host.db is not encrypted and can be accessed, it contains the local folder name used to sync the account
+host.dbx and host.db is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in Base64
+
+
 
 ### File Created
 
