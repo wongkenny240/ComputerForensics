@@ -90,13 +90,13 @@ snapshot.db
 
 The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
 * Cloud_entry table
-* File name
-* Created (UNIX Timestamp)
-* Modified (UNIX Timestamp)
-* URL
-* Checksum (MD5 hash)
-* Size
-* Shared
+  * File name
+  * Created (UNIX Timestamp)
+  * Modified (UNIX Timestamp)
+  * URL
+  * Checksum (MD5 hash)
+  * Size
+  * Shared
 
 * Local_entry
 * File name
