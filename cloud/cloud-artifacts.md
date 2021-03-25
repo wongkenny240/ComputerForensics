@@ -23,6 +23,11 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 ```
 /home/$USER/.dropbox/
 ```
+
+* Configuration files are mostly encrypted
+
+host.dbx and host.db is not encrypted and can be accessed, it contains the local folder name used to sync the account
+
 ### File Created
 
 Executable and libraries are stored in
@@ -50,6 +55,7 @@ NTUSER\Software\Microsoft\Windows\CurrentVersion\UFH\SHC
 NTUSER\Software\Dropbox\InstallPath
 ```
 
-We can obtain
+We can obtain from the industry
 * Install Location
 * Installed version
+
