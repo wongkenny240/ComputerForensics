@@ -55,7 +55,7 @@ docker pull log2timeline/plaso
 Run it from your directory \(mount your data directory to docker container's volume \(i.e. /data\)
 
 ```bash
-docker run -v </YOUR DATA DIR/>:/data log2timeline/plaso log2timeline /data/evidences.plaso /data/evidences
+docker run -v </YOUR DATA DIR/>:/data log2timeline/plaso log2timeline /data/evidences.plaso /data/evidences/<evidence file name>
 ```
 
 ### Timeline Explorer / Elasticsearch \(3rd step\)
