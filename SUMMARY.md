@@ -49,5 +49,6 @@
 
 ## Cloud
 
+* [Cloud Artifacts](cloud/cloud-artifacts.md)
 * [Azure Forensic](cloud/azure-forensic.md)
 

@@ -2,7 +2,6 @@
 
 ## Chrome
 
-
 ## Edge
 
 ## Firefox

@@ -139,6 +139,5 @@ volatility -f /path/to/hiberfile.sys --profile=<profile> imagecopy -O /path/to/o
 
 #### Tactical
 
-
 #### Consultant + Covert
 
