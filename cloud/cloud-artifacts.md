@@ -26,7 +26,11 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 
 * Configuration files are mostly encrypted
 
+##### host.dbx/ host.db
+
 **host.dbx** and **host.db** is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in **Base64**
+
+##### filecache.dbx
 
 * **Filecache.dbx** located in the folder
 
@@ -86,7 +90,7 @@ We can obtain from the industry
 
 Google provides a Mac OS X and Windows and desktop client.
 
-snapshot.db
+##### snapshot.db
 
 The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
 * Cloud_entry table
@@ -111,7 +115,7 @@ The **snapshot.db** is a SQLITE3 DB containing information about local and cloud
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\snapshot.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\snapshot.db
 ```
-sync_config.db
+##### sync_config.db
 
 The **sync_config.db** is a SQLITE3 DB containing profile configuration
 * Client version installed
@@ -122,7 +126,9 @@ The **sync_config.db** is a SQLITE3 DB containing profile configuration
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 ```
-sync_config.log
+
+##### sync_config.log
+
 ```
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log.1
