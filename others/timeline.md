@@ -132,7 +132,7 @@ use a streamer to upload the data to the server
 
 #### File Download Capabilities
 
-| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| Topic | Supported  | <div style="width:500px">Timesketch and Kibana Queries, Notes </div>|
 | :--- | :--- | :--- |
 | Mail Attachements  | NO | There is just no parser for mail attachments but this is a case where analysts are usually well off with a commercial forensic suite. |
 | Skype History | YES | parser:”skype” |
