@@ -97,6 +97,9 @@ CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to
 2. Create a case after logging in [https://127.0.0.1:5000](https://127.0.0.1:5000)
 3. Upload data using timesketch api
 
+
+#### Upload data with Python
+
 importing python libraries
 
 ```python
@@ -109,6 +112,26 @@ connect to your timesketch server with your server ip, username and password
 ```python
  ts = client.TimesketchApi(SERVER_LOCATION, USERNAME, PASSWORD)
  my_sketch = ts.get_sketch(SKETCH_ID)
+```
+
+code to enumerate sketch
+
+```python
+sketches = ts_client.list_sketches()
+for i, sketch in enumerate(sketches):
+  print('[{0:d}] {1:s}'.format(i, sketch.name))
+```
+
+Output
+```
+[0] MUSCTF 2019
+[1] The Greendale incident - 2019
+[2] The Greendale investigation
+```
+
+set target sketch
+```python
+my_sketch = sketches[0]
 ```
 
 use a streamer to upload the data to the server
@@ -124,7 +147,7 @@ use a streamer to upload the data to the server
     streamer.add_data_frame(frame)
 ```
 
-#### Search queries
+#### Search queries for timesketch
 
 {% embed url="https://blog.compass-security.com/2019/03/windows-forensics-with-plaso/" caption="" %}
 
@@ -221,6 +244,47 @@ use a streamer to upload the data to the server
 | Cache | YES | Query:parser:”chrome\_cache” OR parser:”firefox\_cache” OR parser:”msie\_webcache” |
 | Flash& Super Cookies | NO | No parser but not very relevant |
 | SessionRestore | NO | No parser but would be nice to have one |
+
+#### Python code for searching on TimeSketch with jupyter notebook
+
+import the necessary libraries for searching
+```python
+# Import some things we'll need
+from timesketch_api_client import config
+from timesketch_api_client import search
+import pandas as pd
+
+```
+
+
+First way of searching is to use the explore function
+
+```python
+ts_results = ctf.explore(
+    <query_str>, 
+    return_fields='*', # * means return all fields 
+    as_pandas=True)
+
+```
+
+Second way of searching
+
+```python
+search_obj = search.Search(ctf)
+
+date_chip = search.DateRangeChip()
+date_chip.start_time = '2019-02-25T00:00:00'
+date_chip.end_time = '2019-03-04T23:59:59'
+
+search_obj.query_string = 'TeamViewer'
+search_obj.add_chip(date_chip)
+search_obj.return_fields = '*'
+
+ts_results = search_obj.table
+
+```
+
+DateRangeClip object is used to control the date range of the output of the query
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
