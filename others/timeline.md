@@ -249,7 +249,6 @@ use a streamer to upload the data to the server
 
 import the necessary libraries for searching
 ```python
-# Import some things we'll need
 from timesketch_api_client import config
 from timesketch_api_client import search
 import pandas as pd
