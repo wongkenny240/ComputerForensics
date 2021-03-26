@@ -222,4 +222,7 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.1
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.2
 ```
-
+We can use a keyword search with the strings:
+* RawEvent(CREATE
+* RawEvent(DELETE
+* RawEvent(MODIFY
