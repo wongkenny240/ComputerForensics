@@ -5,57 +5,70 @@
 ### Configuration
 
 #### Windows XP
-```
+
+```text
 C:\Documents and Settings\%USERNAME%\Application Data\Dropbox\
 C:\Documents and Settings\%USERNAME%\Local Settings\Application Data\Dropbox\
 ```
+
 #### Windows Vista and later
-```
+
+```text
 C:\Users\%USERNAME%\AppData\Local\Dropbox\
 C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 ```
+
 #### Mac OS X
-```
+
+```text
 /Users/$USER/.dropbox/
 ```
 
 #### Linux
-```
+
+```text
 /home/$USER/.dropbox/
 ```
 
 * Configuration files are mostly encrypted
 
-##### host.dbx/ host.db
+**host.dbx/ host.db**
 
 **host.dbx** and **host.db** is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in **Base64**
 
-##### filecache.dbx
+**filecache.dbx**
 
 * **Filecache.dbx** located in the folder
 
-```
+```text
 C:\Documents and Settings\<username>\Application Data\Dropbox
 ```
+
 * Windows Protection Folder
-```
-C:\Documents and Settings\<username>\Application Data\Microsoft\Protect
-```
+
+  ```text
+  C:\Documents and Settings\<username>\Application Data\Microsoft\Protect
+  ```
+
 * Registry value
-```
-NTUSER.DAT\Software\Dropbox\ks\Client
-```
+
+  ```text
+  NTUSER.DAT\Software\Dropbox\ks\Client
+  ```
+
 * User’s password
 
 ### File Created
 
 Executable and libraries are stored in
-```
+
+```text
 C:\Users\%USERNAME%\AppData\Roaming\Dropbox\bin
 ```
 
 Four files created during installation
-```
+
+```text
 C:\Users\<username>\Desktop\Dropbox.lnk
 C:\Users\<username>\Links\Dropbox.lnk
 C:\Windows\Prefetch\DROPBOX N.N.NN.EXE-NNNNNNNN.pf
@@ -64,7 +77,7 @@ C:\Windows\Prefetch\DROPBOX.EXE-NNNNNNNN.pf
 
 ### Registry Changes
 
-```
+```text
 SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules
 SOFTWARE\Microsoft\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\DropBoxExt1
 SOFTWARE\Microsoft\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\DropBoxExt1
@@ -75,61 +88,61 @@ NTUSER\Software\Dropbox\InstallPath
 ```
 
 We can obtain from the industry
+
 * Install Location
 * Installed version
 
 ### Uninstall
 
 * During the uninstall process the client config folder is removed
-* The registry key NTUSER\Software\Dropbox is preserved (but without values)
+* The registry key NTUSER\Software\Dropbox is preserved \(but without values\)
 * The prefetch files are not deleted
 * Local copy of the file is not deleted
-
 
 ## Google Drive
 
 Google provides a Mac OS X and Windows and desktop client.
 
-##### snapshot.db
+**snapshot.db**
 
 The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
-* Cloud_entry table
+
+* Cloud\_entry table
   * File name
-  * Created (UNIX Timestamp)
-  * Modified (UNIX Timestamp)
+  * Created \(UNIX Timestamp\)
+  * Modified \(UNIX Timestamp\)
   * URL
-  * Checksum (MD5 hash)
+  * Checksum \(MD5 hash\)
   * Size
   * Shared
-
-* Local_entry
+* Local\_entry
   * File name
-  * Modified (UNIX Timestamp)
-  * Checksum (MD5 hash)
+  * Modified \(UNIX Timestamp\)
+  * Checksum \(MD5 hash\)
   * Size
+* After file deletion the file information is removed from the cloud\_entry and the local\_entry table
 
-* After file deletion the file information is removed from the cloud_entry and the local_entry table
-
-
-```
+```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\snapshot.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\snapshot.db
 ```
-##### sync_config.db
 
-The **sync_config.db** is a SQLITE3 DB containing profile configuration
+**sync\_config.db**
+
+The **sync\_config.db** is a SQLITE3 DB containing profile configuration
+
 * Client version installed
 * Local Sync Root Path
 * User Email
 
-```
+```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 ```
 
-##### sync_config.log
+**sync\_config.log**
 
-```
+```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log.1
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log.2
@@ -137,3 +150,4 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.1
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.2
 ```
+

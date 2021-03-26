@@ -123,10 +123,108 @@ use a streamer to upload the data to the server
 
     streamer.add_data_frame(frame)
 ```
+
 #### Search queries
 
-https://blog.compass-security.com/2019/03/windows-forensics-with-plaso/
+{% embed url="https://blog.compass-security.com/2019/03/windows-forensics-with-plaso/" %}
 
+
+
+#### File Download Capabilities
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| Mail Attachements  | NO | There is just no parser for mail attachments but this is a case where analysts are usually well off with a commercial forensic suite. |
+| Skype History | YES | parser:”skype” |
+| Browser Artifacts | YES | source\_short:”WEBHIST” |
+| Downloads | YES | parser:”firefox\_downloads” OR parser:”msiecf”  Note that msiecf contains general browsing artifacts and is not limited to file downloads only. |
+| ADS Zone.Identifier  | NO |  |
+| Open/Save MRU | CLAIMED | MRU parsers pose to be some sort of jungle yet. Plaso has a total of six different MRU list parsers\[5\].  Unfortunately, it is not documented which one parses which artifact. Even though they have different names, it is hard to guess which artifact they get and one definitely cannot get around digging into the source code.  However, empirical tests of the six MRU list parsers did not include the NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU registry items that contains the Open/Save MRU artifacts. |
+
+#### Program Execution Analysis
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| UserAssist | YES | parser:”userassist” |
+| Last-VisitedMRU | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedPidlMRU” OR “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedMRU” |
+| SystemBoot Autostart Progs. | YES | parser:”windows\_run” |
+| SystemBoot Autostart Svcs. | YES | parser:”windows\_services” |
+| AppCompatCache/  Shimcache | PARTIAL | parser:”appcompatcache”  The parser gets the executable which is the most important artifact. However, the shimcache would also include other information such as file size, last modification time,last update time as well as the execution flag. The parser would need to be improved to get the supplement information as well. |
+| RecentApps | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Search\\RecentApps” |
+| Prefetch | YES | parser:”prefetch” |
+| LastCommands Executed | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU” OR “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Policies\\RunMRU” parser:”mrulist\_string” AND “\\CurrentVersion\\Explorer\\RunMRU” |
+| Amcache.hive / RecentFile-Cache.bcf | PARTIAL | parser:”amcache”  This parser was run against a Windows 10 image and it was not capable to parse events. This parser is likely to be buggy. In general, event parsing seems to be tricky as we noticed event parser to fail for various reasons. |
+| SRUM | CLAIMED | parser:”srum”  Make sure to configure the SRUM artifact files in your filter.conf file. With our setup, log2timeline had troubles to extract the /Windows/System32/SRU folder from the image and Plaso failed to properly parse it. Thus, manually extracting the folder and running the parser will yield results. |
+| BAM/DAM | YES | “\\Services\\bam\\UserSettings\\” OR “\\Services\\dam\\UserSettings\\” |
+
+#### **Deleted Files or File Knowledge**
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+|  |  |  |
+| Thumbnails | NO | log2timeline/Plaso is a tool designed to extract meta information from files. Thus, it will collect timestamps from images but for analyzing media artifacts such as pictures, music or video it is recommended to rely on a commercial forensics suite. |
+| Thumbcache | NO | See above. |
+| WordWheelQuery  | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\WordWheelQuery”&gt;br&gt; parser:”mrulistex\_string” AND “\\WordWheelQuery” |
+| RecycleBin | YES | parser:”recycle\_bin” |
+|  |  |  |
+|  |  |  |
+
+#### Network Activity and Physical Locations
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| Network History   | YES | parser:”networks” |
+| Shares, offline caching | YES | “\\Services\\lanmanserver\\Shares” |
+| MappedDrives    | YES | parser:”winreg/network\_drives” |
+| WLANEvent Log | YES | parser:”winevtx” AND \(event\_identifier:”11000″ OR event\_identifier:”8001″ OR event\_identifier:”8002″ OR event\_identifier:”8003″ OR event\_identifier:”6100″\) |
+
+#### **File/Folder Opening**
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| UserAssist | YES | parser:”userassist” |
+| Last-VisitedMRU | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedPidlMRU” OR “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedMRU” |
+| SystemBoot Autostart Progs. | YES | parser:”windows\_run” |
+| SystemBoot Autostart Svcs. | YES | parser:”windows\_services” |
+| AppCompatCache/  Shimcache | PARTIAL | parser:”appcompatcache”  The parser gets the executable which is the most important artifact. However, the shimcache would also include other information such as file size, last modification time,last update time as well as the execution flag. The parser would need to be improved to get the supplement information as well. |
+| RecentApps | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Search\\RecentApps” |
+| Prefetch | YES | parser:”prefetch” |
+| LastCommands Executed | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU” OR “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Policies\\RunMRU” parser:”mrulist\_string” AND “\\CurrentVersion\\Explorer\\RunMRU” |
+| Amcache.hive / RecentFile-Cache.bcf | PARTIAL | parser:”amcache”  This parser was run against a Windows 10 image and it was not capable to parse events. This parser is likely to be buggy. In general, event parsing seems to be tricky as we noticed event parser to fail for various reasons. |
+| SRUM | CLAIMED | parser:”srum”  Make sure to configure the SRUM artifact files in your filter.conf file. With our setup, log2timeline had troubles to extract the /Windows/System32/SRU folder from the image and Plaso failed to properly parse it. Thus, manually extracting the folder and running the parser will yield results. |
+| BAM/DAM | YES | “\\Services\\bam\\UserSettings\\” OR “\\Services\\dam\\UserSettings\\” |
+
+#### Account Usage
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| RDP | YES | parser:”winevtx” AND \(event\_identifier:”4778″ OR event\_identifier:”4779″\) |
+| ServiceEvents | YES | parser:”winevtx” AND \(event\_identifier:”7034″ OR event\_identifier:”7035″ OR event\_identifier:”7036″ OR event\_identifier:”7040″  OR event\_identifier:”7045″ event\_identifier:”4097″\) |
+| LogonTypes | YES | parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;2/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;3/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;4/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;5/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;7/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;8/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;9/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;10/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;11/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;12/” parser:”winevtx” AND event\_identifier:”4624″ AND xml\_string:”/LogonType\”\&gt;13/” |
+| AuthenticationEvents | YES | parser:”winevtx” AND \(event\_identifier:”4776″ OR event\_identifier:”4768″ OR event\_identifier:”4769″ OR event\_identifier:”4771″\) |
+| Success/FailLogons | YES | parser:”winevtx” AND \(event\_identifier:”4624″ OR event\_identifier:”4625″ OR event\_identifier:”4634″ OR event\_identifier:”4647″ OR event\_identifier:”4648″ OR event\_identifier:”4672″ OR event\_identifier:”4720″\) |
+
+#### External Devices, Storage
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| IDs, First/LastTime Use | PARTIAL | parser:”windows\_usb\_devices”parser:”windows\_usbstor\_devices”but the connection times are missing.  These parsers get some information out of the registry such as which USB devices were connected. But the parsers do not analyze the setupapi.dev.log file which also includes some information. Currently, the the Plaso parser give some information about USB stick usage but this definitely needs improvement. |
+| User | YES | ListGUIDs: “SYSTEM\\MountedDevices” Users:”\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2″ |
+| PnPEvents | YES | parser:”winevtx” AND event\_identifier:”20001″ |
+| SerialNumbers | NO |  |
+| DriveLetters and Vol. Names | NO |  |
+| AuditRemovable Storage | YES | parser:”winevtx” AND event\_identifier:”4663″ |
+
+#### Browser Usage
+
+| Topic | Supported  | Timesketch and Kibana Queries, Notes |
+| :--- | :--- | :--- |
+| SearchTerms | YES | source\_short:”webhist” parser:”opera\_typed\_history” OR parser:”file\_history” OR parser:”safari\_history” OR parser:”chrome\_27\_history” OR parser:”chrome\_8\_history” OR parser:”firefox\_history”  Mind that queries need some fine tuning with the URL search parameter i.e. AND “search” AND “q=” |
+| History | YES | source\_short:”webhist” |
+| Cookies | YES | parser:”binary\_cookies” OR parser:”chrome\_cookies” OR parser:”firefox\_cookies” OR parser:”msie\_webcache” |
+| Cache | YES | Query:parser:”chrome\_cache” OR parser:”firefox\_cache” OR parser:”msie\_webcache” |
+| Flash& Super Cookies | NO | No parser but not very relevant |
+| SessionRestore  | NO | No parser but would be nice to have one |
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
