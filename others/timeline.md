@@ -44,6 +44,8 @@ To see a list of support format
 psort.py -o list
 ```
 
+#### Docker
+
 Also we can use docker to run log2timeline and psort as it is the latest version and we don't need to bother with the dependencies
 
 Install docker from docker hub
@@ -121,6 +123,10 @@ use a streamer to upload the data to the server
 
     streamer.add_data_frame(frame)
 ```
+#### Search queries
+
+https://blog.compass-security.com/2019/03/windows-forensics-with-plaso/
+
 
 ## How to create a timeline from harddrive image and memory dump with SleutKit and Volatility's timeliner plugin?
 
