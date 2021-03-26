@@ -166,8 +166,7 @@ use a streamer to upload the data to the server
 | Thumbcache | NO | See above. |
 | WordWheelQuery  | YES | “\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\WordWheelQuery”&gt;br&gt; parser:”mrulistex\_string” AND “\\WordWheelQuery” |
 | RecycleBin | YES | parser:”recycle\_bin” |
-|  |  |  |
-|  |  |  |
+
 
 #### Network Activity and Physical Locations
 
