@@ -30,9 +30,13 @@ Jump List Path
 
 JumpLister, by WoanWare 
 
-[https://github.com/woanware/JumpLister](https://github.com/woanware/JumpLister)[ ](https://github.com/woanware/JumpLister)
+{% embed url="https://github.com/woanware/JumpLister" %}
+
+
 
 JumpListParser \(jmp\), by TZWorks 
 
-[tzworks.net/prototype\_page.php?proto\_id=20](https://tzworks.net/prototype_page.php?proto_id=20)
+{% embed url="https://tzworks.net/prototype\_page.php?proto\_id=20" %}
+
+
 

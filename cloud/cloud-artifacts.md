@@ -167,7 +167,6 @@ Google provides a Mac OS X and Windows and desktop client.
 The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
 
 * Cloud\_entry table
-
   * File name
   * Created \(UNIX Timestamp\)
   * Modified \(UNIX Timestamp\)
@@ -175,7 +174,6 @@ The **snapshot.db** is a SQLITE3 DB containing information about local and cloud
   * Checksum \(MD5 hash\)
   * Size
   * Shared
-
 * Local\_entry
   * File name
   * Modified \(UNIX Timestamp\)
@@ -207,7 +205,8 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 
 **sync\_config.log**
 
-The Sync_log.log is a log file containing information about the client sync session
+The Sync\_log.log is a log file containing information about the client sync session
+
 * Inside the file we can find information about
 * Sync sessions
 * File created
@@ -222,7 +221,10 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.1
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.log.2
 ```
+
 We can use a keyword search with the strings:
-* RawEvent(CREATE
-* RawEvent(DELETE
-* RawEvent(MODIFY
+
+* RawEvent\(CREATE
+* RawEvent\(DELETE
+* RawEvent\(MODIFY
+
