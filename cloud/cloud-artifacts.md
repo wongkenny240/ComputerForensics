@@ -36,7 +36,7 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\
 
 **host.dbx** and **host.db** is not encrypted and can be accessed, it contains the local folder name used to sync the account. The folder name is encoded in **Base64**
 
-**filecache.dbx**
+**filecache.dbx and filecache.db**
 
 * **Filecache.dbx** located in the folder
 
@@ -57,6 +57,13 @@ C:\Documents and Settings\<username>\Application Data\Dropbox
   ```
 
 * User’s password
+
+The decrypted filecache.db contains:
+* Server path
+* Local file name
+* Local creation time
+* Local modified time
+* Local size
 
 ### File Created
 
