@@ -207,6 +207,13 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 
 **sync\_config.log**
 
+The Sync_log.log is a log file containing information about the client sync session
+* Inside the file we can find information about
+* Sync sessions
+* File created
+* File saved
+* File deleted
+
 ```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.log.1
