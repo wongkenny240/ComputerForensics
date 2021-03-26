@@ -68,24 +68,8 @@ The decrypted filecache.db contains:
 
 ![](../.gitbook/assets/image%20%2877%29.png)
 
-### File Created
 
-Executable and libraries are stored in
-
-```text
-C:\Users\%USERNAME%\AppData\Roaming\Dropbox\bin
-```
-
-Four files created during installation
-
-```text
-C:\Users\<username>\Desktop\Dropbox.lnk
-C:\Users\<username>\Links\Dropbox.lnk
-C:\Windows\Prefetch\DROPBOX N.N.NN.EXE-NNNNNNNN.pf
-C:\Windows\Prefetch\DROPBOX.EXE-NNNNNNNN.pf
-```
-
-### Registry Changes
+### Installation
 
 ```text
 SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules
@@ -97,10 +81,27 @@ NTUSER\Software\Microsoft\Windows\CurrentVersion\UFH\SHC
 NTUSER\Software\Dropbox\InstallPath
 ```
 
-We can obtain from the industry
+Four files created during installation
+
+```text
+C:\Users\<username>\Desktop\Dropbox.lnk
+C:\Users\<username>\Links\Dropbox.lnk
+C:\Windows\Prefetch\DROPBOX N.N.NN.EXE-NNNNNNNN.pf
+C:\Windows\Prefetch\DROPBOX.EXE-NNNNNNNN.pf
+```
+
+We can obtain from the registry
 
 * Install Location
 * Installed version
+
+### File Created
+
+Executable and libraries are stored in
+
+```text
+C:\Users\%USERNAME%\AppData\Roaming\Dropbox\bin
+```
 
 ### Uninstall
 
@@ -112,16 +113,42 @@ We can obtain from the industry
 ## Google Drive
 
 Google Drive client is installed inside the Program Files folder
-
+```
 C:\Program Files\Google\Drive
-
+```
 Client configuration is stored in the user profile, so we have different profiles for each user 
-
+```
 C:\Users\AppData\Local\Google\Drive
-
-The default folder used for syncing files. By default, the folder is empty
-
+```
+The default folder used for syncing files. By default, the folder is **empty**
+```
 C:\Users\Google Drive
+```
+
+### Installation
+
+During the installation different keys and values are created inside the registry
+```
+SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders\
+SOFTWARE\Google\Drive
+NTUSER\Software\Microsoft\Windows\CurrentVersion\Run\GoogleDriveSync
+NTUSER\Software\Classes
+```
+From the registry we can obtain:
+* Installed version
+* User folder
+
+Four files are created during client installation:
+```
+C:\Users\<username>\Desktop\Google Drive.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Drive\Google Drive.lnk
+C:\Windows\Prefetch\GOOGLEDRIVESYNC.EXE-NNNNNNNN.pf
+C:\Windows\Prefetch\GOOGLEUPDATE.EXE-NNNNNNNN.pf
+```
+
+### Configuration
+
+* Configuration files are saved inside the installation folder in the user profile
 
 
 
