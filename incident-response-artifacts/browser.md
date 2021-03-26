@@ -2,6 +2,9 @@
 
 ## Chrome
 
+syncdata.db
+
+
 ## Edge
 
 ## Firefox
