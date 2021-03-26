@@ -59,11 +59,14 @@ C:\Documents and Settings\<username>\Application Data\Dropbox
 * User’s password
 
 The decrypted filecache.db contains:
+
 * Server path
 * Local file name
 * Local creation time
 * Local modified time
 * Local size
+
+![](../.gitbook/assets/image%20%2877%29.png)
 
 ### File Created
 

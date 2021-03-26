@@ -97,7 +97,6 @@ CTRL-C: Copy the selected cells \(with headers\) to the clipboard. Hold SHIFT to
 2. Create a case after logging in [https://127.0.0.1:5000](https://127.0.0.1:5000)
 3. Upload data using timesketch api
 
-
 #### Upload data with Python
 
 importing python libraries
@@ -123,13 +122,15 @@ for i, sketch in enumerate(sketches):
 ```
 
 Output
-```
+
+```text
 [0] MUSCTF 2019
 [1] The Greendale incident - 2019
 [2] The Greendale investigation
 ```
 
 set target sketch
+
 ```python
 my_sketch = sketches[0]
 ```
@@ -248,13 +249,12 @@ use a streamer to upload the data to the server
 #### Python code for searching on TimeSketch with jupyter notebook
 
 import the necessary libraries for searching
+
 ```python
 from timesketch_api_client import config
 from timesketch_api_client import search
 import pandas as pd
-
 ```
-
 
 First way of searching is to use the explore function
 
@@ -263,7 +263,6 @@ ts_results = ctf.explore(
     <query_str>, 
     return_fields='*', # * means return all fields 
     as_pandas=True)
-
 ```
 
 Second way of searching
@@ -280,7 +279,6 @@ search_obj.add_chip(date_chip)
 search_obj.return_fields = '*'
 
 ts_results = search_obj.table
-
 ```
 
 DateRangeClip object is used to control the date range of the output of the query

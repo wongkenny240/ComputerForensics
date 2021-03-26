@@ -56,7 +56,7 @@ After finished acquiring &gt; Physically remove the device &gt; Stop the write-b
 
 ![Process Evidence -&amp;gt; Acquire](../.gitbook/assets/image%20%2816%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
-![Location tab](../.gitbook/assets/image%20%286%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Location tab](../.gitbook/assets/image%20%286%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ![Format tab](../.gitbook/assets/image%20%287%29.png)
 
