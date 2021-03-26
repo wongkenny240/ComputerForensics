@@ -68,7 +68,6 @@ The decrypted filecache.db contains:
 
 ![](../.gitbook/assets/image%20%2877%29.png)
 
-
 ### Installation
 
 ```text
@@ -113,33 +112,42 @@ C:\Users\%USERNAME%\AppData\Roaming\Dropbox\bin
 ## Google Drive
 
 Google Drive client is installed inside the Program Files folder
-```
+
+```text
 C:\Program Files\Google\Drive
 ```
-Client configuration is stored in the user profile, so we have different profiles for each user 
-```
+
+Client configuration is stored in the user profile, so we have different profiles for each user
+
+```text
 C:\Users\AppData\Local\Google\Drive
 ```
+
 The default folder used for syncing files. By default, the folder is **empty**
-```
+
+```text
 C:\Users\Google Drive
 ```
 
 ### Installation
 
 During the installation different keys and values are created inside the registry
-```
+
+```text
 SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders\
 SOFTWARE\Google\Drive
 NTUSER\Software\Microsoft\Windows\CurrentVersion\Run\GoogleDriveSync
 NTUSER\Software\Classes
 ```
+
 From the registry we can obtain:
+
 * Installed version
 * User folder
 
 Four files are created during client installation:
-```
+
+```text
 C:\Users\<username>\Desktop\Google Drive.lnk
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Drive\Google Drive.lnk
 C:\Windows\Prefetch\GOOGLEDRIVESYNC.EXE-NNNNNNNN.pf
@@ -150,8 +158,6 @@ C:\Windows\Prefetch\GOOGLEUPDATE.EXE-NNNNNNNN.pf
 
 * Configuration files are saved inside the installation folder in the user profile
 
-
-
 Google provides a Mac OS X and Windows and desktop client.
 
 **snapshot.db**
@@ -159,6 +165,7 @@ Google provides a Mac OS X and Windows and desktop client.
 The **snapshot.db** is a SQLITE3 DB containing information about local and cloud entry
 
 * Cloud\_entry table
+
   * File name
   * Created \(UNIX Timestamp\)
   * Modified \(UNIX Timestamp\)
@@ -166,12 +173,15 @@ The **snapshot.db** is a SQLITE3 DB containing information about local and cloud
   * Checksum \(MD5 hash\)
   * Size
   * Shared
+
 * Local\_entry
   * File name
   * Modified \(UNIX Timestamp\)
   * Checksum \(MD5 hash\)
   * Size
 * After file deletion the file information is removed from the cloud\_entry and the local\_entry table
+
+![](../.gitbook/assets/image%20%2879%29.png)
 
 ```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\snapshot.db
@@ -190,6 +200,8 @@ The **sync\_config.db** is a SQLITE3 DB containing profile configuration
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 ```
+
+![](../.gitbook/assets/image%20%2878%29.png)
 
 **sync\_config.log**
 

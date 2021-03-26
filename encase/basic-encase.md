@@ -25,7 +25,7 @@ Tree Pane &gt; Set Included &gt; Timeline view &gt; Higher Resolution or Lower R
 
 Date Types &gt; select which timestamps to be viewed
 
-![Timeline View](../.gitbook/assets/2019-04-03-16_29_25-encase-forensic%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Timeline View](../.gitbook/assets/2019-04-03-16_29_25-encase-forensic%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ## Sort
 
