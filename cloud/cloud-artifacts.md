@@ -66,7 +66,9 @@ The decrypted filecache.db contains:
 * Local modified time
 * Local size
 
-![](../.gitbook/assets/image%20%2877%29.png)
+![cloud\_entry\_table](../.gitbook/assets/image%20%2877%29.png)
+
+![local\_entry\_table](../.gitbook/assets/image%20%2878%29.png)
 
 ### Installation
 
@@ -181,7 +183,7 @@ The **snapshot.db** is a SQLITE3 DB containing information about local and cloud
   * Size
 * After file deletion the file information is removed from the cloud\_entry and the local\_entry table
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 ```text
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\snapshot.db
@@ -201,7 +203,7 @@ C:\Users\%USERNAME%\AppData\Local\Google\Drive\sync_config.db
 C:\Users\%USERNAME%\AppData\Local\Google\Drive\user_default\sync_config.db
 ```
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2879%29.png)
 
 **sync\_config.log**
 
