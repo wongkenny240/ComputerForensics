@@ -111,6 +111,20 @@ We can obtain from the industry
 
 ## Google Drive
 
+Google Drive client is installed inside the Program Files folder
+
+C:\Program Files\Google\Drive
+
+Client configuration is stored in the user profile, so we have different profiles for each user 
+
+C:\Users\AppData\Local\Google\Drive
+
+The default folder used for syncing files. By default, the folder is empty
+
+C:\Users\Google Drive
+
+
+
 Google provides a Mac OS X and Windows and desktop client.
 
 **snapshot.db**
