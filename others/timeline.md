@@ -132,7 +132,7 @@ use a streamer to upload the data to the server
 
 #### File Download Capabilities
 
-| Topic | Supported  | <div style="width:400px">Timesketch and Kibana Queries, Notes </div>|
+| Topic | Supported  | <div style="width:300px">Timesketch and Kibana Queries, Notes </div>|
 | :--- | :--- | :--- |
 | Mail Attachements  | NO | There is just no parser for mail attachments but this is a case where analysts are usually well off with a commercial forensic suite. |
 | Skype History | YES | parser:”skype” |
@@ -140,7 +140,7 @@ use a streamer to upload the data to the server
 | Downloads | YES | parser:”firefox\_downloads” OR parser:”msiecf”  Note that msiecf contains general browsing artifacts and is not limited to file downloads only. |
 | ADS Zone.Identifier  | NO |  |
 | Open/Save MRU | CLAIMED | MRU parsers pose to be some sort of jungle yet. Plaso has a total of six different MRU list parsers\[5\].  Unfortunately, it is not documented which one parses which artifact. Even though they have different names, it is hard to guess which artifact they get and one definitely cannot get around digging into the source code.  However, empirical tests of the six MRU list parsers did not include the NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU registry items that contains the Open/Save MRU artifacts. |
-| `border-bottom-right-radius`| | |
+
 #### Program Execution Analysis
 
 | Topic | Supported  | Timesketch and Kibana Queries, Notes |
