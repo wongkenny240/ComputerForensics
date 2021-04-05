@@ -16,7 +16,7 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Office\Recent\
 
 Windows LNK Parsing Utility \(lp\) – TZWorks
 
-[https](https://www.tzworks.net/prototype_page.php?proto_id=11)[://](https://www.tzworks.net/prototype_page.php?proto_id=11)[www.tzworks.net/prototype\_page.php?proto\_id=11](https://www.tzworks.net/prototype_page.php?proto_id=11)
+[https://www.tzworks.net/prototype\_page.php?proto\_id=11](https://www.tzworks.net/prototype_page.php?proto_id=11)
 
 Lnkanalyser – Mark Woan
 
