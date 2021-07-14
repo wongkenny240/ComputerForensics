@@ -15,7 +15,7 @@ syncdata.sqlite3
 
 Use the SQLite Database Browser to view SQLite database
 
-
+![](../.gitbook/assets/image%20%2881%29.png)
 
 ### Edge
 
