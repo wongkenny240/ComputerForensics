@@ -21,14 +21,21 @@ Use the SQLite Database Browser to view SQLite database
 
 ### Firefox
 
-
-
-### BrowsingHistoryView 
+### BrowsingHistoryView
 
 * Select load histroy form the specified history files
 
-* Copy the file location of the WebCacheV01.dat in Internet Explorer (Version 10.0/11.0) history files(WebCacheV01.dat) and click OK to proceed
+![](../.gitbook/assets/image%20%2884%29.png)
+
+* Copy the file location of the WebCacheV01.dat in Internet Explorer \(Version 10.0/11.0\) history files\(WebCacheV01.dat\) and click OK to proceed
+
+![](../.gitbook/assets/image%20%2883%29.png)
 
 * Click Ok again to start loading the Web browsing histroy
 
+![](../.gitbook/assets/image%20%2885%29.png)
+
 * Browing history will be shown after loading the history file
+
+![](../.gitbook/assets/image%20%2882%29.png)
+
