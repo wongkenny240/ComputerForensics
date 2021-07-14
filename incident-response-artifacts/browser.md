@@ -23,7 +23,7 @@ Use the SQLite Database Browser to view SQLite database
 
 ### BrowsingHistoryView
 
-* Select load histroy form the specified history files
+* Select load history form the specified history files
 
 ![](../.gitbook/assets/image%20%2884%29.png)
 
@@ -31,11 +31,11 @@ Use the SQLite Database Browser to view SQLite database
 
 ![](../.gitbook/assets/image%20%2883%29.png)
 
-* Click Ok again to start loading the Web browsing histroy
+* Click Ok again to start loading the Web browsing history
 
 ![](../.gitbook/assets/image%20%2885%29.png)
 
-* Browing history will be shown after loading the history file
+* Browsing history will be shown after loading the history file
 
 ![](../.gitbook/assets/image%20%2882%29.png)
 
