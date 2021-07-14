@@ -21,3 +21,14 @@ Use the SQLite Database Browser to view SQLite database
 
 ### Firefox
 
+
+
+### BrowsingHistoryView 
+
+* Select load histroy form the specified history files
+
+* Copy the file location of the WebCacheV01.dat in Internet Explorer (Version 10.0/11.0) history files(WebCacheV01.dat) and click OK to proceed
+
+* Click Ok again to start loading the Web browsing histroy
+
+* Browing history will be shown after loading the history file
