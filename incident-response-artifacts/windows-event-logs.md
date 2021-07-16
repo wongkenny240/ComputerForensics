@@ -92,11 +92,22 @@ The Windows service logged on using its configured credentials.
 
 Microsoft defines this as “a proxy-type logon.” We have yet to see this type of event in the wild, or any documentation explaining how it may be generated.
 
-
 ## Analysis of Logs
+
 * Collect logs from the directory /windows/system32/winevt/logs
+
+![](../.gitbook/assets/image%20%2893%29.png)
+
 * Export the evtx file of interest
-* Analyse the event log using event viewer (e.g. Event Log Explorer)
-* Or use some Event Log parser to parse them into format that can be read in Excel format such as EvtxECmd.exe
-* Then can review in Excel or other Excel like tools (e.g. Timeline Explorer)
+* Analyse the event log using event viewer \(e.g. Event Log Explorer\)
+
+![](../.gitbook/assets/image%20%2892%29.png)
+
+* Or use some Event Log parser to parse them into format that can be read in Excel format such as **EvtxECmd.exe**
+
+![](../.gitbook/assets/image%20%2890%29.png)
+
+* Then can review in Excel or other Excel like tools \(e.g. Timeline Explorer\)
+
+![](../.gitbook/assets/image%20%2891%29.png)
 
