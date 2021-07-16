@@ -25,7 +25,7 @@ The Data is stored in the main folders in a Tree like structure which is called 
 * Registry analysis in inactive systems \(forensic replication drives or images\)
 * Registry Hive file needs to be collected
 
-### Registry extraction
+#### Registry extraction
 
 * Collect registry location - Export Files
 * Use FTK Imager to export the folder in Windows/System32/config
