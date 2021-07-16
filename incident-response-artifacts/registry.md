@@ -30,14 +30,22 @@ The Data is stored in the main folders in a Tree like structure which is called 
 * Collect registry location - Export Files
 * Use FTK Imager to export the folder in Windows/System32/config
 
+![](../.gitbook/assets/image%20%2886%29.png)
+
 #### Regripper
+
 * Select the corresponding registry and the report location
-* Continue to load the other remaining registry files (e.g. Security, Software, System, NTUSER.dat)
+
+![](../.gitbook/assets/image%20%2888%29.png)
+
+* Continue to load the other remaining registry files \(e.g. Security, Software, System, NTUSER.dat\)
 
 #### Registry Explorer
-* Open the Registry Explorer (Eric Zimmerman)
+
+* Open the Registry Explorer \(Eric Zimmerman\)
 * Select the Registry to view
 
+![](../.gitbook/assets/image%20%2887%29.png)
 
 #### System specific hive
 
@@ -57,8 +65,8 @@ SYSTEM, SECURITY, SOFTWARE, SAM, DEFAULT.
 
 | Version | Path |
 | :--- | :--- |
-| Windows XP and Server 2003 | • \Documents and Settings\\NTUSER.DAT    • \Documents and Settings\\Local Settings\Application Data\Microsoft\Windows\USRCLASS.DAT |
-| Windows Vista, 7, and Server 2008 | • \Users\\NTUSER.DAT    • \Users\\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
+| Windows XP and Server 2003 | • \Documents and Settings\NTUSER.DAT    • \Documents and Settings\Local Settings\Application Data\Microsoft\Windows\USRCLASS.DAT |
+| Windows Vista, 7, and Server 2008 | • \Users\NTUSER.DAT    • \Users\AppData\Local\Microsoft\Windows\USRCLASS.DAT |
 
 #### Mapping
 
