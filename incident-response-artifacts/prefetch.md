@@ -55,8 +55,9 @@ The hash is a hash of the file’s path. In this example, CALC.EXE is located in
 ![](../.gitbook/assets/image%20%2872%29.png)
 
 * Analyze Prefetch file through Nirsoft WinPrefetchView
-*  Select the folder with the Prefetch files in the Advanced Options
+* Select the folder with the Prefetch files in the Advanced Options
 
+![](../.gitbook/assets/image%20%2889%29.png)
 
 ### PrefetchForensics – Mark Woan
 
