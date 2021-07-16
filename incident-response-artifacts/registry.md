@@ -25,6 +25,20 @@ The Data is stored in the main folders in a Tree like structure which is called 
 * Registry analysis in inactive systems \(forensic replication drives or images\)
 * Registry Hive file needs to be collected
 
+### Registry extraction
+
+* Collect registry location - Export Files
+* Use FTK Imager to export the folder in Windows/System32/config
+
+#### Regripper
+* Select the corresponding registry and the report location
+* Continue to load the other remaining registry files (e.g. Security, Software, System, NTUSER.dat)
+
+#### Registry Explorer
+* Open the Registry Explorer (Eric Zimmerman)
+* Select the Registry to view
+
+
 #### System specific hive
 
 Windows maintains five main registry hives in the path below:
