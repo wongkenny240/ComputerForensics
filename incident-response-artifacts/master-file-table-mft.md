@@ -39,15 +39,20 @@
 
 * Open the converted file using text editor or Excel
 
-![](../.gitbook/assets/image%20%2896%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 ## $USNJRNL
 
 * Choose the $J file of $USNJRNL file to be converted
 * Select the appropriate time zone
 * Select process output options
-* Click start processing to proceed the convertion process
+* Click start processing to proceed the conversion process
+
+![](../.gitbook/assets/image%20%2897%29.png)
+
 * Open Excel and then select Get Data through import
+
+![](../.gitbook/assets/image%20%2896%29.png)
 
 ## $LogFiles
 
