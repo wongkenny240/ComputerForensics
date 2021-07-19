@@ -23,3 +23,27 @@
 
 ![](../.gitbook/assets/image%20%2873%29.png)
 
+## MFT
+
+  * Collect the MFT and analyze the file timestamps
+  * Use MFT2CSV to convert MFT file into .csv file
+  * Choose the MFT file to be converted
+  * Select the appropriate time zone
+  * Set the outfile path
+  * Click start processing to proceed the convertion process
+  * Open the converted file using text editor or Excel
+
+## $USNJRNL
+
+  * Choose the $J file of $USNJRNL file to be converted
+  * Select the appropriate time zone
+  * Select process output options
+  * Click start processing to proceed the convertion process
+  * Open Excel and then select Get Data through import
+
+## $LogFiles
+
+  * Choose the $LogFile and the previous processed MFT.csv file
+  * Select the appropriate time zone
+  * Click start processing to proceed the convertion process
+
