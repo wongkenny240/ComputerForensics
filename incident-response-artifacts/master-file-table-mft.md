@@ -54,7 +54,7 @@
 
 ![](../.gitbook/assets/image%20%2896%29.png)
 
-![](../.gitbook/assets/image%20%2899%29.png)
+![](../.gitbook/assets/image%20%28100%29.png)
 
 
 
@@ -62,5 +62,7 @@
 
 * Choose the $LogFile and the previous processed MFT.csv file
 * Select the appropriate time zone
-* Click start processing to proceed the convertion process
+* Click start processing to proceed the conversion process
+
+![](../.gitbook/assets/image%20%2899%29.png)
 
