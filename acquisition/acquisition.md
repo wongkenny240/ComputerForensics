@@ -20,17 +20,16 @@ File &gt; Capture Memory
 
 ![FTK Imager Lite for capturing memory](../.gitbook/assets/2019-04-04-17_31_52-greenshot.png)
 
-## FTK Imager on Linux 
+## FTK Imager on Linux
 
 * copy the file to /usr/local/bin so that the binary is executable from anywhere
 * mount the disk where the image files is going to be stored
 
-```
+```text
 ftkimager source [dest_file] [options]
 ```
 
-
-```
+```text
 Options:
    --help Display this information
    --list-drives Show detected physical drives
@@ -40,18 +39,17 @@ Options:
    --quiet Do not show create/verify progress information
    --no-sha1 Do not compute SHA1 hash during acquire or verify
  The following options are valid only when dest_file is specified
-   s01 Create a SMART ew-compressed image
-   e01 Create an E01 format image
-   frag x{K|M|G|T} Create image fragments at most x {K|M|G|T} in size  also accepts kB, MB, GB, and TB for powers of 10 instead of 2 
-   compress C Set compression level to C (0=none, 1=fast, ..., 9=best)
+   --s01 Create a SMART ew-compressed image
+   --e01 Create an E01 format image
+   --frag x{K|M|G|T}  Create image fragments at most x {K|M|G|T} in size  also accepts kB, MB, GB, and TB for powers of 10 instead of 2 
+   --compress C  Set compression level to C (0=none, 1=fast, ..., 9=best)
  E01/smart metadata (use quote marks when X contains spaces):
-   case-number X
-   evidence-number X
-   description X
-   examiner X
-   notes X
+   --case-number X
+   --evidence-number X
+   --description X
+   --examiner X
+   --notes X
 ```
-
 
 ## FastBloc SE
 
