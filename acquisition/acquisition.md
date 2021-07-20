@@ -24,6 +24,7 @@ File &gt; Capture Memory
 
 * copy the file to /usr/local/bin so that the binary is executable from anywhere
 * mount the disk where the image files is going to be stored
+* run the following command
 
 ```text
 ftkimager source [dest_file] [options]
