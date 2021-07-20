@@ -32,13 +32,13 @@ ftkimager source [dest_file] [options]
 
 ```
 Options:
-   help Display this information
-   list-drives Show detected physical drives
-   verify Hash/verify the destination image, or the source image if no
-   destination is specified
-   print-info Print information about a drive or image and then exit
-   quiet Do not show create/verify progress information
-   no-sha1 Do not compute SHA1 hash during acquire or verify
+   --help Display this information
+   --list-drives Show detected physical drives
+   --verify Hash/verify the destination image, or the source image if no
+   --destination is specified
+   --print-info Print information about a drive or image and then exit
+   --quiet Do not show create/verify progress information
+   --no-sha1 Do not compute SHA1 hash during acquire or verify
  The following options are valid only when dest_file is specified
    s01 Create a SMART ew-compressed image
    e01 Create an E01 format image
