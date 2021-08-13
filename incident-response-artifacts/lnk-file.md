@@ -1,5 +1,30 @@
 # LNK File
 
+LNK files (labels or Windows shortcut files) are typically files which are created by the Windows OS automatically, whenever a user opens their files. These files are used by the operating system to secure quick access to a certain file. In addition, some of these files can be created by users themselves to make their activities easier.
+
+## Location
+Most of LNK-files are located on the following paths:
+
+### Windows 7 to 10
+```
+C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Recent
+```
+
+### Windows XP
+```
+C:\Documents and Settings\%USERNAME%\Recent
+```
+
+### Other location
+However, there many other places where investigators can find LNK files:
+
+```
+On the desktop (such shortcuts are usually created by users to secure quick access to documents and apps)
+C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Office\Recent\ (for Microsoft Office documents on Windows 7 to 10)
+C:\Users\%USERNAME%\Downloads (Sometimes users send shortcuts via e-mails to other users instead of the documents to be delivered. Consequently, other users download those shortcuts. Again, this is for Windows 7 to 10)
+Startup folder
+```
+
 Windows Vista, 7, and 2008
 
 ```text
@@ -14,7 +39,8 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\
 C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Office\Recent\
 ```
 
-Windows LNK Parsing Utility \(lp\) – TZWorks
+
+Windows LNK Parsing Utility \(lp\) – TZWorks
 
 [https://www.tzworks.net/prototype\_page.php?proto\_id=11](https://www.tzworks.net/prototype_page.php?proto_id=11)
 
