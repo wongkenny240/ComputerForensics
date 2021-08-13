@@ -4,6 +4,11 @@ description: Some docker commands
 
 # Docker
 
+### Stop the process
+
+```
+ docker stop [OPTIONS] CONTAINER [CONTAINER...]
+```
 
 
 ### Procedure to remove file and database
