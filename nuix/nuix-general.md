@@ -1,5 +1,9 @@
 # Nuix General
 
+
+
+![](../.gitbook/assets/image%20%28101%29.png)
+
 ## Registry/Database Viewer Tab
 
 The Registry/Database Viewer tab is used to review the contents of the Windows Registry and SQLite databases. To open a Registry/Database Viewer tab, select the required items in the Results pane and **right-click** to select **Show in Database Viewer**. The tab includes the following UI components:

@@ -4,14 +4,13 @@ description: Some docker commands
 
 # Docker
 
-### Stop the process
+## Stop the process
 
-```
+```text
  docker stop [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-
-### Procedure to remove file and database
+## Procedure to remove file and database
 
 1. Stop the container\(s\) using the following command:
 
