@@ -19,6 +19,11 @@ The Registry/Database Viewer tab is used to review the contents of the Windows R
 
 ![Viewing SQLite Database](../.gitbook/assets/image%20%2838%29.png)
 
+
+## Items Menu
+
+![Delete Items](../.gitbook/assets/image%20%2843%29.png)
+
 Items Menu The Items menu contains commands for editing, managing, and finding items in the case.
 
 <table>
@@ -104,8 +109,6 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
     </tr>
   </tbody>
 </table>
-
-![Delete Items](../.gitbook/assets/image%20%2843%29.png)
 
 
 
