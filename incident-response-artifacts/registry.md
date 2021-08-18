@@ -208,7 +208,7 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 ```
 
 * Show manufacturer, product name, and version information through Device Class ID format
-* For Example Ven\_\\&\\&Rev\_\
+* For Example Ven\_&lt;Manufacturer&gt;&&lt;Product Name&gt;&Rev\_&lt;Version&gt;
 
 ![](../.gitbook/assets/image%20%28103%29.png)
 
