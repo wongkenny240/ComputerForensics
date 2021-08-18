@@ -29,6 +29,7 @@
 ## Incident Response Artifacts
 
 * [Registry](incident-response-artifacts/registry.md)
+* [Recycle Bin](incident-response-artifacts/recycle-bin.md)
 * [Master File Table \(MFT\)](incident-response-artifacts/master-file-table-mft.md)
 * [LNK File](incident-response-artifacts/lnk-file.md)
 * [AppCompatCache](incident-response-artifacts/appcompatcache.md)
