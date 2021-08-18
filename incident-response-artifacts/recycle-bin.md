@@ -11,9 +11,9 @@ When a file is placed into the Recycle Bin, Windows renames it using the followi
 ```
 
 * D is a fixed character and will always be present.
-*  refers to the volume from which the file was deleted.
-*  references a count of the number of deleted files currently tracked by the Recycle Bin. This value increments with each deleted file or folder, and is cleared when the Recycle Bin is emptied and the system rebooted.
-*  matches the original extension of the file.
+* <DriveLetter> refers to the volume from which the file was deleted.
+* <Index#> references a count of the number of deleted files currently tracked by the Recycle Bin. This value increments with each deleted file or folder, and is cleared when the Recycle Bin is emptied and the system rebooted.
+* <FileExtension> matches the original extension of the file.
 
 Each time a new file is added to the Recycle Bin, its associated metadata is stored in a hidden file named \Recycler\\INFO2. The INFO2 file tracks the following information for each file currently stored in the Recycle Bin:
 
@@ -27,3 +27,13 @@ Windows will create a directory named \Recycler\ \DC\#\, where \# is the current
 
 ## \$Recycle.Bin \(Vista and After\)
 
+The operating system creates two files each time a file is placed in the Recycle Bin:
+```
+* \$Recycle.Bin\<SID>\$I<ID_STRING>.<FileExtension>
+* \$Recycle.Bin\<SID>\$R<ID_STRING>.<FileExtension>
+```
+
+* <ID_STRING> is a six-character identifier generated for each file placed in the Recycle Bin. 
+* $R file is a renamed copy of the “deleted” file, similar to the DC# file. 
+* The $I file takes the place of INFO2 as the source of accompanying metadata
+* It contains the original name, path, and date and time deleted for its associated $R file.
