@@ -35,7 +35,7 @@ Note: Start time is recorded when the Save As Windows is triggered
 
 ### Firefox
 
-### BrowsingHistoryView
+## BrowsingHistoryView
 
 * Select load history form the specified history files
 
