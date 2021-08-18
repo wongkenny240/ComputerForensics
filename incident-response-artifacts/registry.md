@@ -260,5 +260,10 @@ If there's not Serial Number in like the second key, then we go to the following
 
 ![](../.gitbook/assets/image%20%28104%29.png)
 
+```
+SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\Partmgr
+```
+
 ![](../.gitbook/assets/image%20%28106%29.png)
 
+Then we can correlate to the value with the bracket value
