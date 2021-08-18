@@ -25,7 +25,7 @@ Each time a new file is added to the Recycle Bin, its associated metadata is sto
 
 Windows will create a directory named \Recycler \DC\#\, where \# is the current Recycle Bin index value. The original directory’s contents will be moved into this new path, but will retain their original file names and will not be tracked in the INFO2 file.
 
-## $Recycle.Bin \(Vista and After\)
+## \$Recycle.Bin \(Vista and After\)
 
 The operating system creates two files each time a file is placed in the Recycle Bin:
 
