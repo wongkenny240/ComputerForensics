@@ -1,7 +1,5 @@
 # Nuix General
 
-
-
 ![](../.gitbook/assets/image%20%28101%29.png)
 
 ## Registry/Database Viewer Tab
@@ -18,7 +16,6 @@ The Registry/Database Viewer tab is used to review the contents of the Windows R
 ![Viewing Registry](../.gitbook/assets/image%20%2837%29.png)
 
 ![Viewing SQLite Database](../.gitbook/assets/image%20%2838%29.png)
-
 
 ## Items Menu
 
@@ -109,6 +106,4 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
     </tr>
   </tbody>
 </table>
-
-
 

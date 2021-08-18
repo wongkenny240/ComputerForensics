@@ -191,8 +191,8 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{DID, device class identifier}
 HKLM\SYSTEM\ControlSet00X\Control\DeviceClasses\{GUID}
 ```
 
-1. The device driver installation process is saved in a log file.
-2. As a result, traces of USB devices can be identified through log files \(setupapi.log\) and registry.
+1. The device **driver installation process** is **saved in a log file**.
+2. As a result, traces of USB devices can be identified through log files \(**setupapi.log**\) and registry.
 
 Precautions when checking registry key last modification time information
 
