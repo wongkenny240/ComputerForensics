@@ -210,7 +210,7 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 * Show manufacturer, product name, and version information through Device Class ID format
 * For Example Ven\_&lt;Manufacturer&gt;&&lt;Product Name&gt;&Rev\_&lt;Version&gt;
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28105%29.png)
 
 #### Serial number
 
@@ -242,9 +242,17 @@ HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices
 
 Under Devices, search for a key including product name or serial number among subkeys
 
+![](../.gitbook/assets/image%20%28103%29.png)
+
 _**FriendlyName**_
 
 ![](../.gitbook/assets/image%20%2860%29.png)
 
 ![](../.gitbook/assets/image%20%2859%29.png)
+
+In this example, the Volume Name is KINGSTON
+
+![](../.gitbook/assets/image%20%28104%29.png)
+
+One more example the Volume Name is FOR408-USB
 
