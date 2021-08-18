@@ -268,3 +268,8 @@ SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\
 
 Then we can correlate to the value under Windows Portable Devices with the bracket value
 
+#### Determine the Drive Letter
+
+```
+SYSTEM\MountedDevices
+```
