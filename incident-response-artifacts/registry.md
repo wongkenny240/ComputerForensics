@@ -201,13 +201,16 @@ Precautions when checking registry key last modification time information
 * According to the security policy \(Windows Vista/7\), the PnP administrator frequently accesses to set the sub-key security token. 
   * RegSetKeySecurityAPI call -&gt; change the last modification time
 
-#### Storage media information
+#### USB Registry Keys
 
 ```text
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 ```
 
 * Show manufacturer, product name, and version information through Device Class ID format
+* For Example Ven_<manufacturer>&<Product Name>&Rev_<Version Number>
+
+
 
 #### Serial number
 
@@ -215,7 +218,9 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
 ```
 
-* Check the serial number through the Unique Instance ID format of the Device Class ID subkey
+* The serial number is a sub-key of the Device Class ID
+* If the USB devices have a unique serial from their respective manufacturers. &0 or &1 will be displayed at the end of the serial number. 
+* If instead the second character is an & then the device does not have a unique serial number and Windows has issued one which is unique to the local system only.
 
 ![](../.gitbook/assets/image%20%2857%29.png)
 
