@@ -210,7 +210,7 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR
 * Show manufacturer, product name, and version information through Device Class ID format
 * For Example Ven\_&lt;Manufacturer&gt;&&lt;Product Name&gt;&Rev\_&lt;Version&gt;
 
-![](../.gitbook/assets/image%20%28105%29.png)
+![](../.gitbook/assets/image%20%28107%29.png)
 
 #### Serial number
 
@@ -252,7 +252,13 @@ _**FriendlyName**_
 
 In this example, the Volume Name is KINGSTON
 
-![](../.gitbook/assets/image%20%28104%29.png)
+![](../.gitbook/assets/image%20%28105%29.png)
 
 One more example the Volume Name is FOR408-USB
+
+If there's not Serial Number in like the second key, then we go to the following key to look for the bracket value \(i.e. {c0b076c....}\)
+
+![](../.gitbook/assets/image%20%28104%29.png)
+
+![](../.gitbook/assets/image%20%28106%29.png)
 
