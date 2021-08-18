@@ -7,3 +7,8 @@ When a file is placed into the Recycle Bin, Windows renames it using the followi
 ```
  D <DriveLetter><Index#>.<FileExtension>
 ```
+
+* D is a fixed character and will always be present.
+* <DriveLetter> refers to the volume from which the file was deleted.
+* <Index#> references a count of the number of deleted files currently tracked by the Recycle Bin. This value increments with each deleted file or folder, and is cleared when the Recycle Bin is emptied and the system rebooted.
+* <FileExtension> matches the original extension of the file.
