@@ -186,27 +186,26 @@ Remove Sort:
         <p>Report on the core system information for Linux and Windows, including:</p>
         <p></p>
         <ul>
-          <li>Hash Analysis</li>
-          <li></li>
+          <li>User activity (Linux only)</li>
+          <li>Operating system</li>
+          <li>Hardware</li>
+          <li>Software</li>
+          <li>Accounts/users</li>
+          <li>Network information</li>
+          <li>Shared/mapped drives</li>
+          <li>USB Devices</li>
+          <li>Network Shares</li>
         </ul>
-        <p></p>
-        <p>User activity (Linux only)</p>
-        <p>Operating system</p>
-        <p>Hardware</p>
-        <p>Software</p>
-        <p>Accounts/users</p>
-        <p>Network information</p>
-        <p>Shared/mapped drives</p>
-        <p>USB Devices</p>
-        <p>Network Shares</p>
         <p>Advanced : Windows Registry</p>
-        <p>Time zone setting</p>
-        <p>Auto start</p>
-        <p>Hardware</p>
-        <p>User activity</p>
-        <p>User defined keys</p>
-        <p>Network Shares</p>
-        <p>Other AutoRuns</p>
+        <ul>
+          <li>Time zone setting</li>
+          <li>Auto start</li>
+          <li>Hardware</li>
+          <li>User activity</li>
+          <li>User defined keys</li>
+          <li>Network Shares</li>
+          <li>Other AutoRuns</li>
+        </ul>
       </td>
     </tr>
     <tr>
@@ -224,15 +223,6 @@ Remove Sort:
   </tbody>
 </table>
 
-   –   –   –   –   –   – 
-
- –   –   – 
-
- – 
-
- – 
-
-–
 
 ## File Signature Analysis
 
@@ -240,9 +230,27 @@ Remove Sort:
 
 ### Running File Signature Analysis against Selected Files
 
+
+### File Signature Analysis
+
 | extension | header | Header in Table | Extension | Signature | Signature Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |  |
 
-### File Signature Analysis
+p1cture;jpg
+picturegd11
+anyfi1egzza
+picturegjpg
+FF D8 FF E0
+'FF DS'FFEO
+FF D6 FE FF
+D8 D8 FF E0
+Known
+Known
+Unknown
+Unknown
 
+Known and matches
+Known and incorrect
+Unknown 1
+Known and doesn't match
