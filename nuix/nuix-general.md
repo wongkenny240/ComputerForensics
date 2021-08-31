@@ -1,5 +1,7 @@
 # Nuix General
 
+## Tabs
+
 ![Workbench](../.gitbook/assets/image%20%28101%29.png)
 
 | Option  | Description  |
@@ -115,6 +117,14 @@ To open a new Context tab:
 The Context tab consists of:
 * Analysis Graph
 * Analysis Table
+
+### Analysis Graph
+The Analysis Graph consists of the:
+* Graph Menu bar
+* Graph
+* Magnification Menu
+* Timeline
+
 
 ## Search and Tag Tab
 
