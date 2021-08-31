@@ -225,9 +225,17 @@ Remove Sort:
 
 ### Create a new file signatures
 
-![View &amp;gt; File Types](../.gitbook/assets/image%20%28115%29.png)
+![View &amp;gt; File Types](../.gitbook/assets/image%20%28116%29.png)
 
-![Click New on the File Types table toolbar](../.gitbook/assets/image%20%28116%29.png)
+![Click New on the File Types table toolbar](../.gitbook/assets/image%20%28117%29.png)
+
+![Change the extensions or Description of the file types](../.gitbook/assets/image%20%28115%29.png)
+
+
+
+
+
+
 
 ### Running File Signature Analysis against Selected Files
 
