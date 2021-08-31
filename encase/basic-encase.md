@@ -208,9 +208,11 @@ Remove Sort:
       <td style="text-align:left">Windows Artifact Parser</td>
       <td style="text-align:left">
         <p>Report on Windows artifacts, including</p>
-        <p>Link files</p>
-        <p>Recycle Bin files</p>
-        <p>MFT (NTFS Master File Table) transactions</p>
+         <ul>
+          <li>Link files</li>
+          <li>Recycle Bin files</li>
+          <li>MFT (NTFS Master File Table) transactions</li>
+        </ul>
         <p>Option: All or selected files, and/or unallocated clusters</p>
       </td>
     </tr>
@@ -233,11 +235,13 @@ Remove Sort:
 
 
 
-
-
-
-
 ### Running File Signature Analysis against Selected Files
+
+* Blue check the specific files you want to run signature analysis on.
+* Click Entries. In the dropdown menu, click Hash\Sig Selected. The Hash\Sig Selected dialog displays.
+* Select Verify file signatures to run signature analysis.
+* Click OK and refresh the device after running
+
 
 ### File Signature Analysis
 
