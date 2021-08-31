@@ -98,8 +98,8 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
 * Search and Tag activities use CSV Files .csv \(comma delimited\) or a JSON file
 * Scoping query limits the scope of all direct matches in the table rows and applies only to direct matches. 
 * The fields that are searched:
-* In the GUI, fields listed in the Search under Global Options \(content, properties, names, pathnames, and evidence metadata\).
-* In Scripting API, the common set of 4 fields that are used elsewhere in scripting searches.
+  * In the GUI, fields listed in the Search under Global Options \(content, properties, names, pathnames, and evidence metadata\).
+  * In Scripting API, the common set of 4 fields that are used elsewhere in scripting searches.
 
 ### Import
 
@@ -115,8 +115,8 @@ Two kinds of files can be imported:
 
 The Registry/Database Viewer tab is used to review the contents of the **Windows Registry** and **SQLite databases**. To open a Registry/Database Viewer tab, select the required items in the Results pane and **right-click** to select **Show in Database Viewer**. The tab includes the following UI components:
 
-* Evidence Tree: For Windows Registry, displays the decoded items, items in the case \(having Nuix logo\), and items not in the case \(without Nuix logo\) but you can still browse them. You can also browse other data such as ZIP files, registry hives, and view its file structure.
-* For SQLite databases, you can browse the tables or indexes. You can tag the required items loaded into the case or view them in Workbench or Context tabs.
+* Evidence Tree: For Windows Registry, displays the decoded items, items **in the case** \(having **Nuix logo**\), and items **not in the case** \(**without Nuix logo**\) but you can still browse them. You can also browse other data such as **ZIP files**, **registry hives**, and view its file structure.
+* For **SQLite databases**, you can browse the tables or indexes. You can tag the required items loaded into the case or view them in Workbench or Context tabs.
 * Registry Key Values: When you select an item, the keys and values of the Windows Registry are displayed in this panel.
 * Table Data: When reviewing SQLite databases, select the required table to view its content in this panel.
 * SQL Query: Provides you an editor to write and execute SQL queries on the database.
