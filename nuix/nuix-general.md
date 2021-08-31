@@ -8,7 +8,8 @@
 | Context  | Allows you to visualize the data links between files in the case. |
 | Statistics  | Displays information about the processed and irregular files by file type, including number, processed, corrupted, and encrypted, and a percentage of each file type encountered.  |
 | Fast Review  | Allows you to create jobs that can be batched together for review by investigators. For each job, you can specify tags and words to highlight. You can then associate items with each job, and those items are presented in a linear fashion for tagging. |
-| Search and Tag | Allows you to search processed data using queries, and tag the results for future reference. Production Enables you to create a new production set. |
+| Search and Tag | Allows you to search processed data using queries, and tag the results for future reference.  |
+| Production  | Enables you to create a new production set. |
 
    
 
