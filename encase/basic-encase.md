@@ -246,8 +246,10 @@ Remove Sort:
 
 | extension | header | Header in Table | Extension | Signature | Signature Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| picture.jpg | FF D8 FF E0 | Known | Known and matches |  |  |
-| picture.dll | FF D8 FF E0 | Known | Known and incorrect |  |  |
-| anyfile.zza | FF D6 FE FF | Unknown | Unknown |  |  |
-| picture.jpg | D8 D8 FF E0 | Unknown | Known and doesn't match |  |  |
+| picture.jpg | FF D8 FF E0 | Known | Known and matches |  | Match  |
+| picture.dll | FF D8 FF E0 | Known | Known and incorrect |  | Alias |
+| anyfile.zza | FF D6 FE FF | Unknown | Unknown |  | Unknown  |
+| picture.jpg | D8 D8 FF E0 | Unknown | Known and doesn't match |  | Bad Signature |
+
+
 
