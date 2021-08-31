@@ -123,8 +123,7 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
   <tbody>
     <tr>
       <td style="text-align:left">Recover folders</td>
-      <td style="text-align:left">&#x2013; Recover files that have been deleted or corrupted on FAT and
-        NTFS volumes</td>
+      <td style="text-align:left">Recover files that have been deleted or corrupted on FAT and NTFS volumes</td>
     </tr>
     <tr>
       <td style="text-align:left">File signature analysis</td>
