@@ -246,27 +246,35 @@ Remove Sort:
 
 | extension | header | Header in Table | Extension | Signature | Signature Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| picture.jpg | FF D8 FF E0 | Known | Known and matches | JPEG Image Standard | Match  |
+| picture.jpg | FF D8 FF E0 | Known | Known and matches | JPEG Image Standard | Match |
 | picture.dll | FF D8 FF E0 | Known | Known and incorrect | JPEG Image Standard | Alias |
-| anyfile.zza | FF D6 FE FF | Unknown | Unknown |  | Unknown  |
+| anyfile.zza | FF D6 FE FF | Unknown | Unknown |  | Unknown |
 | picture.jpg | D8 D8 FF E0 | Unknown | Known and doesn't match |  | Bad Signature |
 
 * Search for different types of results with filter
 * Find Entries by Signature
 * The results will be in Result tab
 
-
 ## Hash Analysis
 
 ### Creating hash libraries and hash sets
+
 * Before you can create any hash sets from within EnCase, you must first create a hash library container, which is a folder containing a series of file-based, database-like structures into which EnCase will store hash sets.
-* Tools -> Manage Hash Libraries
-* Manage hash libraries -> new hash library
+* Tools -&gt; Manage Hash Libraries
+* Manage hash libraries -&gt; new hash library
 * Importing legacy hash sets into EnCase
+
+![Create a folder](../.gitbook/assets/image%20%28122%29.png)
+
+![Tools &amp;gt; Manage hash library](../.gitbook/assets/image%20%28119%29.png)
+
+![New hash library &amp;gt; Select the folder \(container\) you created](../.gitbook/assets/image%20%28120%29.png)
+
+![Importing legacy EnCase hash sets](../.gitbook/assets/image%20%28121%29.png)
 
 ### Adding hash values to the hash sets and library
 
 * Query the hash libraries for a MD5 hash
-* Manage Hash Library -> Query
-* Add to hash library -> Right Click New Hash Set
+* Manage Hash Library -&gt; Query
+* Add to hash library -&gt; Right Click New Hash Set
 
