@@ -22,6 +22,12 @@
 
 ![](../.gitbook/assets/image%20%28113%29.png)
 
+## EnCase View
+
+Placeholder
+
+
+
 ## Verify Evidence
 
 Evidence tab &gt; drop down menu &gt; Verify File Integrity &gt; File Integrity/ MD5/SHA-1 / CRC Errors
@@ -104,4 +110,61 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
 * Finding Email
 * Finding Internet Artifacts
 * Search Keywords
+* Index text and metadata
+* System Info Parser
+* Windows Artifact Parser
+* Snapshot – (Live preview of devices only) – Running processes, open ports, logged on users, etc.
 
+
+Recover folders – Recover files that have been deleted or corrupted on FAT and NTFS volumes
+File signature analysis – Determine if the extension of a file has been altered and whether or not the extension matches the file type as specified by the file’s header
+Protected file analysis – Identify encrypted and password-protected files with the Passware Encryption Analyzer
+Thumbnail creation – Creates image thumbnails for faster display in the EnCase® GUI
+Hash analysis – Generate MD5 and/or SHA1 hash values for files and compare against your case Hash Library
+Expand compound files – Expand compound and compressed files, such as ZIP, RAR, GZIP, TAR, THUMBS.DB, CLOOP, and BZIP2
+Find email – Extract individual messages from e-mail archive files, such as PST (Microsoft® Outlook), NSF (Lotus® Notes), DBX (Microsoft® Outlook Express), EDB (Microsoft® Exchange), AOL, MBOX, and EMLX (Macintosh).
+
+Find Internet artifacts – Collect Internet-related artifacts, such as browser histories and cached web pages. You also have the option to search unallocated space for the Internet artifacts.
+Search for keywords – Search raw (not transcript) text for specific keywords.
+Index text and metadata – Create an index for when you need to search for keywords in compound files (Microsoft Office 2007 and 2010) and across large amounts of data. You can adjust the parameters for index creation, such as the minimum word length to index and whether to use a noise file (which does not index specific and common words).
+
+System Info Parser – Report on the core system information for Linux and Windows, including:
+ Startup routine (Linux only)
+ User activity (Linux only)
+ Operating system
+ Hardware
+ Software
+ Accounts/users
+ Network information
+ Shared/mapped drives
+ USB Devices
+ Network Shares
+ Advanced : Windows Registry
+– Time zone setting
+– Auto start
+– Hardware
+– User activity
+– User defined keys
+ Network Shares
+ Other AutoRuns
+
+Windows Artifact Parser – Report on Windows artifacts, including
+ Link files
+ Recycle Bin files
+ MFT (NTFS Master File Table) transactions
+Option: All or selected files, and/or unallocated clusters
+
+
+Snapshot – (Live preview of devices only) – Running processes, open ports, logged on users, etc.
+
+
+
+
+
+## File Signature Analysis
+
+### Create a new file signatures
+
+### Running File Signature Analysis against Selected Files
+
+### File Signature Analysis
