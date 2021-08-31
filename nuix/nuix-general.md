@@ -93,6 +93,26 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
   </tbody>
 </table>
 
+## Search and Tag Tab
+
+* To open a Search and Tag tab, go to Window and select New Search and Tag Tab.
+* Search and Tag activities use CSV Files \.csv (comma delimited) or a JSON file
+* Scoping query limits the scope of all direct matches in the table rows and applies only to direct matches. 
+* 
+The fields that are searched:
+* In the GUI, fields listed in the Search under Global Options (content, properties, names, pathnames, and evidence metadata).
+* In Scripting API, the common set of 4 fields that are used elsewhere in scripting searches.
+
+### Import
+Two kinds of files can be imported:
+* JSON file: If there is no data in the table already, then the settings from the JSON file will be used (if present). However, if the table already contains data then
+its present settings will be retained and the settings from the JSON file will be ignored. 
+
+* CSV file: Importing files while there is data already appends the new rows to the end of the table and keeps the existing rows and settings intact. 
+* They should be in the following format of two columns, with no header row:
+* The first column contains the tag name and supports the use of nested tags via the pipe (‘|’) character.
+* The second column contains any valid Nuix query or a simple keyword.
+
 ## Registry/Database Viewer Tab
 
 The Registry/Database Viewer tab is used to review the contents of the **Windows Registry** and **SQLite databases**. To open a Registry/Database Viewer tab, select the required items in the Results pane and **right-click** to select **Show in Database Viewer**. The tab includes the following UI components:
