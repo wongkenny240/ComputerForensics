@@ -105,7 +105,7 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
 
 ## Context Tab
 
-_**Note: This tab is particularly useful in data breaches or incident investigation**_
+_**Note: This tab is particularly useful in data breaches or security incidents investigation**_
 
 The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation. 
 
