@@ -282,3 +282,26 @@ Remove Sort:
 
 ![Add to Hash Library &amp;gt; Right click New Hash Set](../.gitbook/assets/image%20%28121%29.png)
 
+### Using hash values to identify/exclude files
+* Entries -> Hash\Sig Selected
+* Find Entries by Hash Category -> Result tab
+
+### Hash Analysis Summary
+
+* Creating a Hash Library
+  * Tools > Manage Hash Library
+  * New button
+  * Browse for a folder -> click OK
+* Import hash sets from another library
+  * Tools > Manage Hash Library
+  * Click Import from the toolbar
+* Creating a Hash Set
+  * Tools > Manage Hash Library
+  * click New Hash Set. The Create Hash Set dialog appears
+* Adding Hash Values to a Hash Set
+  * Hash the item by right click item Entries -> Hash\Sig Selected
+  * Right click Entries -> Add to hash library
+  * Choose the hash library to add to
+  * Select one existing hash sets or create new hash set by right clicking
+  * Select Fields
+* Adding Hash Values to a Hash Set from Results
