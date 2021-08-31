@@ -227,13 +227,13 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
 
 ![](../.gitbook/assets/image%20%2857%29.png)
 
-#### Manufacturer ID, Product ID
+#### Vendor ID, Product ID
 
 ```text
 HKLM\SYSTEM\ControlSet00X\Enum\USB
 ```
 
-* VID_\#\#\#\#&PID_\#\#\#\# -&gt; Manufacturer ID, Product ID
+* VID_\#\#\#\#&PID_\#\#\#\# -&gt; Vendor ID, Product ID
 
 ![](../.gitbook/assets/image%20%2858%29.png)
 
