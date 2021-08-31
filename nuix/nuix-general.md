@@ -128,6 +128,10 @@ The Analysis Graph consists of the:
 * Magnification Menu
 * Timeline
 
+|  |  |
+| :--- | :--- |
+|  |  |
+
 ## Search and Tag Tab
 
 * To open a Search and Tag tab, go to Window and select New Search and Tag Tab.
