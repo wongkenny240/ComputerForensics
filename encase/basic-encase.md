@@ -123,7 +123,12 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
   <tbody>
     <tr>
       <td style="text-align:left">Recover folders</td>
-      <td style="text-align:left">Recover files that have been deleted or corrupted on FAT and NTFS volumes</td>
+      <td style="text-align:left">
+        <p>Recover files that have been deleted or corrupted on FAT and NTFS volumes</p>
+        <p>
+          <img src="../.gitbook/assets/image (114).png" alt/>
+        </p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">File signature analysis</td>
@@ -177,6 +182,7 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
       <td style="text-align:left">System Info Parser</td>
       <td style="text-align:left">
         <p>Report on the core system information for Linux and Windows, including:</p>
+        <p></p>
         <p>Startup routine (Linux only)</p>
         <p>User activity (Linux only)</p>
         <p>Operating system</p>
