@@ -4,16 +4,14 @@
 
 ![Workbench](../.gitbook/assets/image%20%28101%29.png)
 
-| Option  | Description  |
+| Option | Description |
 | :--- | :--- |
-| **Workbench**  | Hosts the primary tasks of excluding, filtering, and searching data within the case. You can also analyze data, preview individual items, and tag from here. It is set to display by default when you open a case.  |
-| **Context**  | Allows you to visualize the data links between files in the case. |
-| Statistics  | Displays information about the processed and irregular files by file type, including number, processed, corrupted, and encrypted, and a percentage of each file type encountered.  |
-| Fast Review  | Allows you to create jobs that can be batched together for review by investigators. For each job, you can specify tags and words to highlight. You can then associate items with each job, and those items are presented in a linear fashion for tagging. |
-| **Search and Tag** | Allows you to search processed data using queries, and tag the results for future reference.  |
-| Production  | Enables you to create a new production set. |
-
-   
+| **Workbench** | Hosts the primary tasks of excluding, filtering, and searching data within the case. You can also analyze data, preview individual items, and tag from here. It is set to display by default when you open a case. |
+| **Context** | Allows you to visualize the data links between files in the case. |
+| Statistics | Displays information about the processed and irregular files by file type, including number, processed, corrupted, and encrypted, and a percentage of each file type encountered. |
+| Fast Review | Allows you to create jobs that can be batched together for review by investigators. For each job, you can specify tags and words to highlight. You can then associate items with each job, and those items are presented in a linear fashion for tagging. |
+| **Search and Tag** | Allows you to search processed data using queries, and tag the results for future reference. |
+| Production | Enables you to create a new production set. |
 
 ## Items Menu
 
@@ -109,22 +107,26 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
 
 Note: This tab is particularly useful in data breaches or incident investigation
 
-The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation.
-To open a new Context tab:
+The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation. To open a new Context tab:
+
 * Navigate to Window and select New Context Tab.
 * In the Results pane, select the items to be shown on the Context Tab and select Show and then select Show in Context from the right-click menu.
 
 The Context tab consists of:
+
 * Analysis Graph
 * Analysis Table
 
 ### Analysis Graph
+
+![Analysis Graph](../.gitbook/assets/image%20%28111%29.png)
+
 The Analysis Graph consists of the:
+
 * Graph Menu bar
 * Graph
 * Magnification Menu
 * Timeline
-
 
 ## Search and Tag Tab
 
