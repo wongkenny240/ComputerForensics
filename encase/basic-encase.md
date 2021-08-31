@@ -217,7 +217,6 @@ Remove Sort:
   </tbody>
 </table>
 
-![](../.gitbook/assets/image%20%28125%29.png)
 
 ## File Signature Analysis
 
