@@ -15,13 +15,12 @@
 * **Secondary Evidence Cache**: This location is for previously created caches
 * **Case Info**: several fields into which you can or should enter data pertaining to the case. The fields will vary according to the template you select in Templates
 
-
 ### EnCase Folder Structure
 
 * EnCase creates subfolders called Email, Export, Tags, and Temp. 
 * User need to manually created Evidence and EvidenceCache.
 
-
+![](../.gitbook/assets/image%20%28113%29.png)
 
 ## Verify Evidence
 
