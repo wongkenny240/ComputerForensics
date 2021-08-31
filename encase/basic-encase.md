@@ -2,16 +2,18 @@
 
 ## Creating a Case
 
-* Templates: has an extension of .CaseTemplate and is stored in the Users\Documents\EnCase\Templates folder.
+![](../.gitbook/assets/image%20%28112%29.png)
+
+* **Templates**: has an extension of .CaseTemplate and is stored in the Users\Documents\EnCase\Templates folder.
 * Case information items with default values
 * Bookmark folders and notes
 * Tag names
 * Report template
 * User-defined report styles
-* Base Case Folder: By default, your cases will be stored in your Documents or My Documents folder.
-* Primary Evidence Cache : When EnCase loads an evidence item for viewing, it parses and stores metadata associated with that evidence item. Each acquired evidence item is assigned a GUID, and a folder by that GUID name will contain the cached data associated with that evidence item.
-* Secondary Evidence Cache: This location is for previously created caches
-* Case Info: several fields into which you can or should enter data pertaining to the case. The fields will vary according to the template you select in Templates
+* **Base Case Folder**: By default, your cases will be stored in your Documents or My Documents folder.
+* **Primary Evidence Cache** : When EnCase loads an evidence item for viewing, it parses and stores metadata associated with that evidence item. Each acquired evidence item is assigned a GUID, and a folder by that GUID name will contain the cached data associated with that evidence item.
+* **Secondary Evidence Cache**: This location is for previously created caches
+* **Case Info**: several fields into which you can or should enter data pertaining to the case. The fields will vary according to the template you select in Templates
 
 ## Verify Evidence
 
