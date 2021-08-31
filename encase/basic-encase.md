@@ -101,8 +101,6 @@ Remove Sort:
 
 ![](../.gitbook/assets/image%20%2870%29.png)
 
-
-
 * File Signatures Analysis
 * Finding Email
 * Finding Internet Artifacts
@@ -124,7 +122,6 @@ Remove Sort:
       <td style="text-align:left">Recover folders</td>
       <td style="text-align:left">
         <p>Recover files that have been deleted or corrupted on FAT and NTFS volumes</p>
-        <p></p>
         <p><em>Note: When you turn on the Recover folder structure of NTFS 3.0 files option, recovery will take longer, but will reconstruct (folder tree); if you left that unchecked, all found folders will be grouped together without tree structure.</em>
         </p>
         <p>
@@ -184,7 +181,6 @@ Remove Sort:
       <td style="text-align:left">System Info Parser</td>
       <td style="text-align:left">
         <p>Report on the core system information for Linux and Windows, including:</p>
-        <p></p>
         <ul>
           <li>User activity (Linux only)</li>
           <li>Operating system</li>
@@ -223,34 +219,20 @@ Remove Sort:
   </tbody>
 </table>
 
-
 ## File Signature Analysis
 
 ### Create a new file signatures
 
 ### Running File Signature Analysis against Selected Files
 
-
 ### File Signature Analysis
 
 | extension | header | Header in Table | Extension | Signature | Signature Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  |  |  |
+| picture.jpg | FF D8 FF E0 | Known  | Known and matches |  |  |
+| picture.dll | FF D8 FF E0 | Known  | Known and incorrect  |  |  |
+| anyfile.zza | FF D6 FE FF  | Unknown  | Unknown  |  |  |
+| picture.jpg   | D8 D8 FF E0 | Unknown |  Known and doesn't match |  |  |
 
-p1cture;jpg
-picturegd11
-anyfi1egzza
-picturegjpg
-FF D8 FF E0
-'FF DS'FFEO
-FF D6 FE FF
-D8 D8 FF E0
-Known
-Known
-Unknown
-Unknown
 
-Known and matches
-Known and incorrect
-Unknown 1
-Known and doesn't match
+
