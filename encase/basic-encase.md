@@ -93,31 +93,25 @@ Remove Sort:
 
 ![Evidence Processor](../.gitbook/assets/image.png)
 
-* Prioritization
 
-![](../.gitbook/assets/2019-04-04-14_52_15-greenshot.png)
-
-* Recover Folders
-
-![](../.gitbook/assets/image%20%2870%29.png)
-
-* File Signatures Analysis
-* Finding Email
-* Finding Internet Artifacts
-* Search Keywords
-* Index text and metadata
-* System Info Parser
-* Windows Artifact Parser
-* Snapshot – \(Live preview of devices only\) – Running processes, open ports, logged on users, etc.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
+      <th style="text-align:left">Task</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">Prioritization</td>
+      <td style="text-align:left">
+        <p>Prioritisation option</p>
+        <p>
+          <img src="../.gitbook/assets/image (125).png" alt/>
+        </p>
+      </td>
+    </tr>
     <tr>
       <td style="text-align:left">Recover folders</td>
       <td style="text-align:left">
@@ -223,6 +217,8 @@ Remove Sort:
   </tbody>
 </table>
 
+![](../.gitbook/assets/image%20%28125%29.png)
+
 ## File Signature Analysis
 
 ### Create a new file signatures
@@ -306,7 +302,7 @@ Remove Sort:
   * Select one existing hash sets or create new hash set by right clicking
   * Select Fields
 
-![Add to hash library](../.gitbook/assets/image%20%28125%29.png)
+![Add to hash library](../.gitbook/assets/image%20%28126%29.png)
 
 
 
