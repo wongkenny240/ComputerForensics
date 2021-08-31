@@ -105,12 +105,16 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
 
 ## Context Tab
 
-Note: This tab is particularly useful in data breaches or incident investigation
+_**Note: This tab is particularly useful in data breaches or incident investigation**_
 
-The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation. To open a new Context tab:
+The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation. 
+
+To open a new Context tab:
 
 * Navigate to Window and select New Context Tab.
-* In the Results pane, select the items to be shown on the Context Tab and select Show and then select Show in Context from the right-click menu.
+* In the **Results** pane, select the items to be shown on the **Context Tab** and select **Show** and then select **Show in Context** from the **right-click** menu.
+
+_**Note: I sometimes use this plus the Pivot function to find out the sequences of events**_
 
 The Context tab consists of:
 
