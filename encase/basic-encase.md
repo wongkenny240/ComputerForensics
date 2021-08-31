@@ -252,26 +252,24 @@ Remove Sort:
 ### Creating hash libraries and hash sets
 
 * Before you can create any hash sets from within EnCase, you must first create a hash library container, which is a folder containing a series of file-based, database-like structures into which EnCase will store hash sets.
-* Tools -&gt; Manage Hash Libraries
-* Manage hash libraries -&gt; new hash library
-* Importing legacy hash sets into EnCase
-
 ![Create a folder](../.gitbook/assets/image%20%28124%29.png)
 
+* Tools -&gt; Manage Hash Libraries
 ![Tools &amp;gt; Manage hash library](../.gitbook/assets/image%20%28119%29.png)
 
+* Manage hash libraries -&gt; new hash library
 ![New hash library &amp;gt; Select the folder \(container\) you created](../.gitbook/assets/image%20%28122%29.png)
 
+* Importing legacy hash sets into EnCase
 ![Importing legacy EnCase hash sets](../.gitbook/assets/image%20%28123%29.png)
 
 ### Adding hash values to the hash sets and library
 
 * Query the hash libraries for a MD5 hash
 * Manage Hash Library -&gt; Query
-* Add to hash library -&gt; Right Click New Hash Set
-
 ![Manage Hash Library &amp;gt; Query](../.gitbook/assets/image%20%28120%29.png)
 
+* Add to hash library -&gt; Right Click New Hash Set
 ![Add to Hash Library &amp;gt; Right click New Hash Set](../.gitbook/assets/image%20%28121%29.png)
 
 ### Using hash values to identify/exclude files
