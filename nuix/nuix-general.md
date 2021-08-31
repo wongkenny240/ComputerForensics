@@ -1,6 +1,6 @@
 # Nuix General
 
-![](../.gitbook/assets/image%20%28101%29.png)
+![Workbench](../.gitbook/assets/image%20%28101%29.png)
 
 | Option  | Description  |
 | :--- | :--- |
