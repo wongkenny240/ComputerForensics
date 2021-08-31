@@ -251,5 +251,22 @@ Remove Sort:
 | anyfile.zza | FF D6 FE FF | Unknown | Unknown |  | Unknown  |
 | picture.jpg | D8 D8 FF E0 | Unknown | Known and doesn't match |  | Bad Signature |
 
+* Search for different types of results with filter
+* Find Entries by Signature
+* The results will be in Result tab
 
+
+## Hash Analysis
+
+### Creating hash libraries and hash sets
+* Before you can create any hash sets from within EnCase, you must first create a hash library container, which is a folder containing a series of file-based, database-like structures into which EnCase will store hash sets.
+* Tools -> Manage Hash Libraries
+* Manage hash libraries -> new hash library
+* Importing legacy hash sets into EnCase
+
+### Adding hash values to the hash sets and library
+
+* Query the hash libraries for a MD5 hash
+* Manage Hash Library -> Query
+* Add to hash library -> Right Click New Hash Set
 
