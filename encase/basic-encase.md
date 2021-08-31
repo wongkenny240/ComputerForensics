@@ -208,7 +208,7 @@ Remove Sort:
       <td style="text-align:left">Windows Artifact Parser</td>
       <td style="text-align:left">
         <p>Report on Windows artifacts, including</p>
-         <ul>
+        <ul>
           <li>Link files</li>
           <li>Recycle Bin files</li>
           <li>MFT (NTFS Master File Table) transactions</li>
@@ -233,8 +233,6 @@ Remove Sort:
 
 ![Change the extensions or Description of the file types](../.gitbook/assets/image%20%28115%29.png)
 
-
-
 ### Running File Signature Analysis against Selected Files
 
 * Blue check the specific files you want to run signature analysis on.
@@ -242,15 +240,14 @@ Remove Sort:
 * Select Verify file signatures to run signature analysis.
 * Click OK and refresh the device after running
 
+![Entries &amp;gt; Hash\Sig Selected](../.gitbook/assets/image%20%28118%29.png)
 
 ### File Signature Analysis
 
 | extension | header | Header in Table | Extension | Signature | Signature Analysis |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| picture.jpg | FF D8 FF E0 | Known  | Known and matches |  |  |
-| picture.dll | FF D8 FF E0 | Known  | Known and incorrect  |  |  |
-| anyfile.zza | FF D6 FE FF  | Unknown  | Unknown  |  |  |
-| picture.jpg   | D8 D8 FF E0 | Unknown |  Known and doesn't match |  |  |
-
-
+| picture.jpg | FF D8 FF E0 | Known | Known and matches |  |  |
+| picture.dll | FF D8 FF E0 | Known | Known and incorrect |  |  |
+| anyfile.zza | FF D6 FE FF | Unknown | Unknown |  |  |
+| picture.jpg | D8 D8 FF E0 | Unknown | Known and doesn't match |  |  |
 
