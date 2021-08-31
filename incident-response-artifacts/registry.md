@@ -224,6 +224,10 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
 
 ![](../.gitbook/assets/image%20%2857%29.png)
 
+![](../.gitbook/assets/image%20%28108%29.png)
+
+![](../.gitbook/assets/image%20%28109%29.png)
+
 #### Manufacturer ID, Product ID
 
 ```text
@@ -270,6 +274,7 @@ Then we can correlate to the value under Windows Portable Devices with the brack
 
 #### Determine the Drive Letter
 
-```
+```text
 SYSTEM\MountedDevices
 ```
+
