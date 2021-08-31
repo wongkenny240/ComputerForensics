@@ -214,15 +214,20 @@ HKLM\SYSTEM\ControlSet00X\Enum\USBSTOR\{Device Class ID}
 
 * Device Class ID format show manufacturer, product name, and version information 
 * For Example Ven\_&lt;Manufacturer&gt;&&lt;Product Name&gt;&Rev\_&lt;Version&gt;
+
+![](../.gitbook/assets/image%20%28109%29.png)
+
+
 * The serial number is a sub-key of the Device Class ID
+
+![](../.gitbook/assets/image%20%28108%29.png)
+
 * If the USB devices have a unique serial from their respective manufacturers. &0 or &1 will be displayed at the end of the serial number. 
 * If instead the second character is an & then the device does not have a unique serial number and Windows has issued one which is unique to the local system only.
 
 ![](../.gitbook/assets/image%20%2857%29.png)
 
-![](../.gitbook/assets/image%20%28108%29.png)
 
-![](../.gitbook/assets/image%20%28109%29.png)
 
 #### Manufacturer ID, Product ID
 
