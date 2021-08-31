@@ -207,8 +207,10 @@ Remove Sort:
     <tr>
       <td style="text-align:left">Windows Artifact Parser</td>
       <td style="text-align:left">
-        <p>Report on Windows artifacts, including Link files Recycle Bin files MFT
-          (NTFS Master File Table) transactions</p>
+        <p>Report on Windows artifacts, including</p>
+        <p>Link files</p>
+        <p>Recycle Bin files</p>
+        <p>MFT (NTFS Master File Table) transactions</p>
         <p>Option: All or selected files, and/or unallocated clusters</p>
       </td>
     </tr>
