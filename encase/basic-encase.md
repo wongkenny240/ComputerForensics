@@ -93,8 +93,6 @@ Remove Sort:
 
 ![Evidence Processor](../.gitbook/assets/image.png)
 
-
-
 <table>
   <thead>
     <tr>
@@ -217,7 +215,6 @@ Remove Sort:
   </tbody>
 </table>
 
-
 ## File Signature Analysis
 
 ### Create a new file signatures
@@ -302,8 +299,6 @@ Remove Sort:
   * Select Fields
 
 ![Add to hash library](../.gitbook/assets/image%20%28126%29.png)
-
-
 
 * Adding Hash Values to a Hash Set from Results
 
