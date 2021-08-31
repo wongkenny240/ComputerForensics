@@ -103,6 +103,19 @@ Items Menu The Items menu contains commands for editing, managing, and finding i
   </tbody>
 </table>
 
+## Context Tab
+
+Note: This tab is particularly useful in data breaches or incident investigation
+
+The Context tab provides data links between files in the form of interactive visuals to allow for easier identification of patterns and trends in the data and to help identify any anomalies that may be relevant to the investigation.
+To open a new Context tab:
+* Navigate to Window and select New Context Tab.
+* In the Results pane, select the items to be shown on the Context Tab and select Show and then select Show in Context from the right-click menu.
+
+The Context tab consists of:
+* Analysis Graph
+* Analysis Table
+
 ## Search and Tag Tab
 
 * To open a Search and Tag tab, go to Window and select New Search and Tag Tab.
