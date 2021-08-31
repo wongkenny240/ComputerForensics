@@ -26,8 +26,6 @@
 
 Placeholder
 
-
-
 ## Verify Evidence
 
 Evidence tab &gt; drop down menu &gt; Verify File Integrity &gt; File Integrity/ MD5/SHA-1 / CRC Errors
@@ -113,53 +111,117 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
 * Index text and metadata
 * System Info Parser
 * Windows Artifact Parser
-* Snapshot – (Live preview of devices only) – Running processes, open ports, logged on users, etc.
+* Snapshot – \(Live preview of devices only\) – Running processes, open ports, logged on users, etc.
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Recover folders</td>
+      <td style="text-align:left">&#x2013; Recover files that have been deleted or corrupted on FAT and
+        NTFS volumes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">File signature analysis</td>
+      <td style="text-align:left">Determine if the extension of a file has been altered and whether or not
+        the extension matches the file type as specified by the file&#x2019;s header</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Protected file analysis</td>
+      <td style="text-align:left">Identify encrypted and password-protected files with the Passware Encryption
+        Analyzer</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Thumbnail creation</td>
+      <td style="text-align:left">Creates image thumbnails for faster display in the EnCase&#xAE; GUI</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Hash analysis</td>
+      <td style="text-align:left">Generate MD5 and/or SHA1 hash values for files and compare against your
+        case Hash Library</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Expand compound files</td>
+      <td style="text-align:left">Expand compound and compressed files, such as ZIP, RAR, GZIP, TAR, THUMBS.DB,
+        CLOOP, and BZIP2</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Find email</td>
+      <td style="text-align:left">Extract individual messages from e-mail archive files, such as PST (Microsoft&#xAE;
+        Outlook), NSF (Lotus&#xAE; Notes), DBX (Microsoft&#xAE; Outlook Express),
+        EDB (Microsoft&#xAE; Exchange), AOL, MBOX, and EMLX (Macintosh).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Find Internet artifacts</td>
+      <td style="text-align:left">Collect Internet-related artifacts, such as browser histories and cached
+        web pages. You also have the option to search unallocated space for the
+        Internet artifacts.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Search for keywords</td>
+      <td style="text-align:left">Search raw (not transcript) text for specific keywords.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Index text and metadata</td>
+      <td style="text-align:left">Create an index for when you need to search for keywords in compound files
+        (Microsoft Office 2007 and 2010) and across large amounts of data. You
+        can adjust the parameters for index creation, such as the minimum word
+        length to index and whether to use a noise file (which does not index specific
+        and common words).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">System Info Parser</td>
+      <td style="text-align:left">
+        <p>Report on the core system information for Linux and Windows, including:</p>
+        <p>Startup routine (Linux only)</p>
+        <p>User activity (Linux only)</p>
+        <p>Operating system</p>
+        <p>Hardware</p>
+        <p>Software</p>
+        <p>Accounts/users</p>
+        <p>Network information</p>
+        <p>Shared/mapped drives</p>
+        <p>USB Devices</p>
+        <p>Network Shares</p>
+        <p>Advanced : Windows Registry</p>
+        <p>Time zone setting</p>
+        <p>Auto start</p>
+        <p>Hardware</p>
+        <p>User activity</p>
+        <p>User defined keys</p>
+        <p>Network Shares</p>
+        <p>Other AutoRuns</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Windows Artifact Parser</td>
+      <td style="text-align:left">
+        <p>Report on Windows artifacts, including Link files Recycle Bin files MFT
+          (NTFS Master File Table) transactions</p>
+        <p>Option: All or selected files, and/or unallocated clusters</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Snapshot (Live preview of devices only)</td>
+      <td style="text-align:left">Running processes, open ports, logged on users, etc.</td>
+    </tr>
+  </tbody>
+</table>
 
-Recover folders – Recover files that have been deleted or corrupted on FAT and NTFS volumes
-File signature analysis – Determine if the extension of a file has been altered and whether or not the extension matches the file type as specified by the file’s header
-Protected file analysis – Identify encrypted and password-protected files with the Passware Encryption Analyzer
-Thumbnail creation – Creates image thumbnails for faster display in the EnCase® GUI
-Hash analysis – Generate MD5 and/or SHA1 hash values for files and compare against your case Hash Library
-Expand compound files – Expand compound and compressed files, such as ZIP, RAR, GZIP, TAR, THUMBS.DB, CLOOP, and BZIP2
-Find email – Extract individual messages from e-mail archive files, such as PST (Microsoft® Outlook), NSF (Lotus® Notes), DBX (Microsoft® Outlook Express), EDB (Microsoft® Exchange), AOL, MBOX, and EMLX (Macintosh).
+   –   –   –   –   –   – 
 
-Find Internet artifacts – Collect Internet-related artifacts, such as browser histories and cached web pages. You also have the option to search unallocated space for the Internet artifacts.
-Search for keywords – Search raw (not transcript) text for specific keywords.
-Index text and metadata – Create an index for when you need to search for keywords in compound files (Microsoft Office 2007 and 2010) and across large amounts of data. You can adjust the parameters for index creation, such as the minimum word length to index and whether to use a noise file (which does not index specific and common words).
+ –   –   – 
 
-System Info Parser – Report on the core system information for Linux and Windows, including:
- Startup routine (Linux only)
- User activity (Linux only)
- Operating system
- Hardware
- Software
- Accounts/users
- Network information
- Shared/mapped drives
- USB Devices
- Network Shares
- Advanced : Windows Registry
-– Time zone setting
-– Auto start
-– Hardware
-– User activity
-– User defined keys
- Network Shares
- Other AutoRuns
+ – 
 
-Windows Artifact Parser – Report on Windows artifacts, including
- Link files
- Recycle Bin files
- MFT (NTFS Master File Table) transactions
-Option: All or selected files, and/or unallocated clusters
+ – 
 
-
-Snapshot – (Live preview of devices only) – Running processes, open ports, logged on users, etc.
-
-
-
-
+–
 
 ## File Signature Analysis
 
@@ -167,4 +229,9 @@ Snapshot – (Live preview of devices only) – Running processes, open ports, l
 
 ### Running File Signature Analysis against Selected Files
 
+| extension | header | Header in Table | Extension | Signature | Signature Analysis |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  |  |  |
+
 ### File Signature Analysis
+
