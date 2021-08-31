@@ -109,9 +109,9 @@ Two kinds of files can be imported:
 its present settings will be retained and the settings from the JSON file will be ignored. 
 
 * CSV file: Importing files while there is data already appends the new rows to the end of the table and keeps the existing rows and settings intact. 
-* They should be in the following format of two columns, with no header row:
-* The first column contains the tag name and supports the use of nested tags via the pipe (‘|’) character.
-* The second column contains any valid Nuix query or a simple keyword.
+  * They should be in the following format of two columns, with no header row:
+   * The first column contains the tag name and supports the use of nested tags via the pipe (‘|’) character.
+   * The second column contains any valid Nuix query or a simple keyword.
 
 ## Registry/Database Viewer Tab
 
