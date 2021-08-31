@@ -15,6 +15,14 @@
 * **Secondary Evidence Cache**: This location is for previously created caches
 * **Case Info**: several fields into which you can or should enter data pertaining to the case. The fields will vary according to the template you select in Templates
 
+
+### EnCase Folder Structure
+
+* EnCase creates subfolders called Email, Export, Tags, and Temp. 
+* User need to manually created Evidence and EvidenceCache.
+
+
+
 ## Verify Evidence
 
 Evidence tab &gt; drop down menu &gt; Verify File Integrity &gt; File Integrity/ MD5/SHA-1 / CRC Errors
