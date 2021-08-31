@@ -101,9 +101,8 @@ Remove Sort:
 
 ![](../.gitbook/assets/image%20%2870%29.png)
 
-When you turn on the Recover folder structure of NTFS 3.0 files option, recovery will take longer, but will reconstruct \(folder tree\); if you left that unchecked, all found folders will be grouped together without tree structure.
 
-* Hash Analysis
+
 * File Signatures Analysis
 * Finding Email
 * Finding Internet Artifacts
@@ -125,6 +124,9 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
       <td style="text-align:left">Recover folders</td>
       <td style="text-align:left">
         <p>Recover files that have been deleted or corrupted on FAT and NTFS volumes</p>
+        <p></p>
+        <p><em>Note: When you turn on the Recover folder structure of NTFS 3.0 files option, recovery will take longer, but will reconstruct (folder tree); if you left that unchecked, all found folders will be grouped together without tree structure.</em>
+        </p>
         <p>
           <img src="../.gitbook/assets/image (114).png" alt/>
         </p>
@@ -183,7 +185,11 @@ When you turn on the Recover folder structure of NTFS 3.0 files option, recovery
       <td style="text-align:left">
         <p>Report on the core system information for Linux and Windows, including:</p>
         <p></p>
-        <p>Startup routine (Linux only)</p>
+        <ul>
+          <li>Hash Analysis</li>
+          <li></li>
+        </ul>
+        <p></p>
         <p>User activity (Linux only)</p>
         <p>Operating system</p>
         <p>Hardware</p>
