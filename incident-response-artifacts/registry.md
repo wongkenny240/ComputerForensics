@@ -129,7 +129,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.MOV
 
 The RecentDocs key also has a number of subkeys, each one being the extension of a file that was opened \(.doc, .txt, .html, etc.\). The values within these subkeys are maintained in the same way as in the RecentDocs key: The value names are numbered, and their data contains the name of the file accessed as a binary data type \(in Unicode\). Another value called MRUListEx is also a binary data type and maintains the order in which the files were accessed, most recent first, as DWORDs.
 
-![](../.gitbook/assets/image%20%28130%29.png)
+![](../.gitbook/assets/image%20%28131%29.png)
 
 ### Recently executed command \(Explorer\)
 
@@ -141,6 +141,8 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
 ![](../.gitbook/assets/image%20%2856%29.png)
+
+![](../.gitbook/assets/image%20%28130%29.png)
 
 * List of files opened in Paint
 
