@@ -110,6 +110,42 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ### MRUs
 
+### Recently opened files \(Explorer\)
+
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+```
+
+This key can contain quite a number of values, all of which are binary data types. We are interested in the values that have numbers as names, which contain the names of the files accessed (in Unicode), and the value named **MRUListEx**, which records the order in which the files were accessed (as DWORDs). Given that adding a value and its associated data to the key, as well as modifying the MRUListEx value, constituted modifying the key, the **LastWrite time of the RecentDocs key will tell us when that file was accessed**.
+
+* Files such as recently opened documents, pictures, music, and videos
+* 2000/XP – My Recent Documents
+* Vista/7 – Recent Items
+* Check the order of search word usage through the MRUListEx key value
+
+
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.MOV
+```
+
+The RecentDocs key also has a number of subkeys, each one being the extension of a file that was opened (.doc, .txt, .html, etc.). The values within these subkeys are maintained in the same way as in the RecentDocs key: The value names are numbered, and their data contains the name of the file accessed as a binary data type (in Unicode). Another value called MRUListEx is also a binary data type and maintains the order in which the files were accessed, most recent first, as DWORDs.
+
+
+### Recently executed command \(Explorer\)
+
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+```
+
+* List of commands executed through “Start -&gt; Run” or “Ctrl + R”
+* The order of the most recently executed commands is the alphabetical order of the MRUList.
+
+![](../.gitbook/assets/image%20%2856%29.png)
+
+
+
+
+
 * List of files opened in Paint
 
 ```text
@@ -139,27 +175,7 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
 
-### Recently opened files \(Explorer\)
 
-```text
-HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
-```
-
-* Files such as recently opened documents, pictures, music, and videos
-* 2000/XP – My Recent Documents
-* Vista/7 – Recent Items
-* Check the order of search word usage through the MRUListEx key value
-
-### Recently executed command \(Explorer\)
-
-```text
-HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
-```
-
-* List of commands executed through “Start -&gt; Run” or “Ctrl + R”
-* The order of the most recently executed commands is the alphabetical order of the MRUList.
-
-![](../.gitbook/assets/image%20%2856%29.png)
 
 ### Search term list \(Explorer\)
 
