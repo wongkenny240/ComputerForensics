@@ -139,7 +139,6 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
 
-
 ### Recently opened files \(Explorer\)
 
 ```text
@@ -161,7 +160,6 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
 ![](../.gitbook/assets/image%20%2856%29.png)
-
 
 ### Search term list \(Explorer\)
 
@@ -277,7 +275,6 @@ SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\
 
 Then we can correlate to the value under Windows Portable Devices with the bracket value
 
-
 #### Volume Serial Number
 
 * VSN is created by Windows Vista and up Operating Systems each time the device is formatted. 
@@ -286,12 +283,15 @@ Then we can correlate to the value under Windows Portable Devices with the brack
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt
 ```
 
-This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number.
+![](../.gitbook/assets/image%20%28129%29.png)
 
-Therefore showing that this device was installed on this machine and has not been formatted since (this is an important footnote, the Volume Serial Number can change for the device if it is formatted, as the Volume Serial Number is allocated after the Format!).
+This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number. 
 
-Make a note of the Volume Serial Number and the Volume Name for use in analysing the Link (.lnk) files
+You can check with the vol command with the device connected.
 
+_Note: The Volume Serial Number can change for the device if it is formatted, as the Volume Serial Number is allocated after the Format._
+
+_Note: It is important to make note of the Volume Serial Number and the Volume Name for use in analysing the Link \(.lnk\) files_
 
 #### Determine the Drive Letter
 

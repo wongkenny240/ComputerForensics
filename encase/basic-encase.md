@@ -38,7 +38,7 @@ Tree Pane &gt; Set Included &gt; Timeline view &gt; Higher Resolution or Lower R
 
 Date Types &gt; select which timestamps to be viewed
 
-![Timeline View](../.gitbook/assets/2019-04-03-16_29_25-encase-forensic%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Timeline View](../.gitbook/assets/2019-04-03-16_29_25-encase-forensic%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%287%29.png)
 
 ## Sort
 
@@ -117,7 +117,7 @@ Remove Sort:
         <p><em>Note: When you turn on the Recover folder structure of NTFS 3.0 files option, recovery will take longer, but will reconstruct (folder tree); if you left that unchecked, all found folders will be grouped together without tree structure.</em>
         </p>
         <p>
-          <img src="../.gitbook/assets/image (114).png" alt/>
+          <img src="../.gitbook/assets/image (114) (2) (3) (5) (3) (7).png" alt/>
         </p>
       </td>
     </tr>
