@@ -142,7 +142,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 ![](../.gitbook/assets/image%20%28130%29.png)
 
- **The MRUList value within the RunMRU key tells** us that the most recent item to be typed into the Run box is item "e"
+**The MRUList value within the RunMRU key tells** us that the most recent item to be typed into the Run box is item "e"
 
 * List of files opened in Paint
 
@@ -175,7 +175,7 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 #### Search term list \(Explorer\)
 
-##### Windows 7
+**Windows 7**
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
@@ -188,10 +188,13 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 
 #### Typed Paths \(Explorer\)
 
-```
+```text
 HKU\{USER}\SOFTWARE\Microsoft\Internet Explorer\TypedURLs
 ```
-The TypedURLs key maintains a list of the URLs the user types into the Address bar in Internet Explorer. However, the value names within the TypedURLs key are ordered with the most recently typed URL having the lowest number; consequently, this key doesn’t have an MRUList or MRUListEx value. 
+
+The TypedURLs key maintains a list of the URLs the user types into the Address bar in Internet Explorer. However, the value names within the TypedURLs key are ordered with the most recently typed URL having the lowest number; consequently, this key doesn’t have an MRUList or MRUListEx value.
+
+![](../.gitbook/assets/image%20%28132%29.png)
 
 ### UserAssist
 
