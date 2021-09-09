@@ -108,6 +108,8 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ### Program Usage Log
 
+### MRUs
+
 * List of files opened in Paint
 
 ```text
@@ -137,18 +139,6 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
 
-### Search term list \(Explorer\)
-
-#### Windows 7
-
-```text
-HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
-```
-
-* List of search terms when using search in Windows 7 Explorer
-* Vista does not store the search term list in the registry.
-* Check the order of search word usage through the MRUListEx key value
-* 10 -&gt; 0F -&gt; 0E -&gt; 0D -&gt; 0C -&gt; 0B -&gt; 0A -&gt; 04 -&gt; 09 -&gt; 08 -&gt; 07 -&gt; 06 -&gt; 05 -&gt; 03 -&gt; 02 -&gt; 01 -&gt; 00
 
 ### Recently opened files \(Explorer\)
 
@@ -171,6 +161,20 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
 ![](../.gitbook/assets/image%20%2856%29.png)
+
+
+### Search term list \(Explorer\)
+
+#### Windows 7
+
+```text
+HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
+```
+
+* List of search terms when using search in Windows 7 Explorer
+* Vista does not store the search term list in the registry.
+* Check the order of search word usage through the MRUListEx key value
+* 10 -&gt; 0F -&gt; 0E -&gt; 0D -&gt; 0C -&gt; 0B -&gt; 0A -&gt; 04 -&gt; 09 -&gt; 08 -&gt; 07 -&gt; 06 -&gt; 05 -&gt; 03 -&gt; 02 -&gt; 01 -&gt; 00
 
 ### Typed Paths \(Explorer\)
 
