@@ -106,8 +106,6 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ![](../.gitbook/assets/image%20%2854%29.png)
 
-### Program Usage Log
-
 ### MRUs
 
 ### Recently opened files \(Explorer\)
