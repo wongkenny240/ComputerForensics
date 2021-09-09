@@ -261,19 +261,15 @@ One more example, here the FriendlyName \(i.e. Volume Name\) is FOR408-USB
 
 If there's not Serial Number in like the second key, then we go to the following key to look for the bracket value \(i.e. {c0b076c....}\)
 
+```text
+SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\Partmgr
+```
+
 ![1. Find the value in the USB TOR Key ](../.gitbook/assets/image%20%28127%29.png)
 
 ![2. Find the USB under the Devices Key](../.gitbook/assets/image%20%2870%29.png)
 
 ![3. Look up the FriendlyName of the Key](../.gitbook/assets/image%20%28128%29.png)
-
-![](../.gitbook/assets/image%20%28104%29.png)
-
-```text
-SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\Partmgr
-```
-
-![](../.gitbook/assets/image%20%28106%29.png)
 
 Then we can correlate to the value under Windows Portable Devices with the bracket value
 
