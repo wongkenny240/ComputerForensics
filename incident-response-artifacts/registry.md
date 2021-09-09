@@ -261,6 +261,12 @@ One more example, here the FriendlyName \(i.e. Volume Name\) is FOR408-USB
 
 If there's not Serial Number in like the second key, then we go to the following key to look for the bracket value \(i.e. {c0b076c....}\)
 
+![1. Find the value in the USB TOR Key ](../.gitbook/assets/image%20%28127%29.png)
+
+![2. Find the USB under the Devices Key](../.gitbook/assets/image%20%2870%29.png)
+
+![3. Look up the FriendlyName of the Key](../.gitbook/assets/image%20%28128%29.png)
+
 ![](../.gitbook/assets/image%20%28104%29.png)
 
 ```text
