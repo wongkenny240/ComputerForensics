@@ -108,7 +108,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 
 ### MRUs
 
-### Recently opened files \(Explorer\)
+#### Recently opened files \(Explorer\)
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
@@ -129,7 +129,7 @@ The RecentDocs key also has a number of subkeys, each one being the extension of
 
 ![](../.gitbook/assets/image%20%28131%29.png)
 
-### Recently executed command \(Explorer\)
+#### Recently executed command \(Explorer\)
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
@@ -154,7 +154,7 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![](../.gitbook/assets/image%20%2853%29.png)
 
-### Microsoft Office usage trace
+#### Microsoft Office usage trace
 
 * Recently opened folder
 
@@ -173,9 +173,9 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
 
-### Search term list \(Explorer\)
+#### Search term list \(Explorer\)
 
-#### Windows 7
+##### Windows 7
 
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
@@ -186,7 +186,7 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 * Check the order of search word usage through the MRUListEx key value
 * 10 -&gt; 0F -&gt; 0E -&gt; 0D -&gt; 0C -&gt; 0B -&gt; 0A -&gt; 04 -&gt; 09 -&gt; 08 -&gt; 07 -&gt; 06 -&gt; 05 -&gt; 03 -&gt; 02 -&gt; 01 -&gt; 00
 
-### Typed Paths \(Explorer\)
+#### Typed Paths \(Explorer\)
 
 ### UserAssist
 
