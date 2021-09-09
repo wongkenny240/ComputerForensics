@@ -144,6 +144,8 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 ![](../.gitbook/assets/image%20%28130%29.png)
 
+ **The MRUList value within the RunMRU key tells** us that the most recent item to be typed into the Run box is item "e"
+
 * List of files opened in Paint
 
 ```text
