@@ -116,20 +116,20 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 ```
 
-This key can contain quite a number of values, all of which are binary data types. We are interested in the values that have numbers as names, which contain the names of the files accessed (in Unicode), and the value named **MRUListEx**, which records the order in which the files were accessed (as DWORDs). Given that adding a value and its associated data to the key, as well as modifying the MRUListEx value, constituted modifying the key, the **LastWrite time of the RecentDocs key will tell us when that file was accessed**.
+This key can contain quite a number of values, all of which are binary data types. We are interested in the values that have numbers as names, which contain the names of the files accessed \(in Unicode\), and the value named **MRUListEx**, which records the order in which the files were accessed \(as DWORDs\). Given that adding a value and its associated data to the key, as well as modifying the MRUListEx value, constituted modifying the key, the **LastWrite time of the RecentDocs key will tell us when that file was accessed**.
 
 * Files such as recently opened documents, pictures, music, and videos
 * 2000/XP – My Recent Documents
 * Vista/7 – Recent Items
 * Check the order of search word usage through the MRUListEx key value
 
-
 ```text
 HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.MOV
 ```
 
-The RecentDocs key also has a number of subkeys, each one being the extension of a file that was opened (.doc, .txt, .html, etc.). The values within these subkeys are maintained in the same way as in the RecentDocs key: The value names are numbered, and their data contains the name of the file accessed as a binary data type (in Unicode). Another value called MRUListEx is also a binary data type and maintains the order in which the files were accessed, most recent first, as DWORDs.
+The RecentDocs key also has a number of subkeys, each one being the extension of a file that was opened \(.doc, .txt, .html, etc.\). The values within these subkeys are maintained in the same way as in the RecentDocs key: The value names are numbered, and their data contains the name of the file accessed as a binary data type \(in Unicode\). Another value called MRUListEx is also a binary data type and maintains the order in which the files were accessed, most recent first, as DWORDs.
 
+![](../.gitbook/assets/image%20%28130%29.png)
 
 ### Recently executed command \(Explorer\)
 
@@ -141,10 +141,6 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 * The order of the most recently executed commands is the alphabetical order of the MRUList.
 
 ![](../.gitbook/assets/image%20%2856%29.png)
-
-
-
-
 
 * List of files opened in Paint
 
@@ -174,8 +170,6 @@ File{\#Number}–The lower the number, the most recently opened file \(saving th
 * Included information such as Recently opened folders, recently used files, recently used pages, recently accessed URLs, etc.
 
 ![File MRU with Registry Explorer](../.gitbook/assets/image%20%2855%29.png)
-
-
 
 ### Search term list \(Explorer\)
 
@@ -301,7 +295,7 @@ SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt
 
 ![](../.gitbook/assets/image%20%28129%29.png)
 
-This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number. 
+This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number.
 
 You can check with the vol command with the device connected.
 
