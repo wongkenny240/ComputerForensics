@@ -247,17 +247,17 @@ Under Devices, search for a key including product name or serial number among su
 
 ![](../.gitbook/assets/image%20%28103%29.png)
 
-_**FriendlyName**_
+_**FriendlyName \(i.e. Volume Name\)**_
 
 ![](../.gitbook/assets/image%20%2860%29.png)
 
 ![](../.gitbook/assets/image%20%2859%29.png)
 
-In this example, the Volume Name is KINGSTON
+In this example, here the FriendlyName \(i.e. Volume Name\) is KINGSTON
 
 ![](../.gitbook/assets/image%20%28105%29.png)
 
-One more example the Volume Name is FOR408-USB
+One more example, here the FriendlyName \(i.e. Volume Name\) is FOR408-USB
 
 If there's not Serial Number in like the second key, then we go to the following key to look for the bracket value \(i.e. {c0b076c....}\)
 
