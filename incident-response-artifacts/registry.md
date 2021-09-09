@@ -277,6 +277,22 @@ SYSTEM\CurrentControlSet\Enum\USBSTOR\<Device>\<SerialNumber>\Device Parameters\
 
 Then we can correlate to the value under Windows Portable Devices with the bracket value
 
+
+#### Volume Serial Number
+
+* VSN is created by Windows Vista and up Operating Systems each time the device is formatted. 
+
+```text
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt
+```
+
+This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number.
+
+Therefore showing that this device was installed on this machine and has not been formatted since (this is an important footnote, the Volume Serial Number can change for the device if it is formatted, as the Volume Serial Number is allocated after the Format!).
+
+Make a note of the Volume Serial Number and the Volume Name for use in analysing the Link (.lnk) files
+
+
 #### Determine the Drive Letter
 
 ```text
