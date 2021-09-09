@@ -188,6 +188,11 @@ HKU\{USER}\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
 
 #### Typed Paths \(Explorer\)
 
+```
+HKU\{USER}\SOFTWARE\Microsoft\Internet Explorer\TypedURLs
+```
+The TypedURLs key maintains a list of the URLs the user types into the Address bar in Internet Explorer. However, the value names within the TypedURLs key are ordered with the most recently typed URL having the lowest number; consequently, this key doesn’t have an MRUList or MRUListEx value. 
+
 ### UserAssist
 
 ### USB
