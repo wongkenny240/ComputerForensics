@@ -406,6 +406,9 @@ The filter is located at `/usr/share/plaso/filter_windows.txt` and is designated
 
 #### Target Timeline
 
+Parse winevtx, bagmru, usnjrnl, prefectch, amcache, winreg_default, SRUM. Add to memory with mactime parser. Run the commands in order.
+
+
 ```
 log2timeline.py --parsers="winevtx,usnjrnl,prefetch,winreg,esedb/srum" --status_view window dc01-targeted.dump ../E01-DC01/20200918_0347_CDrive.E01 --partitions "all"
 
