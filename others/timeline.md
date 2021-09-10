@@ -348,7 +348,6 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 4. Sort the data with **psort** into a CSV.
 5. Filter the CSV to remove excess Windows noise if desired.
 
-
 ### Create body file with Volatility
 
 1. The **MFT** module will carve out Master File Table residue that was in memory at the time of capture.
@@ -366,13 +365,13 @@ vol.py -f xxx.mem --profile=Win2012R2x64 mftparser --output=body --output-file=d
 
 #### Volatility 3
 
-```
+```text
 vol3 -f memory.mem timeliner.Timeliner --create-bodyfile
 ```
 
 ### Combine the body file
 
-```
+```text
 cat dc01-shellbags.body >> dc01-super-mem-time.body
 cat dc01-mft.body >> dc01-super-mem-time.body
 ```
@@ -381,7 +380,26 @@ cat dc01-mft.body >> dc01-super-mem-time.body
 
 #### Triage
 
-```
+```text
 log2timeline.py --status_view window -f /usr/share/plaso/filter_windows.txt dc01-triage.dump ../E01-DC01/20200918_0347_CDrive.E01 --partitions "all"
 log2timeline.py --parsers="mactime" --status_view window dc01-triage.dump ./dc01-super-mem-time.body
 ```
+
+
+
+Creating a Triage style Super Timeline is easy. Simply using the premade filter included with Log2timeline will generate a great timeline to effectively triage a disk image.
+
+The filter is located at `/usr/share/plaso/filter_windows.txt` and is designated with the `-f` switch. As stated above, this filter will filter on \(extract\) the following items:
+
+* MFT
+* NTFS LogFile
+* UsnJrnl
+* Recycle bin artifacts
+* Windows Registry files
+* Recent file activity
+* Jump List Files
+* Windows Event Logs
+* Windows Artifacts
+* Prefetch files
+* Browser History Artifacts
+
