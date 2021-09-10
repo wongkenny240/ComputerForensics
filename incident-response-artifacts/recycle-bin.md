@@ -57,9 +57,13 @@ Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{GUID}
 
 ## Using an EnCase Evidence Processor to Determine the Status of Recycle Bin Files
 
-
 * Windows Artifact Parser
+
+![EnCase Evidence Processor](../.gitbook/assets/image%20%28136%29.png)
+
+![Select Recycle Bin Files](../.gitbook/assets/image%20%28135%29.png)
 
 * After you run the EnCase Evidence Processor, you can review the results of this module by running the Case Analyzer from the EnScript menu
 
+![](../.gitbook/assets/image%20%28137%29.png)
 
