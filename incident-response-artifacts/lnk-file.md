@@ -43,6 +43,8 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Windows\Recent\
 C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Office\Recent\
 ```
 
+## Tools
+
 Windows LNK Parsing Utility \(lp\) – TZWorks
 
 {% embed url="https://www.tzworks.net/prototype\_page.php?proto\_id=11" %}
@@ -54,4 +56,12 @@ Lnkanalyser – Mark Woan
 {% embed url="http://www.woanware.co.uk/forensics/lnkanalyser.html" %}
 
 
+### Using the Link File Parser
+
+
+* Windows Artifact Parser -> Link files
+* Case Analyzer to analysis
+* Link files can be stored in RAM memory and the OS writes volatile data that is not currently in use to swap file (pagefile.sys)
+* Windows XP/Vista/7, if the system is placed into hibernation or hybrid sleep, the contents of RAM are written to the hiberfil.sys file
+* The swap file is configured to adjust in size. While this adjustment occurs, clusters that were formerly allocated to the swap file find themselves in unallocated space, therefore you should parse for link files in the unallocated spaces.
 
