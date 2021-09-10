@@ -340,3 +340,15 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 
 ## How to create a supertime line with log2timeline?
 
+![Process to create the super timeline \(Source: https://dfirmadness.com/case-001-super-timeline-analysis/\)](../.gitbook/assets/image%20%28139%29.png)
+
+
+
+1. Process **memory image** with Volatility **Timeliner**, **Shellbags**, and **MFT** modules into a single memory timeline **body file**.
+2. Process **E01 image** timeline data with log2timeline into a plaso **dump file** with selected parsers.
+3. Process the **memory body file** into the **plaso dump file** with the **mactime** body parser.
+4. Sort the data with **psort** into a CSV.
+5. Filter the CSV to remove excess Windows noise if desired. 
+
+
+
