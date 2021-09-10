@@ -356,10 +356,18 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 3. The **timeliner** plugin helps investigators by providing a timeline of all the events that took place when the image was acquired.
 4. The **timeliner** plugin groups details by time and includes process, PID, process offset, DDLs used, registry details, and other useful information.
 
+#### Volatility 2
+
 ```text
 vol.py -f xxx.mem --profile=Win2012R2x64 timeliner --output=body --output-file=./dc01-super-mem-time.body
 vol.py -f xxx.mem --profile=Win2012R2x64 shellbags --output=body --output-file=./dc01-shellbags.body
 vol.py -f xxx.mem --profile=Win2012R2x64 mftparser --output=body --output-file=dc01-mft.body
+```
+
+#### Volatility 3
+
+```
+vol3 -f memory.mem timeliner.Timeliner --create-bodyfile
 ```
 
 ### Combine the body file
