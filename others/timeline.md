@@ -379,3 +379,9 @@ cat dc01-mft.body >> dc01-super-mem-time.body
 
 ### Timeline Dump file Creation
 
+#### Triage
+
+```
+log2timeline.py --status_view window -f /usr/share/plaso/filter_windows.txt dc01-triage.dump ../E01-DC01/20200918_0347_CDrive.E01 --partitions "all"
+log2timeline.py --parsers="mactime" --status_view window dc01-triage.dump ./dc01-super-mem-time.body
+```
