@@ -348,9 +348,8 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 4. Sort the data with **psort** into a CSV.
 5. Filter the CSV to remove excess Windows noise if desired. 
 
-
 * The **MFT** module will carve out Master File Table residue that was in memory at the time of capture. 
 * The **Shellbags** mdoule will retrieve registry information regarding Windows GUI settings for Explorer that were stored in memory. 
 * The **timeliner** plugin helps investigators by providing a timeline of all the events that took place when the image was acquired.
-* The timeliner plugin groups details by time and includes process, PID, process offset, DDLs used, registry details, and other useful information.
+* The **timeliner** plugin groups details by time and includes process, PID, process offset, DDLs used, registry details, and other useful information.
 
