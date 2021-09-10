@@ -403,3 +403,11 @@ The filter is located at `/usr/share/plaso/filter_windows.txt` and is designated
 * Prefetch files
 * Browser History Artifacts
 
+
+#### Target Timeline
+
+```
+log2timeline.py --parsers="winevtx,usnjrnl,prefetch,winreg,esedb/srum" --status_view window dc01-targeted.dump ../E01-DC01/20200918_0347_CDrive.E01 --partitions "all"
+
+log2timeline.py --parsers="mactime" --status_view window dc01-targeted.dump ./dc01-super-mem-time.body
+```
