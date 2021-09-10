@@ -318,4 +318,6 @@ _Note: It is important to make note of the Volume Serial Number and the Volume N
 ```text
 SYSTEM\MountedDevices
 ```
-
+* When a USB removable storage device is connected to a Windows system, it is assigned a drive letter; that drive letter shows up in the MountedDevices key. 
+* If the device is assigned the drive letter F:\, the value in the MountedDevices key will appear as \DosDevices\F:. 
+* We can map the entry from the USBSTOR key to the MountedDevices key using the **ParentldPrefix** value found within the unique instance ID key for the device. 
