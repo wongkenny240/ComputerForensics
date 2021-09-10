@@ -349,6 +349,7 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 5. Filter the CSV to remove excess Windows noise if desired.
 
 
+### Create body file with Volatility
 
 1. The **MFT** module will carve out Master File Table residue that was in memory at the time of capture.
 2. The **Shellbags** mdoule will retrieve registry information regarding Windows GUI settings for Explorer that were stored in memory. 
@@ -361,3 +362,9 @@ vol.py -f xxx.mem --profile=Win2012R2x64 shellbags --output=body --output-file=.
 vol.py -f xxx.mem --profile=Win2012R2x64 mftparser --output=body --output-file=dc01-mft.body
 ```
 
+### Combine the body file
+
+```
+cat dc01-shellbags.body >> dc01-super-mem-time.body
+cat dc01-mft.body >> dc01-super-mem-time.body
+```
