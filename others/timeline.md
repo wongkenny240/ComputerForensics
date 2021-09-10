@@ -385,8 +385,6 @@ log2timeline.py --status_view window -f /usr/share/plaso/filter_windows.txt dc01
 log2timeline.py --parsers="mactime" --status_view window dc01-triage.dump ./dc01-super-mem-time.body
 ```
 
-
-
 Creating a Triage style Super Timeline is easy. Simply using the premade filter included with Log2timeline will generate a great timeline to effectively triage a disk image.
 
 The filter is located at `/usr/share/plaso/filter_windows.txt` and is designated with the `-f` switch. As stated above, this filter will filter on \(extract\) the following items:
@@ -403,14 +401,12 @@ The filter is located at `/usr/share/plaso/filter_windows.txt` and is designated
 * Prefetch files
 * Browser History Artifacts
 
-
 #### Target Timeline
 
-Parse winevtx, bagmru, usnjrnl, prefectch, amcache, winreg_default, SRUM. Add to memory with mactime parser. Run the commands in order.
+Parse winevtx, bagmru, usnjrnl, prefectch, amcache, winreg\_default, SRUM. Add to memory with mactime parser. Run the commands in order.
 
-
-```
+```text
 log2timeline.py --parsers="winevtx,usnjrnl,prefetch,winreg,esedb/srum" --status_view window dc01-targeted.dump ../E01-DC01/20200918_0347_CDrive.E01 --partitions "all"
-
 log2timeline.py --parsers="mactime" --status_view window dc01-targeted.dump ./dc01-super-mem-time.body
 ```
+
