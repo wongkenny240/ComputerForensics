@@ -1,6 +1,6 @@
 # LNK File
 
-LNK files \(labels or Windows shortcut files\) are typically files which are created by the Windows OS automatically, whenever a user opens their files. These files are used by the operating system to secure quick access to a certain file. In addition, some of these files can be created by users themselves to make their activities easier.
+LNK files \(labels or Windows shortcut files\) are typically files which are created by the Windows OS automatically, whenever a **user opens their files**. These files are used by the operating system to secure quick access to a certain file. In addition, some of these files can be created by users themselves to make their activities easier.
 
 ## Location
 
