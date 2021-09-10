@@ -45,9 +45,13 @@ C:\Users\%USERNAME%\AppData\ Roaming\Microsoft\Office\Recent\
 
 Windows LNK Parsing Utility \(lp\) – TZWorks
 
-[https://www.tzworks.net/prototype\_page.php?proto\_id=11](https://www.tzworks.net/prototype_page.php?proto_id=11)
+{% embed url="https://www.tzworks.net/prototype\_page.php?proto\_id=11" %}
+
+
 
 Lnkanalyser – Mark Woan
 
-[http](http://www.woanware.co.uk/forensics/lnkanalyser.html)[://](http://www.woanware.co.uk/forensics/lnkanalyser.html)[www.woanware.co.uk/forensics/lnkanalyser.html](http://www.woanware.co.uk/forensics/lnkanalyser.html)
+{% embed url="http://www.woanware.co.uk/forensics/lnkanalyser.html" %}
+
+
 
