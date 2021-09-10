@@ -346,15 +346,18 @@ grep -a -v -i -f whitelist.txt /path/to/plaso.csv > supertimeline.csv
 2. Process **E01 image** timeline data with log2timeline into a plaso **dump file** with selected parsers.
 3. Process the **memory body file** into the **plaso dump file** with the **mactime** body parser.
 4. Sort the data with **psort** into a CSV.
-5. Filter the CSV to remove excess Windows noise if desired. 
+5. Filter the CSV to remove excess Windows noise if desired.
 
-* The **MFT** module will carve out Master File Table residue that was in memory at the time of capture. 
-* The **Shellbags** mdoule will retrieve registry information regarding Windows GUI settings for Explorer that were stored in memory. 
-* The **timeliner** plugin helps investigators by providing a timeline of all the events that took place when the image was acquired.
-* The **timeliner** plugin groups details by time and includes process, PID, process offset, DDLs used, registry details, and other useful information.
 
-```
+
+1. The **MFT** module will carve out Master File Table residue that was in memory at the time of capture.
+2. The **Shellbags** mdoule will retrieve registry information regarding Windows GUI settings for Explorer that were stored in memory. 
+3. The **timeliner** plugin helps investigators by providing a timeline of all the events that took place when the image was acquired.
+4. The **timeliner** plugin groups details by time and includes process, PID, process offset, DDLs used, registry details, and other useful information.
+
+```text
 vol.py -f xxx.mem --profile=Win2012R2x64 timeliner --output=body --output-file=./dc01-super-mem-time.body
 vol.py -f xxx.mem --profile=Win2012R2x64 shellbags --output=body --output-file=./dc01-shellbags.body
 vol.py -f xxx.mem --profile=Win2012R2x64 mftparser --output=body --output-file=dc01-mft.body
 ```
+
