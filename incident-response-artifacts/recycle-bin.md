@@ -39,3 +39,17 @@ The operating system creates two files each time a file is placed in the Recycle
 * The **$I file** takes the place of **INFO2** as the source of accompanying metadata
 * $I file contains the **original name, path, and date and time deleted** for its associated $R file.
 
+
+## NukeOnDelete
+
+```
+Microsoft\Windows\CurrentVersion\Explorer\BitBucket
+```
+Adding the NukeOnDelete value and setting it to 1 effectively disables the Recycle Bin, as deleted files will bypass the Recycle Bin. 
+
+
+On Windows XP and 2003 systems, the BitBucket key is located in the Software hive file, so the setting applied to all users on the system. On Vista and Windows 7, the BitBucket key moved into the user’s hive file (NTUSER.DAT) in the following path:
+
+```
+Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{GUID}
+```
