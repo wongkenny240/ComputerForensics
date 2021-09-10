@@ -55,3 +55,11 @@ Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{GUID}
 
 ![Bypass recycle bin setting](../.gitbook/assets/image%20%28133%29.png)
 
+## Using an EnCase Evidence Processor to Determine the Status of Recycle Bin Files
+
+
+* Windows Artifact Parser
+
+* After you run the EnCase Evidence Processor, you can review the results of this module by running the Case Analyzer from the EnScript menu
+
+
