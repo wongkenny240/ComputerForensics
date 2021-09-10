@@ -323,5 +323,5 @@ SYSTEM\MountedDevices
 * If the device is assigned the drive letter F:\, the value in the MountedDevices key will appear as \DosDevices\F:. 
 * We can map the entry from the USBSTOR key to the MountedDevices key using the **ParentldPrefix** value found within the unique instance ID key for the device. 
 
-![](../.gitbook/assets/image%20%28133%29.png)
+![](../.gitbook/assets/image%20%28134%29.png)
 

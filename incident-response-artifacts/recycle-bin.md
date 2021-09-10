@@ -53,3 +53,5 @@ On Windows XP and 2003 systems, the BitBucket key is located in the Software hiv
 Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{GUID}
 ```
 
+![Bypass recycle bin setting](../.gitbook/assets/image%20%28133%29.png)
+
