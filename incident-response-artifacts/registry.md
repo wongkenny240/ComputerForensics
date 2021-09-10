@@ -275,11 +275,11 @@ _**FriendlyName \(i.e. Volume Name\)**_
 
 ![](../.gitbook/assets/image%20%2859%29.png)
 
-In this example, here the FriendlyName \(i.e. Volume Name\) is KINGSTON
+In this example, here the **FriendlyName** \(i.e. Volume Name\) is KINGSTON
 
 ![](../.gitbook/assets/image%20%28105%29.png)
 
-One more example, here the FriendlyName \(i.e. Volume Name\) is FOR408-USB
+One more example, here the **FriendlyName** \(i.e. Volume Name\) is FOR408-USB
 
 If there's not Serial Number in like the second key, then we go to the following key to look for the bracket value \(i.e. {c0b076c....}\)
 
@@ -307,7 +307,7 @@ SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt
 
 This is a Decimal value of the Volume Serial Number, which is a **Hexadecimal value**. Convert this value into the Hex and you have your Volume Serial Number.
 
-You can check with the vol command with the device connected.
+You can check with the **vol** command with the device connected.
 
 _Note: The Volume Serial Number can change for the device if it is formatted, as the Volume Serial Number is allocated after the Format._
 
